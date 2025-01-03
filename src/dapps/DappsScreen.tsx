@@ -241,7 +241,7 @@ function DappsScreen({ navigation }: Props) {
                   }}
                   value={searchTerm}
                   multiline={false}
-                  placeholderTextColor={Colors.gray4}
+                  placeholderTextColor={Colors.lightBlue}
                   underlineColorAndroid="transparent"
                   placeholder={t('dappsScreen.searchPlaceHolder') ?? undefined}
                   showClearButton={true}
@@ -332,19 +332,19 @@ const styles = StyleSheet.create({
     flexGrow: 1,
   },
   refreshControl: {
-    backgroundColor: Colors.white,
+    backgroundColor: Colors.darkBlue,
   },
   sectionList: {
     flex: 1,
   },
   sectionTitle: {
     ...typeScale.labelSemiBoldSmall,
-    color: Colors.gray4,
+    color: Colors.lightBlue,
     marginTop: Spacing.Large32,
   },
   disclaimer: {
     ...typeScale.bodyXSmall,
-    color: Colors.gray4,
+    color: Colors.lightBlue,
   },
   listFooterComponent: {
     marginTop: Spacing.Large32,
@@ -352,7 +352,7 @@ const styles = StyleSheet.create({
   },
   title: {
     ...typeScale.titleMedium,
-    color: Colors.black,
+    color: Colors.white,
   },
   titleContainer: {
     marginBottom: Spacing.Thick24,

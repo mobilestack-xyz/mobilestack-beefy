@@ -57,14 +57,14 @@ function RecipientItem({ recipient, onSelectRecipient, loading, selected }: Prop
           <ContactCircle
             style={styles.avatar}
             recipient={recipient}
-            backgroundColor={Colors.gray1}
-            foregroundColor={Colors.black}
-            borderColor={Colors.gray2}
+            backgroundColor={Colors.blue100}
+            foregroundColor={Colors.white}
+            borderColor={Colors.blue200}
             DefaultIcon={() => renderDefaultIcon(recipient)} // no need to honor color props here since the color we need match the defaults
           />
           {!!showAppIcon && (
             <Logo
-              color={Colors.white}
+              color={Colors.darkBlue}
               style={styles.appIcon}
               size={ICON_SIZE}
               testID="RecipientItem/AppIcon"
@@ -93,9 +93,9 @@ function RecipientItem({ recipient, onSelectRecipient, loading, selected }: Prop
 
 function renderDefaultIcon(recipient: Recipient) {
   if (recipientHasNumber(recipient)) {
-    return <PhoneIcon color={Colors.black} size={24} testID="RecipientItem/PhoneIcon" />
+    return <PhoneIcon color={Colors.white} size={24} testID="RecipientItem/PhoneIcon" />
   } else {
-    return <WalletIcon color={Colors.black} size={24} testID="RecipientItem/WalletIcon" />
+    return <WalletIcon color={Colors.white} size={24} testID="RecipientItem/WalletIcon" />
   }
 }
 
@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   rowSelected: {
-    backgroundColor: Colors.gray1,
+    backgroundColor: Colors.blue100,
   },
   avatar: {
     marginRight: Spacing.Small12,
@@ -115,10 +115,10 @@ const styles = StyleSheet.create({
   contentContainer: {
     flex: 1,
   },
-  name: { ...typeScale.labelMedium, color: Colors.black },
+  name: { ...typeScale.labelMedium, color: Colors.white },
   phone: {
     ...typeScale.bodySmall,
-    color: Colors.gray4,
+    color: Colors.lightBlue,
   },
   rightIconContainer: {
     justifyContent: 'center',

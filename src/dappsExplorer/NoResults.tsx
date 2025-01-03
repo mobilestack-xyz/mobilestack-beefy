@@ -75,7 +75,7 @@ function NoResults({ selectedFilter, removeFilter, testID, searchTerm }: Props) 
 
 const styles = StyleSheet.create({
   searchedText: {
-    color: Colors.black,
+    color: Colors.white,
     fontWeight: 'bold',
   },
   text: {
@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
   removeFilterTouchable: {
     paddingVertical: 0,
     paddingHorizontal: Spacing.Smallest8,
-    backgroundColor: Colors.gray2,
+    backgroundColor: Colors.blue200,
     borderRadius: 16,
   },
   removeFilterText: {

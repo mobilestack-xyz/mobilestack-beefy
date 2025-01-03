@@ -124,7 +124,7 @@ export default function PointsHome({ route, navigation }: Props) {
 
         {pointsConfigStatus === 'error' && (
           <View style={styles.loadingStatusContainer}>
-            <AttentionIcon size={48} color={Colors.black} />
+            <AttentionIcon size={48} color={Colors.white} />
             <Text style={styles.loadingStatusTitle}>{t('points.error.title')}</Text>
             <Text style={styles.loadingStatusBodyText}>{t('points.error.description')}</Text>
             <Button
@@ -296,7 +296,7 @@ const styles = StyleSheet.create({
   },
   bottomSheetPreviousPointsAmount: {
     ...typeScale.labelSemiBoldXSmall,
-    color: Colors.gray3,
+    color: Colors.lightBlue,
     textDecorationLine: 'line-through',
   },
   bottomSheetTitle: {
@@ -305,7 +305,7 @@ const styles = StyleSheet.create({
   },
   bottomSheetBody: {
     ...typeScale.bodySmall,
-    color: Colors.gray3,
+    color: Colors.lightBlue,
     marginBottom: Spacing.XLarge48,
   },
   balanceRow: {
@@ -343,7 +343,7 @@ const styles = StyleSheet.create({
   },
   disclaimerText: {
     ...typeScale.bodySmall,
-    color: Colors.gray4,
+    color: Colors.lightBlue,
     textAlign: 'center',
     marginVertical: Spacing.Thick24,
   },

@@ -144,7 +144,7 @@ export default function PoolCard({
 const styles = StyleSheet.create({
   card: {
     padding: Spacing.Regular16,
-    borderColor: Colors.gray2,
+    borderColor: Colors.blue200,
     borderRadius: 12,
     borderWidth: 1,
   },
@@ -156,11 +156,11 @@ const styles = StyleSheet.create({
     marginLeft: Spacing.Smallest8,
   },
   titleTokens: {
-    color: Colors.black,
+    color: Colors.white,
     ...typeScale.labelSemiBoldSmall,
   },
   titleNetwork: {
-    color: Colors.black,
+    color: Colors.white,
     ...typeScale.bodyXSmall,
   },
   keyValueContainer: {
@@ -171,25 +171,25 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   keyText: {
-    color: Colors.gray3,
+    color: Colors.lightBlue,
     ...typeScale.bodySmall,
   },
   valueText: {
-    color: Colors.black,
+    color: Colors.white,
     ...typeScale.bodySmall,
   },
   valueTextBold: {
-    color: Colors.black,
+    color: Colors.white,
     ...typeScale.labelSemiBoldSmall,
   },
   poweredByText: {
-    color: Colors.gray3,
+    color: Colors.lightBlue,
     ...typeScale.bodyXSmall,
     alignSelf: 'center',
   },
   withBalanceContainer: {
     borderTopWidth: 1,
-    borderTopColor: Colors.gray2,
+    borderTopColor: Colors.blue200,
     paddingTop: Spacing.Regular16,
     gap: Spacing.Smallest8,
     flexDirection: 'row',

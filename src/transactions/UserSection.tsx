@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
   },
   sectionLabel: {
     ...typeScale.labelSemiBoldSmall,
-    color: colors.gray3,
+    color: colors.lightBlue,
     marginBottom: 4,
   },
   userContainer: {
@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
   },
   phoneNumber: {
     ...typeScale.bodySmall,
-    color: colors.gray4,
+    color: colors.lightBlue,
   },
   avatarContainer: {
     flex: 1,
@@ -122,7 +122,7 @@ const styles = StyleSheet.create({
   },
   accountBox: {
     borderRadius: 4,
-    backgroundColor: colors.gray2,
+    backgroundColor: colors.blue200,
     flexDirection: 'column',
     padding: 16,
   },

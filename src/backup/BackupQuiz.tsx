@@ -349,7 +349,7 @@ const styles = StyleSheet.create({
   bodyText: {
     marginTop: 20,
     ...typeScale.bodyMedium,
-    color: colors.black,
+    color: colors.white,
     textAlign: 'center',
   },
   bodyTextBold: {
@@ -371,17 +371,17 @@ const styles = StyleSheet.create({
     marginVertical: 4,
     minWidth: 55,
     borderWidth: 1,
-    borderColor: colors.gray2,
+    borderColor: colors.blue200,
     borderRadius: 100,
   },
   chosenWordWrapperFilled: {
-    backgroundColor: colors.gray2,
+    backgroundColor: colors.blue200,
   },
   chosenWord: {
     ...typeScale.bodySmall,
     textAlign: 'center',
     lineHeight: undefined,
-    color: colors.gray4,
+    color: colors.lightBlue,
   },
   chosenWordFilled: {
     ...typeScale.bodySmall,
@@ -420,7 +420,7 @@ const styles = StyleSheet.create({
   },
   resetButton: { alignItems: 'center', padding: 24, marginTop: 8 },
   cancelButton: {
-    color: colors.gray4,
+    color: colors.lightBlue,
   },
 })
 

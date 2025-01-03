@@ -620,12 +620,12 @@ const styles = StyleSheet.create({
   sectionContainer: {
     marginHorizontal: variables.contentPadding,
     borderTopWidth: 1,
-    borderTopColor: colors.gray2,
+    borderTopColor: colors.blue200,
     paddingVertical: 24,
   },
   sectionHeaderText: {
     ...typeScale.labelSemiBoldSmall,
-    color: colors.gray3,
+    color: colors.lightBlue,
     marginBottom: 8,
   },
   sectionMainTextContainer: {
@@ -639,7 +639,7 @@ const styles = StyleSheet.create({
   },
   sectionSubText: {
     ...typeScale.bodySmall,
-    color: colors.gray4,
+    color: colors.lightBlue,
   },
   submitBtn: {
     flexDirection: 'column',
@@ -647,7 +647,7 @@ const styles = StyleSheet.create({
     marginBottom: 24,
   },
   cancelBtn: {
-    color: colors.gray3,
+    color: colors.lightBlue,
   },
   activityIndicatorContainer: {
     paddingVertical: variables.contentPadding,
@@ -678,7 +678,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: variables.contentPadding,
     marginBottom: 20,
     textAlign: 'center',
-    color: colors.gray4,
+    color: colors.lightBlue,
   },
 })
 

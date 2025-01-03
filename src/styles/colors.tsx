@@ -1,22 +1,17 @@
 // Designer Created Figma Colors
 // from https://www.figma.com/design/erFfzHvSTm5g1sjK6jWyEH/Working-Design-System?node-id=2100-4881&node-type=frame&t=vKGGXrs3Torz7kFE-0
 enum Colors {
-  // black & white
-  black = '#2E3338',
+  // primary beefy colors
   white = '#FFFFFF',
-
-  // grays
-  gray5 = '#505050',
-  gray4 = '#666666',
-  gray3 = '#757575',
-  gray2 = '#E6E6E6',
-  gray1 = '#F8F9F9',
-
-  // primary
+  darkBlue = '#242843',
   primary = '#2E3338',
-  accent = '#1AB775',
+  accent = '#4EB258',
+  lightBlue = '#B7B9C9',
+  blue200 = '#2D3154',
+  blue100 = '#363B63',
 
   // other
+  gray5 = '#505050',
   successDark = '#137211',
   successLight = '#F1FDF1',
   warningDark = '#9C6E00',

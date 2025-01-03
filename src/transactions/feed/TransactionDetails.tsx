@@ -132,11 +132,11 @@ const styles = StyleSheet.create({
   },
   title: {
     ...typeScale.titleSmall,
-    color: Colors.black,
+    color: Colors.white,
   },
   subtitle: {
     ...typeScale.bodyXSmall,
-    color: Colors.gray3,
+    color: Colors.lightBlue,
     marginTop: 2,
   },
   status: {
@@ -152,7 +152,7 @@ const styles = StyleSheet.create({
   },
   blockExplorerLink: {
     ...typeScale.bodyXSmall,
-    color: Colors.gray3,
+    color: Colors.lightBlue,
     marginRight: Spacing.Tiny4,
   },
 })

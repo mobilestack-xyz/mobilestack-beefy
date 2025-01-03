@@ -13,7 +13,7 @@ const CheckBox = ({
   checked,
   testID,
   checkedColor = Colors.accent,
-  uncheckedColor = Colors.gray3,
+  uncheckedColor = Colors.lightBlue,
 }: Props) => {
   if (checked)
     return (

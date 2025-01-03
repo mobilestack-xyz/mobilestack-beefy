@@ -94,7 +94,7 @@ export class CTextInput extends React.Component<Props, State> {
             solid={true}
             size={20}
             activeColor={Colors.gray5}
-            inactiveColor={Colors.gray1}
+            inactiveColor={Colors.blue100}
           />
         )}
         {rightElement}
@@ -120,7 +120,7 @@ const styles = StyleSheet.create({
   },
   input: {
     ...typeScale.bodyMedium,
-    color: Colors.black,
+    color: Colors.white,
     flex: 1,
     paddingVertical: Spacing.Small12,
     paddingHorizontal: 0,

@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     marginBottom: Spacing.Smallest8,
   },
   info: {
-    color: colors.gray4,
+    color: colors.lightBlue,
     marginBottom: Spacing.Smallest8,
   },
   exchangeText: {
@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
   separator: {
     width: '100%',
     height: 1,
-    backgroundColor: colors.gray2,
+    backgroundColor: colors.blue200,
   },
 })
 

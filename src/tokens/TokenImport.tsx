@@ -323,7 +323,7 @@ const TextInputGroup = ({
     <TextInput
       multiline={false}
       style={styles.messageTextInput}
-      placeholderTextColor={Colors.gray4}
+      placeholderTextColor={Colors.lightBlue}
       numberOfLines={1}
       showClearButton={true}
       autoCorrect={false}
@@ -351,7 +351,7 @@ const styles = StyleSheet.create({
   },
   messageTextInput: {
     paddingHorizontal: Spacing.Small12,
-    borderColor: Colors.gray2,
+    borderColor: Colors.blue200,
     borderRadius: Spacing.Tiny4,
     borderWidth: 1.5,
   },

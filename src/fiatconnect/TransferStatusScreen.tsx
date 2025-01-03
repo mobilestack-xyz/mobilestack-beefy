@@ -148,7 +148,7 @@ function SuccessOrProcessingSection({
   if (status === SendingTransferStatus.Completed) {
     icon = (
       <CircledIcon>
-        <Checkmark color={Colors.white} height={22} width={22} />
+        <Checkmark color={Colors.darkBlue} height={22} width={22} />
       </CircledIcon>
     )
     title = t('fiatConnectStatusScreen.success.title')
@@ -158,7 +158,7 @@ function SuccessOrProcessingSection({
   } else {
     icon = (
       <CircledIcon>
-        <ClockIcon color={Colors.white} height={22} width={22} />
+        <ClockIcon color={Colors.darkBlue} height={22} width={22} />
       </CircledIcon>
     )
     title = t('fiatConnectStatusScreen.txProcessing.title')
@@ -196,7 +196,7 @@ function SuccessOrProcessingSection({
             <Text style={styles.txDetails}>
               {t('fiatConnectStatusScreen.success.viewOnCeloScan')}
             </Text>
-            <OpenLinkIcon color={Colors.gray4} />
+            <OpenLinkIcon color={Colors.lightBlue} />
           </View>
         </Touchable>
       )}
@@ -303,7 +303,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   txDetails: {
-    color: Colors.gray4,
+    color: Colors.lightBlue,
   },
   iconContainer: {
     marginBottom: 24,
@@ -341,7 +341,7 @@ const styles = StyleSheet.create({
   },
   cancelBtn: {
     ...typeScale.bodyMedium,
-    color: Colors.gray3,
+    color: Colors.lightBlue,
     paddingHorizontal: Spacing.Thick24,
   },
 })

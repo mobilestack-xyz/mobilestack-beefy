@@ -283,10 +283,10 @@ function GasFeeError() {
 function GasFeeLoading() {
   return (
     <View testID="EarnConfirmation/GasLoading">
-      <SkeletonPlaceholder backgroundColor={Colors.gray2} highlightColor={Colors.white}>
+      <SkeletonPlaceholder backgroundColor={Colors.blue200} highlightColor={Colors.darkBlue}>
         <View style={styles.gasFeeCryptoLoading} />
       </SkeletonPlaceholder>
-      <SkeletonPlaceholder backgroundColor={Colors.gray2} highlightColor={Colors.white}>
+      <SkeletonPlaceholder backgroundColor={Colors.blue200} highlightColor={Colors.darkBlue}>
         <View style={styles.gasFeeFiatLoading} />
       </SkeletonPlaceholder>
     </View>
@@ -351,10 +351,10 @@ const styles = StyleSheet.create({
   },
   collectInfoContainer: {
     padding: Spacing.Regular16,
-    borderColor: Colors.gray2,
+    borderColor: Colors.blue200,
     borderWidth: 1,
     borderRadius: 16,
-    backgroundColor: Colors.gray1,
+    backgroundColor: Colors.blue100,
   },
   row: {
     flexDirection: 'row',
@@ -363,25 +363,25 @@ const styles = StyleSheet.create({
   },
   cryptoText: {
     ...typeScale.labelSemiBoldLarge,
-    color: Colors.black,
+    color: Colors.white,
   },
   fiatText: {
     ...typeScale.bodySmall,
-    color: Colors.gray4,
+    color: Colors.lightBlue,
   },
   collectItemTitle: {
     ...typeScale.labelSemiBoldXSmall,
-    color: Colors.black,
+    color: Colors.white,
     marginBottom: Spacing.Smallest8,
   },
   separator: {
     marginBottom: Spacing.Regular16,
     borderBottomWidth: 1,
-    borderBottomColor: Colors.gray2,
+    borderBottomColor: Colors.blue200,
   },
   rateText: {
     ...typeScale.bodySmall,
-    color: Colors.gray4,
+    color: Colors.lightBlue,
     marginBottom: Spacing.Tiny4,
   },
   iconContainer: {
@@ -393,7 +393,7 @@ const styles = StyleSheet.create({
   },
   gasFeeFiat: {
     ...typeScale.bodyXSmall,
-    color: Colors.gray4,
+    color: Colors.lightBlue,
   },
   button: {
     padding: Spacing.Thick24,

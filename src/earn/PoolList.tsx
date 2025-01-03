@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
   },
   learnMore: {
     ...typeScale.bodySmall,
-    color: Colors.black,
+    color: Colors.white,
     textAlign: 'center',
   },
   learnMoreLink: {

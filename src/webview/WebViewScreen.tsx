@@ -106,7 +106,7 @@ function WebViewScreen({ route, navigation }: Props) {
         <TopBarTextButton
           title={t('close')}
           onPress={navigateBack}
-          titleStyle={{ color: colors.gray4, paddingHorizontal: 0 }}
+          titleStyle={{ color: colors.lightBlue, paddingHorizontal: 0 }}
           testID="WebViewScreen/CloseButton"
         />
       ),
@@ -236,7 +236,7 @@ function WebViewScreen({ route, navigation }: Props) {
           disabled={!canGoBack}
           testID="WebViewScreen/GoBack"
         >
-          <BackChevron color={canGoBack ? colors.black : colors.gray3} />
+          <BackChevron color={canGoBack ? colors.white : colors.lightBlue} />
         </Touchable>
         <Touchable
           onPress={handleGoForward}
@@ -244,17 +244,17 @@ function WebViewScreen({ route, navigation }: Props) {
           disabled={!canGoForward}
           testID="WebViewScreen/GoForward"
         >
-          <ForwardChevron color={canGoForward ? colors.black : colors.gray3} />
+          <ForwardChevron color={canGoForward ? colors.white : colors.lightBlue} />
         </Touchable>
         <Touchable onPress={handleRefresh} hitSlop={iconHitslop} testID="WebViewScreen/Refresh">
-          <Refresh height={20} color={colors.black} />
+          <Refresh height={20} color={colors.white} />
         </Touchable>
         <Touchable
           onPress={openActionSheet}
           hitSlop={iconHitslop}
           testID="WebViewScreen/OpenBottomSheet"
         >
-          <TripleDotVertical color={colors.black} />
+          <TripleDotVertical color={colors.white} />
         </Touchable>
       </View>
     </SafeAreaView>
@@ -283,7 +283,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingHorizontal: 32,
     borderTopWidth: 1,
-    borderColor: colors.gray2,
+    borderColor: colors.blue200,
   },
 })
 

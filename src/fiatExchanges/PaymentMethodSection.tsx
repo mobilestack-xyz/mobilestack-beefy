@@ -149,7 +149,7 @@ export function PaymentMethodSection({
         >
           <>
             <Text style={styles.newLabelText}>{t('selectProviderScreen.newLabel')}</Text>
-            <InfoIcon size={16} color={colors.white} />
+            <InfoIcon size={16} color={colors.darkBlue} />
           </>
         </Touchable>
       )}
@@ -294,7 +294,7 @@ export function PaymentMethodSection({
 const styles = StyleSheet.create({
   container: {
     borderBottomWidth: 1,
-    borderBottomColor: colors.gray2,
+    borderBottomColor: colors.blue200,
   },
   expandableContainer: {
     paddingHorizontal: 16,
@@ -311,7 +311,7 @@ const styles = StyleSheet.create({
   },
   expandedContainer: {
     borderTopWidth: 1,
-    borderTopColor: colors.gray2,
+    borderTopColor: colors.blue200,
     paddingVertical: 16,
     paddingHorizontal: 16,
     backgroundColor: colors.successLight,
@@ -331,7 +331,7 @@ const styles = StyleSheet.create({
     marginLeft: 'auto',
   },
   newLabelContainer: {
-    backgroundColor: colors.gray3,
+    backgroundColor: colors.lightBlue,
     borderRadius: 100,
     paddingVertical: 4,
     paddingHorizontal: 8,
@@ -342,7 +342,7 @@ const styles = StyleSheet.create({
   },
   newLabelText: {
     ...typeScale.labelSemiBoldSmall,
-    color: colors.white,
+    color: colors.darkBlue,
     marginRight: 5,
   },
   category: {
@@ -354,16 +354,16 @@ const styles = StyleSheet.create({
   },
   providerDropdown: {
     ...typeScale.labelSmall,
-    color: colors.gray3,
+    color: colors.lightBlue,
   },
   expandedInfo: {
     ...typeScale.bodySmall,
-    color: colors.gray4,
+    color: colors.lightBlue,
     marginTop: 2,
   },
   topInfo: {
     ...typeScale.bodySmall,
-    color: colors.gray4,
+    color: colors.lightBlue,
     marginTop: 4,
   },
   expandedFee: {

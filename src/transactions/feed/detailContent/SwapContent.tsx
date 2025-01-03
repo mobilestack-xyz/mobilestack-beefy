@@ -120,11 +120,11 @@ const styles = StyleSheet.create({
   },
   bodyText: {
     ...typeScale.bodyMedium,
-    color: Colors.black,
+    color: Colors.white,
   },
   currencyAmountPrimaryText: {
     ...typeScale.bodyMedium,
-    color: Colors.black,
+    color: Colors.white,
     textAlign: 'right',
   },
 })

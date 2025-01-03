@@ -80,7 +80,7 @@ function Item({ icon, title, body }: { icon: React.ReactNode; title: string; bod
 const styles = StyleSheet.create({
   cardTitle: {
     ...typeScale.labelSemiBoldMedium,
-    color: colors.black,
+    color: colors.white,
   },
   container: {
     gap: 18,
@@ -88,11 +88,11 @@ const styles = StyleSheet.create({
   },
   title: {
     ...typeScale.labelSemiBoldSmall,
-    color: colors.gray4,
+    color: colors.lightBlue,
   },
   touchable: {
     padding: Spacing.Regular16,
-    borderColor: colors.gray2,
+    borderColor: colors.blue200,
     borderWidth: 1,
     borderRadius: 8,
   },
@@ -102,11 +102,11 @@ const styles = StyleSheet.create({
   },
   itemTitle: {
     ...typeScale.labelSemiBoldXSmall,
-    color: colors.black,
+    color: colors.white,
   },
   itemBody: {
     ...typeScale.bodyXSmall,
-    color: colors.gray4,
+    color: colors.lightBlue,
   },
   touchableView: {
     gap: Spacing.Thick24,

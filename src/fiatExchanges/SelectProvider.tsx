@@ -557,7 +557,7 @@ const styles = StyleSheet.create({
   },
   container: {
     borderBottomWidth: 1,
-    borderBottomColor: colors.gray2,
+    borderBottomColor: colors.blue200,
   },
   expandableContainer: {
     paddingHorizontal: Spacing.Regular16,
@@ -595,7 +595,7 @@ const styles = StyleSheet.create({
   },
   linkToOtherScreen: {
     ...typeScale.labelSmall,
-    color: colors.gray4,
+    color: colors.lightBlue,
   },
   disclaimerContainer: {
     padding: Spacing.Regular16,
@@ -606,7 +606,7 @@ const styles = StyleSheet.create({
   },
   disclaimerText: {
     ...typeScale.bodySmall,
-    color: colors.gray4,
+    color: colors.lightBlue,
   },
   underline: {
     textDecorationLine: 'underline',
@@ -617,14 +617,14 @@ const styles = StyleSheet.create({
   },
   contactSupport: {
     ...typeScale.labelLarge,
-    color: colors.gray4,
+    color: colors.lightBlue,
     padding: Spacing.Smallest8,
   },
   amountSpentInfo: {
     marginHorizontal: 16,
     marginBottom: 8,
     padding: 16,
-    backgroundColor: colors.gray1,
+    backgroundColor: colors.blue100,
     borderRadius: 16,
   },
   amountSpentInfoText: {

@@ -662,7 +662,7 @@ function TransactionDepositDetails({
                 showLocalAmount={false}
                 style={styles.txDetailsValueText}
               />
-              <ArrowRightThick size={20} color={Colors.black} />
+              <ArrowRightThick size={20} color={Colors.white} />
               <TokenDisplay
                 testID="EarnEnterAmount/Swap/To"
                 tokenId={pool.dataProps.depositTokenId}
@@ -963,7 +963,7 @@ const styles = StyleSheet.create({
   },
   title: {
     ...typeScale.titleMedium,
-    color: Colors.black,
+    color: Colors.white,
     marginBottom: Spacing.Thick24,
   },
   inputContainer: {
@@ -981,7 +981,7 @@ const styles = StyleSheet.create({
   txDetailsContainer: {
     marginVertical: Spacing.Regular16,
     padding: Spacing.Regular16,
-    borderColor: Colors.gray2,
+    borderColor: Colors.blue200,
     borderWidth: 1,
     borderRadius: 12,
     gap: Spacing.Smallest8,
@@ -1002,12 +1002,12 @@ const styles = StyleSheet.create({
   },
   txDetailsValueText: {
     ...typeScale.bodyMedium,
-    color: Colors.black,
+    color: Colors.white,
     flexWrap: 'wrap',
     textAlign: 'right',
   },
   gray4: {
-    color: Colors.gray4,
+    color: Colors.lightBlue,
   },
   gap8: {
     gap: Spacing.Smallest8,
@@ -1036,10 +1036,10 @@ const styles = StyleSheet.create({
   },
   bottomSheetDescriptionTitle: {
     ...typeScale.labelSemiBoldSmall,
-    color: Colors.black,
+    color: Colors.white,
   },
   bottomSheetDescriptionText: {
     ...typeScale.bodySmall,
-    color: Colors.black,
+    color: Colors.white,
   },
 })

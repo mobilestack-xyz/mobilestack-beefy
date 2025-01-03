@@ -34,14 +34,14 @@ function ActionsCarousel() {
   const actions: Actions = {
     [HomeActionName.Send]: {
       title: t('homeActions.send'),
-      icon: <QuickActionsSend color={Colors.black} />,
+      icon: <QuickActionsSend color={Colors.white} />,
       onPress: () => {
         navigate(Screens.SendSelectRecipient)
       },
     },
     [HomeActionName.Receive]: {
       title: t('homeActions.receive'),
-      icon: <QuickActionsReceive color={Colors.black} />,
+      icon: <QuickActionsReceive color={Colors.white} />,
       onPress: () => {
         navigate(Screens.QRNavigator, {
           screen: Screens.QRCode,
@@ -50,14 +50,14 @@ function ActionsCarousel() {
     },
     [HomeActionName.Add]: {
       title: t('homeActions.add'),
-      icon: <QuickActionsAdd color={Colors.black} />,
+      icon: <QuickActionsAdd color={Colors.white} />,
       onPress: () => {
         navigate(Screens.FiatExchangeCurrencyBottomSheet, { flow: FiatExchangeFlow.CashIn })
       },
     },
     [HomeActionName.Swap]: {
       title: t('homeActions.swap'),
-      icon: <SwapArrows color={Colors.black} />,
+      icon: <SwapArrows color={Colors.white} />,
       onPress: () => {
         navigate(Screens.SwapScreenWithBack)
       },
@@ -65,7 +65,7 @@ function ActionsCarousel() {
     },
     [HomeActionName.Withdraw]: {
       title: t('homeActions.withdraw'),
-      icon: <QuickActionsWithdraw color={Colors.black} />,
+      icon: <QuickActionsWithdraw color={Colors.white} />,
       onPress: () => {
         navigate(Screens.WithdrawSpend)
       },
@@ -123,7 +123,7 @@ function ActionsCarousel() {
 
 const styles = StyleSheet.create({
   viewContainer: {
-    backgroundColor: Colors.white,
+    backgroundColor: Colors.darkBlue,
   },
   carouselContainer: {
     padding: Spacing.Regular16,
@@ -132,7 +132,7 @@ const styles = StyleSheet.create({
   card: {
     width: 84,
     padding: 0,
-    backgroundColor: Colors.gray1,
+    backgroundColor: Colors.blue100,
     borderRadius: 10,
   },
   touchable: {
@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
     ...typeScale.labelSmall,
     lineHeight: 17,
     paddingTop: Spacing.Smallest8,
-    color: Colors.black,
+    color: Colors.white,
   },
 })
 

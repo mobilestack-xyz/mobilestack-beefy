@@ -355,7 +355,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: Colors.gray2,
+    backgroundColor: Colors.blue200,
     borderRadius: Spacing.Regular16,
   },
   nftsNoMetadataText: {
@@ -371,7 +371,7 @@ const styles = StyleSheet.create({
   },
   noNftsText: {
     ...typeScale.bodySmall,
-    color: Colors.gray3,
+    color: Colors.lightBlue,
     textAlign: 'center',
   },
   noNftsTextContainer: {
@@ -387,6 +387,6 @@ const styles = StyleSheet.create({
   },
   importTokenText: {
     ...typeScale.labelMedium,
-    color: Colors.black,
+    color: Colors.white,
   },
 })

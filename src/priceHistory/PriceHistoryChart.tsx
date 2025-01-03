@@ -81,7 +81,7 @@ function ChartAwareSvgText({
       /*
       // @ts-ignore */
       onLayout={onLayout}
-      fill={colors.gray4}
+      fill={colors.lightBlue}
       fontSize="14"
       fontFamily="Inter-Regular"
       x={adjustedX}
@@ -116,7 +116,14 @@ function renderPointOnChart(
           <G key={idx + 'dot'}>
             {idx === 0 && (
               <>
-                <Line x1={0} y1={y} x2={chartWidth} y2={y} stroke={colors.gray2} strokeWidth="1" />
+                <Line
+                  x1={0}
+                  y1={y}
+                  x2={chartWidth}
+                  y2={y}
+                  stroke={colors.blue200}
+                  strokeWidth="1"
+                />
                 <Circle cx={x} cy={y} r="4" fill={color} />
               </>
             )}
@@ -211,7 +218,7 @@ export default function PriceHistoryChart({
   containerStyle,
   testID,
   chartPadding,
-  color = colors.black,
+  color = colors.white,
   step = CHART_STEP_IN_HOURS,
 }: PriceHistoryChartProps) {
   const dispatch = useDispatch()
@@ -320,7 +327,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   timeframe: {
-    color: colors.gray3,
+    color: colors.lightBlue,
     fontSize: 16,
     flexGrow: 1,
   },

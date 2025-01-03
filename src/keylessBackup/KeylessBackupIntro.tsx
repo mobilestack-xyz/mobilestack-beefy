@@ -120,25 +120,25 @@ const styles = StyleSheet.create({
   title: {
     ...typeScale.titleMedium,
     textAlign: 'center',
-    color: Colors.black,
+    color: Colors.white,
     paddingTop: Spacing.Thick24,
   },
   description: {
     textAlign: 'center',
     paddingVertical: Spacing.Regular16,
-    color: Colors.black,
+    color: Colors.white,
   },
   authFactorsCard: {
-    backgroundColor: Colors.gray1,
+    backgroundColor: Colors.blue100,
     marginTop: Spacing.Smallest8,
-    borderColor: Colors.gray2,
+    borderColor: Colors.blue200,
     borderWidth: 1,
     borderRadius: 10,
     padding: Spacing.Thick24,
   },
   authFactorsContainer: {
     borderBottomWidth: 1,
-    borderBottomColor: `${Colors.black}33`, // alpha 0.2 (20% opacity)
+    borderBottomColor: `${Colors.white}33`, // alpha 0.2 (20% opacity)
     gap: Spacing.Thick24,
     paddingBottom: Spacing.Thick24,
   },
@@ -156,17 +156,17 @@ const styles = StyleSheet.create({
   },
   authFactorText: {
     ...typeScale.labelMedium,
-    color: Colors.black,
+    color: Colors.white,
   },
   reminderPrefix: {
     ...typeScale.labelSemiBoldXSmall,
-    color: Colors.black,
+    color: Colors.white,
   },
   reminderText: {
     ...typeScale.bodyXSmall,
     textAlign: 'center',
     marginTop: Spacing.Thick24,
-    color: Colors.black,
+    color: Colors.white,
   },
   recoveryPhrase: {
     ...typeScale.labelSemiBoldMedium,

@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
   },
   subtitle: {
     ...typeScale.bodySmall,
-    color: colors.gray4,
+    color: colors.lightBlue,
   },
   tokenAmountContainer: {
     maxWidth: '50%',
@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
   },
   tokenAmount: {
     ...typeScale.bodySmall,
-    color: colors.gray4,
+    color: colors.lightBlue,
     flexWrap: 'wrap',
     textAlign: 'right',
   },

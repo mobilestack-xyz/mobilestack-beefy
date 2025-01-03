@@ -54,7 +54,7 @@ export default function TokenApprovalDetails({ transaction }: Props) {
 const styles = StyleSheet.create({
   description: {
     ...typeScale.bodyMedium,
-    color: Colors.black,
+    color: Colors.white,
     flex: 1,
     paddingBottom: Spacing.XLarge48,
   },

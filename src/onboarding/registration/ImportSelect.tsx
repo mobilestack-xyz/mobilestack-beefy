@@ -5,8 +5,8 @@ import { useTranslation } from 'react-i18next'
 import { ScrollView, StyleSheet, Text, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { cancelCreateOrRestoreAccount } from 'src/account/actions'
-import { OnboardingEvents } from 'src/analytics/Events'
 import AppAnalytics from 'src/analytics/AppAnalytics'
+import { OnboardingEvents } from 'src/analytics/Events'
 import Card from 'src/components/Card'
 import Touchable from 'src/components/Touchable'
 import CloudCheck from 'src/icons/CloudCheck'
@@ -133,7 +133,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   safeArea: {
-    backgroundColor: colors.gray1,
+    backgroundColor: colors.blue100,
     flex: 1,
   },
   screenDescription: {
