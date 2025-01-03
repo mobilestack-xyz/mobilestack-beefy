@@ -4,8 +4,8 @@ exports[`CodeRow renders correctly for all CodeRowStatus states 1`] = `
 <View
   style={
     {
-      "backgroundColor": "#F8F9F9",
-      "borderColor": "#E6E6E6",
+      "backgroundColor": "#363B63",
+      "borderColor": "#2D3154",
       "borderRadius": 3,
       "borderWidth": 1,
       "height": 50,
@@ -42,8 +42,8 @@ exports[`CodeRow renders correctly for all CodeRowStatus states 2`] = `
         "justifyContent": "center",
       },
       {
-        "backgroundColor": "#FFFFFF",
-        "borderColor": "#E6E6E6",
+        "backgroundColor": "#242843",
+        "borderColor": "#2D3154",
         "borderRadius": 3,
         "borderWidth": 1,
         "flex": 0,
@@ -62,7 +62,7 @@ exports[`CodeRow renders correctly for all CodeRowStatus states 2`] = `
     style={
       [
         {
-          "color": "#2E3338",
+          "color": "#FFFFFF",
           "flex": 1,
           "fontFamily": "Inter-Regular",
           "fontSize": 16,
@@ -83,8 +83,8 @@ exports[`CodeRow renders correctly for all CodeRowStatus states 3`] = `
 <View
   style={
     {
-      "backgroundColor": "#FFFFFF",
-      "borderColor": "#E6E6E6",
+      "backgroundColor": "#242843",
+      "borderColor": "#2D3154",
       "borderRadius": 3,
       "borderWidth": 1,
       "height": 50,
@@ -108,11 +108,11 @@ exports[`CodeRow renders correctly for all CodeRowStatus states 3`] = `
     test...
   </Text>
   <ActivityIndicator
-    color="#1AB775"
+    color="#4EB258"
     size="small"
     style={
       {
-        "backgroundColor": "#FFFFFF",
+        "backgroundColor": "#242843",
         "padding": 10,
         "position": "absolute",
         "right": 3,
@@ -127,7 +127,7 @@ exports[`CodeRow renders correctly for all CodeRowStatus states 4`] = `
 <View
   style={
     {
-      "backgroundColor": "#F8F9F9",
+      "backgroundColor": "#363B63",
       "borderRadius": 3,
       "height": 50,
       "justifyContent": "center",
@@ -157,7 +157,7 @@ exports[`CodeRow renders correctly for all CodeRowStatus states 5`] = `
 <View
   style={
     {
-      "backgroundColor": "#F8F9F9",
+      "backgroundColor": "#363B63",
       "borderRadius": 3,
       "height": 50,
       "justifyContent": "center",
@@ -183,7 +183,7 @@ exports[`CodeRow renders correctly for all CodeRowStatus states 5`] = `
   <View
     style={
       {
-        "backgroundColor": "#F8F9F9",
+        "backgroundColor": "#363B63",
         "padding": 10,
         "position": "absolute",
         "right": 3,
@@ -200,7 +200,7 @@ exports[`CodeRow renders correctly for all CodeRowStatus states 5`] = `
     >
       <path
         d="M20.5 7.33 9.186 18.643 4 13.458l1.33-1.33 3.856 3.847L19.17 6 20.5 7.33Z"
-        fill="#1AB775"
+        fill="#4EB258"
         style={{}}
       />
     </svg>

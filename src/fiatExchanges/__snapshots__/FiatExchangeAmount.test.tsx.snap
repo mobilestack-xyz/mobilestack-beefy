@@ -85,7 +85,7 @@ exports[`FiatExchangeAmount cashIn renders correctly with EUR as app currency 1`
           multiline={false}
           onChangeText={[Function]}
           placeholder="€0"
-          placeholderTextColor="#757575"
+          placeholderTextColor="#B7B9C9"
           style={
             [
               {
@@ -98,7 +98,7 @@ exports[`FiatExchangeAmount cashIn renders correctly with EUR as app currency 1`
                 "textAlign": "right",
               },
               {
-                "color": "#1AB775",
+                "color": "#4EB258",
               },
             ]
           }
@@ -169,7 +169,7 @@ exports[`FiatExchangeAmount cashIn renders correctly with EUR as app currency 1`
           [
             {
               "alignItems": "center",
-              "backgroundColor": "#2E3338",
+              "backgroundColor": "#4EB258",
               "flexDirection": "row",
               "flexGrow": 1,
               "height": 48,
@@ -188,7 +188,7 @@ exports[`FiatExchangeAmount cashIn renders correctly with EUR as app currency 1`
           maxFontSizeMultiplier={1}
           style={
             {
-              "color": "#FFFFFF",
+              "color": "#242843",
               "fontFamily": "Inter-SemiBold",
               "fontSize": 16,
               "lineHeight": 24,
@@ -306,7 +306,7 @@ exports[`FiatExchangeAmount cashIn renders correctly with USD as app currency 1`
           multiline={false}
           onChangeText={[Function]}
           placeholder="$0"
-          placeholderTextColor="#757575"
+          placeholderTextColor="#B7B9C9"
           style={
             [
               {
@@ -319,7 +319,7 @@ exports[`FiatExchangeAmount cashIn renders correctly with USD as app currency 1`
                 "textAlign": "right",
               },
               {
-                "color": "#1AB775",
+                "color": "#4EB258",
               },
             ]
           }
@@ -390,7 +390,7 @@ exports[`FiatExchangeAmount cashIn renders correctly with USD as app currency 1`
           [
             {
               "alignItems": "center",
-              "backgroundColor": "#2E3338",
+              "backgroundColor": "#4EB258",
               "flexDirection": "row",
               "flexGrow": 1,
               "height": 48,
@@ -409,7 +409,7 @@ exports[`FiatExchangeAmount cashIn renders correctly with USD as app currency 1`
           maxFontSizeMultiplier={1}
           style={
             {
-              "color": "#FFFFFF",
+              "color": "#242843",
               "fontFamily": "Inter-SemiBold",
               "fontSize": 16,
               "lineHeight": 24,

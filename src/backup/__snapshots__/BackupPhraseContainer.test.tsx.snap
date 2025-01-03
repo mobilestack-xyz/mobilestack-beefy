@@ -46,7 +46,7 @@ exports[`BackupPhraseContainer renders correctly for input backup phrase 1`] = `
       multiline={true}
       onChangeText={[Function]}
       placeholder="backupPhrasePlaceholder"
-      placeholderTextColor="#666666"
+      placeholderTextColor="#B7B9C9"
       shouldShowClipboard={[Function]}
       style={
         [
@@ -105,8 +105,8 @@ exports[`BackupPhraseContainer renders correctly for readonly backup 12-word phr
     style={
       {
         "alignContent": "center",
-        "backgroundColor": "#F8F9F9",
-        "borderColor": "#E6E6E6",
+        "backgroundColor": "#363B63",
+        "borderColor": "#2D3154",
         "borderRadius": 8,
         "borderWidth": 1,
         "flexDirection": "row",
@@ -160,7 +160,7 @@ exports[`BackupPhraseContainer renders correctly for readonly backup 12-word phr
           numberOfLines={1}
           style={
             {
-              "color": "#2E3338",
+              "color": "#FFFFFF",
               "fontFamily": "Inter-SemiBold",
               "fontSize": 14,
               "lineHeight": 20,
@@ -203,7 +203,7 @@ exports[`BackupPhraseContainer renders correctly for readonly backup 12-word phr
           numberOfLines={1}
           style={
             {
-              "color": "#2E3338",
+              "color": "#FFFFFF",
               "fontFamily": "Inter-SemiBold",
               "fontSize": 14,
               "lineHeight": 20,
@@ -246,7 +246,7 @@ exports[`BackupPhraseContainer renders correctly for readonly backup 12-word phr
           numberOfLines={1}
           style={
             {
-              "color": "#2E3338",
+              "color": "#FFFFFF",
               "fontFamily": "Inter-SemiBold",
               "fontSize": 14,
               "lineHeight": 20,
@@ -289,7 +289,7 @@ exports[`BackupPhraseContainer renders correctly for readonly backup 12-word phr
           numberOfLines={1}
           style={
             {
-              "color": "#2E3338",
+              "color": "#FFFFFF",
               "fontFamily": "Inter-SemiBold",
               "fontSize": 14,
               "lineHeight": 20,
@@ -332,7 +332,7 @@ exports[`BackupPhraseContainer renders correctly for readonly backup 12-word phr
           numberOfLines={1}
           style={
             {
-              "color": "#2E3338",
+              "color": "#FFFFFF",
               "fontFamily": "Inter-SemiBold",
               "fontSize": 14,
               "lineHeight": 20,
@@ -375,7 +375,7 @@ exports[`BackupPhraseContainer renders correctly for readonly backup 12-word phr
           numberOfLines={1}
           style={
             {
-              "color": "#2E3338",
+              "color": "#FFFFFF",
               "fontFamily": "Inter-SemiBold",
               "fontSize": 14,
               "lineHeight": 20,
@@ -418,7 +418,7 @@ exports[`BackupPhraseContainer renders correctly for readonly backup 12-word phr
           numberOfLines={1}
           style={
             {
-              "color": "#2E3338",
+              "color": "#FFFFFF",
               "fontFamily": "Inter-SemiBold",
               "fontSize": 14,
               "lineHeight": 20,
@@ -461,7 +461,7 @@ exports[`BackupPhraseContainer renders correctly for readonly backup 12-word phr
           numberOfLines={1}
           style={
             {
-              "color": "#2E3338",
+              "color": "#FFFFFF",
               "fontFamily": "Inter-SemiBold",
               "fontSize": 14,
               "lineHeight": 20,
@@ -504,7 +504,7 @@ exports[`BackupPhraseContainer renders correctly for readonly backup 12-word phr
           numberOfLines={1}
           style={
             {
-              "color": "#2E3338",
+              "color": "#FFFFFF",
               "fontFamily": "Inter-SemiBold",
               "fontSize": 14,
               "lineHeight": 20,
@@ -547,7 +547,7 @@ exports[`BackupPhraseContainer renders correctly for readonly backup 12-word phr
           numberOfLines={1}
           style={
             {
-              "color": "#2E3338",
+              "color": "#FFFFFF",
               "fontFamily": "Inter-SemiBold",
               "fontSize": 14,
               "lineHeight": 20,
@@ -590,7 +590,7 @@ exports[`BackupPhraseContainer renders correctly for readonly backup 12-word phr
           numberOfLines={1}
           style={
             {
-              "color": "#2E3338",
+              "color": "#FFFFFF",
               "fontFamily": "Inter-SemiBold",
               "fontSize": 14,
               "lineHeight": 20,
@@ -633,7 +633,7 @@ exports[`BackupPhraseContainer renders correctly for readonly backup 12-word phr
           numberOfLines={1}
           style={
             {
-              "color": "#2E3338",
+              "color": "#FFFFFF",
               "fontFamily": "Inter-SemiBold",
               "fontSize": 14,
               "lineHeight": 20,
@@ -685,8 +685,8 @@ exports[`BackupPhraseContainer renders correctly for readonly backup 24-word phr
     style={
       {
         "alignContent": "center",
-        "backgroundColor": "#F8F9F9",
-        "borderColor": "#E6E6E6",
+        "backgroundColor": "#363B63",
+        "borderColor": "#2D3154",
         "borderRadius": 8,
         "borderWidth": 1,
         "flexDirection": "row",

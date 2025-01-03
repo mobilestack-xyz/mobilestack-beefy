@@ -707,13 +707,13 @@ exports[`NumberKeypad renders correctly with decimal separator 1`] = `
         >
           <path
             d="M1.82198 9.7422L9.57436 16.7422C9.75813 16.9081 9.99693 17 10.2445 17H33C33.5523 17 34 16.5523 34 16V2C34 1.44772 33.5523 1 33 1H10.2445C9.99693 1 9.75813 1.09186 9.57436 1.25779L1.82198 8.25779C1.38221 8.65488 1.38221 9.34512 1.82198 9.7422Z"
-            stroke="#2E3338"
+            stroke="#FFFFFF"
             strokeWidth="3"
             style={{}}
           />
           <path
             d="M17 5L25 13M17 13L25 5"
-            stroke="#2E3338"
+            stroke="#FFFFFF"
             strokeWidth="3"
             style={{}}
           />
@@ -1392,13 +1392,13 @@ exports[`NumberKeypad renders correctly without decimal separator 1`] = `
         >
           <path
             d="M1.82198 9.7422L9.57436 16.7422C9.75813 16.9081 9.99693 17 10.2445 17H33C33.5523 17 34 16.5523 34 16V2C34 1.44772 33.5523 1 33 1H10.2445C9.99693 1 9.75813 1.09186 9.57436 1.25779L1.82198 8.25779C1.38221 8.65488 1.38221 9.34512 1.82198 9.7422Z"
-            stroke="#2E3338"
+            stroke="#FFFFFF"
             strokeWidth="3"
             style={{}}
           />
           <path
             d="M17 5L25 13M17 13L25 5"
-            stroke="#2E3338"
+            stroke="#FFFFFF"
             strokeWidth="3"
             style={{}}
           />

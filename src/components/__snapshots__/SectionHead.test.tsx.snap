@@ -6,7 +6,7 @@ exports[`renders text 1`] = `
     [
       {
         "alignItems": "center",
-        "backgroundColor": "#FFFFFF",
+        "backgroundColor": "#242843",
         "flexDirection": "row",
         "justifyContent": "space-between",
         "paddingHorizontal": 16,
@@ -19,7 +19,7 @@ exports[`renders text 1`] = `
   <Text
     style={
       {
-        "color": "#666666",
+        "color": "#B7B9C9",
         "fontFamily": "Inter-Medium",
         "fontSize": 13,
         "lineHeight": 16,

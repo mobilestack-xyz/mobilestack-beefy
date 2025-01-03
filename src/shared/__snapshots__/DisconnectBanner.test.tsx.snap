@@ -11,7 +11,7 @@ exports[`renders banner when app is disconnected 1`] = `
         "textAlign": "center",
       },
       {
-        "color": "#666666",
+        "color": "#B7B9C9",
       },
       {
         "fontFamily": "Inter-SemiBold",

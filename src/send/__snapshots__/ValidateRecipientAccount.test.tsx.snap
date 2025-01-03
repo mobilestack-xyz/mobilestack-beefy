@@ -77,8 +77,8 @@ exports[`ValidateRecipientAccount renders correctly when full validation require
                     "justifyContent": "center",
                   },
                   {
-                    "backgroundColor": "#FFFFFF",
-                    "borderColor": "#E6E6E6",
+                    "backgroundColor": "#242843",
+                    "borderColor": "#2D3154",
                     "borderRadius": 3,
                     "borderWidth": 1,
                     "flex": 0,
@@ -97,7 +97,7 @@ exports[`ValidateRecipientAccount renders correctly when full validation require
                 style={
                   [
                     {
-                      "color": "#2E3338",
+                      "color": "#FFFFFF",
                       "flex": 1,
                       "fontFamily": "Inter-Regular",
                       "fontSize": 16,
@@ -184,7 +184,7 @@ exports[`ValidateRecipientAccount renders correctly when full validation require
                 [
                   {
                     "alignItems": "center",
-                    "backgroundColor": "#2E3338",
+                    "backgroundColor": "#4EB258",
                     "flexDirection": "row",
                     "height": 48,
                     "justifyContent": "center",
@@ -202,7 +202,7 @@ exports[`ValidateRecipientAccount renders correctly when full validation require
                 maxFontSizeMultiplier={1}
                 style={
                   {
-                    "color": "#FFFFFF",
+                    "color": "#242843",
                     "fontFamily": "Inter-SemiBold",
                     "fontSize": 16,
                     "lineHeight": 24,
@@ -236,12 +236,12 @@ exports[`ValidateRecipientAccount renders correctly when full validation require
             cx="8"
             cy="8"
             r="7"
-            stroke="#2E3338"
+            stroke="#FFFFFF"
             strokeWidth="1.25"
           />
           <path
             d="M8 12V7M8 6V5"
-            stroke="#2E3338"
+            stroke="#FFFFFF"
             strokeWidth="1.25"
           />
         </svg>
@@ -387,8 +387,8 @@ exports[`ValidateRecipientAccount renders correctly when partial validation requ
                         "justifyContent": "center",
                       },
                       {
-                        "backgroundColor": "#FFFFFF",
-                        "borderColor": "#E6E6E6",
+                        "backgroundColor": "#242843",
+                        "borderColor": "#2D3154",
                         "borderRadius": 3,
                         "borderWidth": 1,
                         "flex": 0,
@@ -409,7 +409,7 @@ exports[`ValidateRecipientAccount renders correctly when partial validation requ
                     style={
                       [
                         {
-                          "color": "#2E3338",
+                          "color": "#FFFFFF",
                           "flex": 1,
                           "fontFamily": "Inter-Regular",
                           "fontSize": 16,
@@ -447,8 +447,8 @@ exports[`ValidateRecipientAccount renders correctly when partial validation requ
                         "justifyContent": "center",
                       },
                       {
-                        "backgroundColor": "#FFFFFF",
-                        "borderColor": "#E6E6E6",
+                        "backgroundColor": "#242843",
+                        "borderColor": "#2D3154",
                         "borderRadius": 3,
                         "borderWidth": 1,
                         "flex": 0,
@@ -469,7 +469,7 @@ exports[`ValidateRecipientAccount renders correctly when partial validation requ
                     style={
                       [
                         {
-                          "color": "#2E3338",
+                          "color": "#FFFFFF",
                           "flex": 1,
                           "fontFamily": "Inter-Regular",
                           "fontSize": 16,
@@ -507,8 +507,8 @@ exports[`ValidateRecipientAccount renders correctly when partial validation requ
                         "justifyContent": "center",
                       },
                       {
-                        "backgroundColor": "#FFFFFF",
-                        "borderColor": "#E6E6E6",
+                        "backgroundColor": "#242843",
+                        "borderColor": "#2D3154",
                         "borderRadius": 3,
                         "borderWidth": 1,
                         "flex": 0,
@@ -529,7 +529,7 @@ exports[`ValidateRecipientAccount renders correctly when partial validation requ
                     style={
                       [
                         {
-                          "color": "#2E3338",
+                          "color": "#FFFFFF",
                           "flex": 1,
                           "fontFamily": "Inter-Regular",
                           "fontSize": 16,
@@ -567,8 +567,8 @@ exports[`ValidateRecipientAccount renders correctly when partial validation requ
                         "justifyContent": "center",
                       },
                       {
-                        "backgroundColor": "#FFFFFF",
-                        "borderColor": "#E6E6E6",
+                        "backgroundColor": "#242843",
+                        "borderColor": "#2D3154",
                         "borderRadius": 3,
                         "borderWidth": 1,
                         "flex": 0,
@@ -589,7 +589,7 @@ exports[`ValidateRecipientAccount renders correctly when partial validation requ
                     style={
                       [
                         {
-                          "color": "#2E3338",
+                          "color": "#FFFFFF",
                           "flex": 1,
                           "fontFamily": "Inter-Regular",
                           "fontSize": 16,
@@ -681,7 +681,7 @@ exports[`ValidateRecipientAccount renders correctly when partial validation requ
                 [
                   {
                     "alignItems": "center",
-                    "backgroundColor": "#2E3338",
+                    "backgroundColor": "#4EB258",
                     "flexDirection": "row",
                     "height": 48,
                     "justifyContent": "center",
@@ -699,7 +699,7 @@ exports[`ValidateRecipientAccount renders correctly when partial validation requ
                 maxFontSizeMultiplier={1}
                 style={
                   {
-                    "color": "#FFFFFF",
+                    "color": "#242843",
                     "fontFamily": "Inter-SemiBold",
                     "fontSize": 16,
                     "lineHeight": 24,
@@ -733,12 +733,12 @@ exports[`ValidateRecipientAccount renders correctly when partial validation requ
             cx="8"
             cy="8"
             r="7"
-            stroke="#2E3338"
+            stroke="#FFFFFF"
             strokeWidth="1.25"
           />
           <path
             d="M8 12V7M8 6V5"
-            stroke="#2E3338"
+            stroke="#FFFFFF"
             strokeWidth="1.25"
           />
         </svg>

@@ -85,7 +85,7 @@ exports[`renders correctly 1`] = `
       >
         <path
           d="M13.9999 2.00146L1.99994 14.0015"
-          stroke="#2E3338"
+          stroke="#FFFFFF"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth={2}
@@ -93,7 +93,7 @@ exports[`renders correctly 1`] = `
         />
         <path
           d="M1.99994 2.00146L13.9999 14.0015"
-          stroke="#2E3338"
+          stroke="#FFFFFF"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth={2}
@@ -417,7 +417,7 @@ exports[`renders correctly 1`] = `
       <View
         style={
           {
-            "backgroundColor": "#1AB775",
+            "backgroundColor": "#4EB258",
             "borderRadius": 5,
             "flex": 0,
             "height": 5,
@@ -429,7 +429,7 @@ exports[`renders correctly 1`] = `
       <View
         style={
           {
-            "backgroundColor": "#E6E6E6",
+            "backgroundColor": "#2D3154",
             "borderRadius": 5,
             "flex": 0,
             "height": 5,
@@ -441,7 +441,7 @@ exports[`renders correctly 1`] = `
       <View
         style={
           {
-            "backgroundColor": "#E6E6E6",
+            "backgroundColor": "#2D3154",
             "borderRadius": 5,
             "flex": 0,
             "height": 5,
@@ -453,7 +453,7 @@ exports[`renders correctly 1`] = `
       <View
         style={
           {
-            "backgroundColor": "#E6E6E6",
+            "backgroundColor": "#2D3154",
             "borderRadius": 5,
             "flex": 0,
             "height": 5,
@@ -530,8 +530,8 @@ exports[`renders correctly 1`] = `
               [
                 {
                   "alignItems": "center",
-                  "backgroundColor": "#F8F9F9",
-                  "borderColor": "#E6E6E6",
+                  "backgroundColor": "#363B63",
+                  "borderColor": "#2D3154",
                   "borderRadius": 100,
                   "borderWidth": 1,
                   "flexDirection": "row",
@@ -551,7 +551,7 @@ exports[`renders correctly 1`] = `
               maxFontSizeMultiplier={1}
               style={
                 {
-                  "color": "#2E3338",
+                  "color": "#FFFFFF",
                   "fontFamily": "Inter-SemiBold",
                   "fontSize": 16,
                   "lineHeight": 24,

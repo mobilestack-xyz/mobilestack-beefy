@@ -286,7 +286,7 @@ exports[`Avatar renders correctly with just number 1`] = `
     <Text
       style={
         {
-          "color": "#2E3338",
+          "color": "#FFFFFF",
           "fontFamily": "Inter-Medium",
           "fontSize": 14,
           "lineHeight": 18,
@@ -408,7 +408,7 @@ exports[`Avatar renders correctly with number and name 1`] = `
     <Text
       style={
         {
-          "color": "#2E3338",
+          "color": "#FFFFFF",
           "fontFamily": "Inter-Medium",
           "fontSize": 14,
           "lineHeight": 18,

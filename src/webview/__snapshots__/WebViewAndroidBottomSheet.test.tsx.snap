@@ -154,7 +154,7 @@ exports[`WebViewAndroidBottomSheet renders correctly when visible 1`] = `
     <View
       style={
         {
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "#242843",
         }
       }
       testID="WebViewAndroidBottomSheet"

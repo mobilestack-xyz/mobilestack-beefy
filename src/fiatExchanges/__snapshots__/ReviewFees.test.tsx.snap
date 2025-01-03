@@ -146,7 +146,7 @@ exports[`ReviewFees renders correctly 1`] = `
             "lineHeight": 24,
           },
           {
-            "color": "#666666",
+            "color": "#B7B9C9",
           },
         ]
       }
@@ -162,7 +162,7 @@ exports[`ReviewFees renders correctly 1`] = `
             "lineHeight": 24,
           },
           {
-            "color": "#666666",
+            "color": "#B7B9C9",
           },
         ]
       }
@@ -172,11 +172,11 @@ exports[`ReviewFees renders correctly 1`] = `
           [
             [
               {
-                "color": "#666666",
+                "color": "#B7B9C9",
               },
             ],
             {
-              "color": "#666666",
+              "color": "#B7B9C9",
             },
           ]
         }
@@ -191,7 +191,7 @@ exports[`ReviewFees renders correctly 1`] = `
     style={
       [
         {
-          "backgroundColor": "#E6E6E6",
+          "backgroundColor": "#2D3154",
           "height": 1,
           "marginVertical": 16,
           "width": "100%",
@@ -356,12 +356,12 @@ exports[`ReviewFees renders correctly 1`] = `
             cx="8"
             cy="8"
             r="7"
-            stroke="#757575"
+            stroke="#B7B9C9"
             strokeWidth="1.25"
           />
           <path
             d="M8 12V7M8 6V5"
-            stroke="#757575"
+            stroke="#B7B9C9"
             strokeWidth="1.25"
           />
         </svg>
@@ -610,7 +610,7 @@ exports[`ReviewFees renders correctly 2`] = `
             "lineHeight": 24,
           },
           {
-            "color": "#666666",
+            "color": "#B7B9C9",
           },
         ]
       }
@@ -626,7 +626,7 @@ exports[`ReviewFees renders correctly 2`] = `
             "lineHeight": 24,
           },
           {
-            "color": "#666666",
+            "color": "#B7B9C9",
           },
         ]
       }
@@ -636,11 +636,11 @@ exports[`ReviewFees renders correctly 2`] = `
           [
             [
               {
-                "color": "#666666",
+                "color": "#B7B9C9",
               },
             ],
             {
-              "color": "#666666",
+              "color": "#B7B9C9",
             },
           ]
         }
@@ -655,7 +655,7 @@ exports[`ReviewFees renders correctly 2`] = `
     style={
       [
         {
-          "backgroundColor": "#E6E6E6",
+          "backgroundColor": "#2D3154",
           "height": 1,
           "marginVertical": 16,
           "width": "100%",
@@ -818,12 +818,12 @@ exports[`ReviewFees renders correctly 2`] = `
             cx="8"
             cy="8"
             r="7"
-            stroke="#757575"
+            stroke="#B7B9C9"
             strokeWidth="1.25"
           />
           <path
             d="M8 12V7M8 6V5"
-            stroke="#757575"
+            stroke="#B7B9C9"
             strokeWidth="1.25"
           />
         </svg>
@@ -832,7 +832,7 @@ exports[`ReviewFees renders correctly 2`] = `
     <Text
       style={
         {
-          "color": "#1AB775",
+          "color": "#4EB258",
           "fontFamily": "Inter-Regular",
           "fontSize": 16,
           "lineHeight": 24,
