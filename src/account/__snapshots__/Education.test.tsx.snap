@@ -85,7 +85,7 @@ exports[`Education renders correctly 1`] = `
       >
         <path
           d="M13.9999 2.00146L1.99994 14.0015"
-          stroke="#2E3338"
+          stroke="#FFFFFF"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth={2}
@@ -93,7 +93,7 @@ exports[`Education renders correctly 1`] = `
         />
         <path
           d="M1.99994 2.00146L13.9999 14.0015"
-          stroke="#2E3338"
+          stroke="#FFFFFF"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth={2}
@@ -243,7 +243,7 @@ exports[`Education renders correctly 1`] = `
               [
                 {
                   "alignItems": "center",
-                  "backgroundColor": "#2E3338",
+                  "backgroundColor": "#4EB258",
                   "flexDirection": "row",
                   "flexGrow": 1,
                   "height": 48,
@@ -261,7 +261,7 @@ exports[`Education renders correctly 1`] = `
               maxFontSizeMultiplier={1}
               style={
                 {
-                  "color": "#FFFFFF",
+                  "color": "#242843",
                   "fontFamily": "Inter-SemiBold",
                   "fontSize": 16,
                   "lineHeight": 24,

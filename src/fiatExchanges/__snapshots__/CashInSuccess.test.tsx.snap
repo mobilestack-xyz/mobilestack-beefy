@@ -133,7 +133,7 @@ exports[`CashinInSuccess renders correctly with a provider 1`] = `
             [
               {
                 "alignItems": "center",
-                "backgroundColor": "#2E3338",
+                "backgroundColor": "#4EB258",
                 "flexDirection": "row",
                 "height": 48,
                 "justifyContent": "center",
@@ -152,7 +152,7 @@ exports[`CashinInSuccess renders correctly with a provider 1`] = `
             maxFontSizeMultiplier={1}
             style={
               {
-                "color": "#FFFFFF",
+                "color": "#242843",
                 "fontFamily": "Inter-SemiBold",
                 "fontSize": 16,
                 "lineHeight": 24,
@@ -303,7 +303,7 @@ exports[`CashinInSuccess renders correctly without a provider 1`] = `
             [
               {
                 "alignItems": "center",
-                "backgroundColor": "#2E3338",
+                "backgroundColor": "#4EB258",
                 "flexDirection": "row",
                 "height": 48,
                 "justifyContent": "center",
@@ -322,7 +322,7 @@ exports[`CashinInSuccess renders correctly without a provider 1`] = `
             maxFontSizeMultiplier={1}
             style={
               {
-                "color": "#FFFFFF",
+                "color": "#242843",
                 "fontFamily": "Inter-SemiBold",
                 "fontSize": 16,
                 "lineHeight": 24,

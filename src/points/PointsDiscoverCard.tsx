@@ -78,7 +78,7 @@ export default function PointsDiscoverCard() {
 const styles = StyleSheet.create({
   touchable: {
     overflow: 'hidden',
-    borderColor: Colors.gray2,
+    borderColor: Colors.blue200,
     borderWidth: 1,
     borderRadius: Spacing.Smallest8,
     marginBottom: Spacing.Thick24,
@@ -94,16 +94,16 @@ const styles = StyleSheet.create({
   },
   title: {
     ...typeScale.labelSemiBoldMedium,
-    color: Colors.black,
+    color: Colors.white,
     marginBottom: Spacing.Smallest8,
   },
   description: {
     ...typeScale.bodyXSmall,
-    color: Colors.gray4,
+    color: Colors.lightBlue,
   },
   balance: {
     ...typeScale.labelSemiBoldSmall,
-    color: Colors.black,
+    color: Colors.white,
   },
   linearGradient: {
     height: 40,
@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     flex: 1,
     margin: 1,
-    backgroundColor: Colors.white,
+    backgroundColor: Colors.darkBlue,
     justifyContent: 'center',
     paddingHorizontal: Spacing.Small12,
     paddingVertical: 6,

@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
   heading: {
     padding: 10,
     paddingBottom: 10,
-    color: colors.black,
+    color: colors.white,
     alignSelf: 'center',
   },
 })

@@ -66,9 +66,12 @@ export function SettingsItemTextValue({
             </Text>
           )}
           {(!!value || showChevron) && (
-            <ForwardChevron height={12} color={isValueActionable ? colors.accent : colors.gray3} />
+            <ForwardChevron
+              height={12}
+              color={isValueActionable ? colors.accent : colors.lightBlue}
+            />
           )}
-          {isExternalLink && <OpenLinkIcon size={16} color={colors.black} />}
+          {isExternalLink && <OpenLinkIcon size={16} color={colors.white} />}
         </View>
       </View>
     </Wrapper>
@@ -144,13 +147,13 @@ export function SettingsItemInput({
   placeholder,
 }: SettingsItemInputProps) {
   const onFocus = () => {
-    setInputColor(colors.black)
+    setInputColor(colors.white)
   }
   const onBlur = () => {
-    setInputColor(colors.gray4)
+    setInputColor(colors.lightBlue)
   }
 
-  const [inputColor, setInputColor] = React.useState(colors.gray4)
+  const [inputColor, setInputColor] = React.useState(colors.lightBlue)
   return (
     <Wrapper>
       <View style={styles.container}>
@@ -189,7 +192,7 @@ export function SettingsItemCta({
       <View style={styles.container}>
         <Title value={title} />
         <View style={styles.right}>{cta}</View>
-        {showChevron && <ForwardChevron height={12} color={colors.gray3} />}
+        {showChevron && <ForwardChevron height={12} color={colors.lightBlue} />}
       </View>
     </Wrapper>
   )
@@ -207,11 +210,11 @@ const styles = StyleSheet.create({
   },
   title: {
     ...typeScale.bodyMedium,
-    color: colors.black,
+    color: colors.white,
   },
   value: {
     ...typeScale.bodyMedium,
-    color: colors.gray4,
+    color: colors.lightBlue,
     marginRight: 8,
   },
   valueActionable: {
@@ -221,7 +224,7 @@ const styles = StyleSheet.create({
   },
   details: {
     ...typeScale.bodySmall,
-    color: colors.gray4,
+    color: colors.lightBlue,
     paddingTop: 16,
     paddingRight: 16,
   },
@@ -237,7 +240,7 @@ const styles = StyleSheet.create({
     minWidth: 160,
     textAlign: 'right',
     paddingVertical: 0,
-    color: colors.gray4,
+    color: colors.lightBlue,
   },
   iconContainer: {
     paddingRight: Spacing.Smallest8,

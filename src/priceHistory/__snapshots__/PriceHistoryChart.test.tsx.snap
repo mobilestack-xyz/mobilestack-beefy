@@ -54,7 +54,7 @@ exports[`PriceHistoryChart renders while update is in progress 1`] = `
       <g>
         <g>
           <line
-            stroke="#E6E6E6"
+            stroke="#2D3154"
             strokeWidth="1"
             x1={0}
             x2={750}
@@ -64,12 +64,12 @@ exports[`PriceHistoryChart renders while update is in progress 1`] = `
           <circle
             cx={5}
             cy={150}
-            fill="#2E3338"
+            fill="#FFFFFF"
             r="4"
           />
         </g>
         <text
-          fill="#666666"
+          fill="#B7B9C9"
           fontFamily="Inter-Regular"
           fontSize="14"
           onLayout={[Function]}
@@ -83,12 +83,12 @@ exports[`PriceHistoryChart renders while update is in progress 1`] = `
           <circle
             cx={745}
             cy={29.99999999999997}
-            fill="#2E3338"
+            fill="#FFFFFF"
             r="4"
           />
         </g>
         <text
-          fill="#666666"
+          fill="#B7B9C9"
           fontFamily="Inter-Regular"
           fontSize="14"
           onLayout={[Function]}
@@ -128,7 +128,7 @@ exports[`PriceHistoryChart renders while update is in progress 1`] = `
           fill="none"
           role="presentation"
           shapeRendering="auto"
-          stroke="#2E3338"
+          stroke="#FFFFFF"
           strokeWidth={2}
           width={94}
         />
@@ -177,7 +177,7 @@ exports[`PriceHistoryChart renders while update is in progress 1`] = `
       style={
         [
           {
-            "color": "#757575",
+            "color": "#B7B9C9",
             "flexGrow": 1,
             "fontSize": 16,
           },
@@ -193,7 +193,7 @@ exports[`PriceHistoryChart renders while update is in progress 1`] = `
       style={
         [
           {
-            "color": "#757575",
+            "color": "#B7B9C9",
             "flexGrow": 1,
             "fontSize": 16,
           },
@@ -263,7 +263,7 @@ exports[`PriceHistoryChart renders with history 1`] = `
       <g>
         <g>
           <line
-            stroke="#E6E6E6"
+            stroke="#2D3154"
             strokeWidth="1"
             x1={0}
             x2={750}
@@ -273,12 +273,12 @@ exports[`PriceHistoryChart renders with history 1`] = `
           <circle
             cx={5}
             cy={150}
-            fill="#2E3338"
+            fill="#FFFFFF"
             r="4"
           />
         </g>
         <text
-          fill="#666666"
+          fill="#B7B9C9"
           fontFamily="Inter-Regular"
           fontSize="14"
           onLayout={[Function]}
@@ -292,12 +292,12 @@ exports[`PriceHistoryChart renders with history 1`] = `
           <circle
             cx={745}
             cy={29.99999999999997}
-            fill="#2E3338"
+            fill="#FFFFFF"
             r="4"
           />
         </g>
         <text
-          fill="#666666"
+          fill="#B7B9C9"
           fontFamily="Inter-Regular"
           fontSize="14"
           onLayout={[Function]}
@@ -337,7 +337,7 @@ exports[`PriceHistoryChart renders with history 1`] = `
           fill="none"
           role="presentation"
           shapeRendering="auto"
-          stroke="#2E3338"
+          stroke="#FFFFFF"
           strokeWidth={2}
           width={94}
         />
@@ -386,7 +386,7 @@ exports[`PriceHistoryChart renders with history 1`] = `
       style={
         [
           {
-            "color": "#757575",
+            "color": "#B7B9C9",
             "flexGrow": 1,
             "fontSize": 16,
           },
@@ -402,7 +402,7 @@ exports[`PriceHistoryChart renders with history 1`] = `
       style={
         [
           {
-            "color": "#757575",
+            "color": "#B7B9C9",
             "flexGrow": 1,
             "fontSize": 16,
           },

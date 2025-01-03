@@ -12,7 +12,7 @@ exports[`FullscreenCTA renders correctly 1`] = `
   }
   style={
     {
-      "backgroundColor": "#FFFFFF",
+      "backgroundColor": "#242843",
       "flex": 1,
       "height": 1292,
       "justifyContent": "space-between",
@@ -140,7 +140,7 @@ exports[`FullscreenCTA renders correctly 1`] = `
             [
               {
                 "alignItems": "center",
-                "backgroundColor": "#2E3338",
+                "backgroundColor": "#4EB258",
                 "flexDirection": "row",
                 "height": 48,
                 "justifyContent": "center",
@@ -158,7 +158,7 @@ exports[`FullscreenCTA renders correctly 1`] = `
             maxFontSizeMultiplier={1}
             style={
               {
-                "color": "#FFFFFF",
+                "color": "#242843",
                 "fontFamily": "Inter-SemiBold",
                 "fontSize": 16,
                 "lineHeight": 24,

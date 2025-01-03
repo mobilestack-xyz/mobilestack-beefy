@@ -401,10 +401,10 @@ const styles = StyleSheet.create({
   },
   actionDetails: {
     ...typeScale.bodySmall,
-    color: Colors.black,
+    color: Colors.white,
   },
   bottomSheetTitle: {
     ...typeScale.titleSmall,
-    color: Colors.black,
+    color: Colors.white,
   },
 })

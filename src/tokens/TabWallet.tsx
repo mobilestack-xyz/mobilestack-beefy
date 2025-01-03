@@ -8,10 +8,11 @@ import Animated, {
   useAnimatedStyle,
   useSharedValue,
 } from 'react-native-reanimated'
-import { AssetsEvents } from 'src/analytics/Events'
 import AppAnalytics from 'src/analytics/AppAnalytics'
+import { AssetsEvents } from 'src/analytics/Events'
 import Button, { BtnSizes, BtnTypes } from 'src/components/Button'
 import { AssetsTokenBalance } from 'src/components/TokenBalance'
+import ActionsCarousel from 'src/home/ActionsCarousel'
 import { navigate } from 'src/navigator/NavigationService'
 import { Screens } from 'src/navigator/Screens'
 import useScrollAwareHeader from 'src/navigator/ScrollAwareHeader'
@@ -28,7 +29,6 @@ import { Shadow, Spacing, getShadowStyle } from 'src/styles/styles'
 import AssetList from 'src/tokens/AssetList'
 import AssetTabBar from 'src/tokens/AssetTabBar'
 import { AssetTabType } from 'src/tokens/types'
-import ActionsCarousel from 'src/home/ActionsCarousel'
 
 type Props = NativeStackScreenProps<StackParamList, Screens.TabWallet>
 
@@ -114,7 +114,7 @@ function TabWallet({ navigation, route }: Props) {
       shadowColor: interpolateColor(
         scrollPosition.value,
         [nonStickyHeaderHeight - 10, nonStickyHeaderHeight + 10],
-        ['transparent', Colors.gray1]
+        ['transparent', Colors.blue100]
       ),
     }
   }, [scrollPosition.value, nonStickyHeaderHeight])
@@ -206,7 +206,7 @@ const styles = StyleSheet.create({
     ...getShadowStyle(Shadow.SoftLight),
     paddingBottom: Spacing.Regular16,
     paddingHorizontal: Spacing.Regular16,
-    backgroundColor: Colors.white,
+    backgroundColor: Colors.darkBlue,
     position: 'absolute',
     width: '100%',
     zIndex: 1,
@@ -216,7 +216,7 @@ const styles = StyleSheet.create({
     paddingBottom: Spacing.Thick24,
   },
   footerContainer: {
-    backgroundColor: Colors.white,
+    backgroundColor: Colors.darkBlue,
     position: 'absolute',
     bottom: 0,
     left: 10, // so the scroll bar is still visible

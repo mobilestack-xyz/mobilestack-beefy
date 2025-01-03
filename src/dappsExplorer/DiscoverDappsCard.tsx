@@ -143,13 +143,13 @@ function DiscoverDappsCard() {
 const styles = StyleSheet.create({
   container: {
     padding: Spacing.Regular16,
-    borderColor: Colors.gray2,
+    borderColor: Colors.blue200,
     borderWidth: 1,
     borderRadius: 8,
   },
   sectionTitle: {
     ...typeScale.labelXSmall,
-    color: Colors.gray4,
+    color: Colors.lightBlue,
     marginTop: Spacing.Smallest8,
   },
   listFooterComponent: {
@@ -162,7 +162,7 @@ const styles = StyleSheet.create({
   },
   title: {
     ...typeScale.labelSemiBoldMedium,
-    color: Colors.black,
+    color: Colors.white,
   },
   titleContainer: {
     marginBottom: Spacing.Smallest8,
@@ -170,7 +170,7 @@ const styles = StyleSheet.create({
   },
   disclaimer: {
     ...typeScale.bodyXSmall,
-    color: Colors.gray3,
+    color: Colors.lightBlue,
   },
 })
 

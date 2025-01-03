@@ -118,17 +118,17 @@ exports[`BackupPhrase renders correctly with backup completed 1`] = `
           style={
             [
               {
-                "color": "#1AB775",
+                "color": "#4EB258",
                 "fontFamily": "Inter-Regular",
                 "fontSize": 16,
                 "lineHeight": 24,
               },
               [
                 {
-                  "color": "#2E3338",
+                  "color": "#FFFFFF",
                 },
                 {
-                  "color": "#666666",
+                  "color": "#B7B9C9",
                 },
               ],
             ]
@@ -193,7 +193,7 @@ exports[`BackupPhrase renders correctly with backup completed 1`] = `
         <Text
           style={
             {
-              "color": "#1AB775",
+              "color": "#4EB258",
               "fontFamily": "Inter-Regular",
               "fontSize": 16,
               "lineHeight": 24,
@@ -250,8 +250,8 @@ exports[`BackupPhrase renders correctly with backup completed 1`] = `
           style={
             {
               "alignContent": "center",
-              "backgroundColor": "#F8F9F9",
-              "borderColor": "#E6E6E6",
+              "backgroundColor": "#363B63",
+              "borderColor": "#2D3154",
               "borderRadius": 8,
               "borderWidth": 1,
               "flexDirection": "row",
@@ -399,17 +399,17 @@ exports[`BackupPhrase renders correctly with backup not completed 1`] = `
           style={
             [
               {
-                "color": "#1AB775",
+                "color": "#4EB258",
                 "fontFamily": "Inter-Regular",
                 "fontSize": 16,
                 "lineHeight": 24,
               },
               [
                 {
-                  "color": "#2E3338",
+                  "color": "#FFFFFF",
                 },
                 {
-                  "color": "#666666",
+                  "color": "#B7B9C9",
                 },
               ],
             ]
@@ -474,7 +474,7 @@ exports[`BackupPhrase renders correctly with backup not completed 1`] = `
         <Text
           style={
             {
-              "color": "#1AB775",
+              "color": "#4EB258",
               "fontFamily": "Inter-Regular",
               "fontSize": 16,
               "lineHeight": 24,
@@ -531,8 +531,8 @@ exports[`BackupPhrase renders correctly with backup not completed 1`] = `
           style={
             {
               "alignContent": "center",
-              "backgroundColor": "#F8F9F9",
-              "borderColor": "#E6E6E6",
+              "backgroundColor": "#363B63",
+              "borderColor": "#2D3154",
               "borderRadius": 8,
               "borderWidth": 1,
               "flexDirection": "row",
@@ -577,10 +577,10 @@ exports[`BackupPhrase renders correctly with backup not completed 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       testID="backupKeySavedSwitch"
-      thumbTintColor="#E6E6E6"
-      trackColorForFalse="#757575"
-      trackColorForTrue="#1AB775"
-      trackTintColor="#757575"
+      thumbTintColor="#2D3154"
+      trackColorForFalse="#B7B9C9"
+      trackColorForTrue="#4EB258"
+      trackTintColor="#B7B9C9"
     />
     <Text
       onPress={[Function]}
@@ -660,8 +660,8 @@ exports[`BackupPhrase renders correctly with backup not completed 1`] = `
           [
             {
               "alignItems": "center",
-              "backgroundColor": "#F8F9F9",
-              "borderColor": "#E6E6E6",
+              "backgroundColor": "#363B63",
+              "borderColor": "#2D3154",
               "borderRadius": 100,
               "borderWidth": 1,
               "flexDirection": "row",
@@ -681,7 +681,7 @@ exports[`BackupPhrase renders correctly with backup not completed 1`] = `
           maxFontSizeMultiplier={1}
           style={
             {
-              "color": "#2E3338",
+              "color": "#FFFFFF",
               "fontFamily": "Inter-SemiBold",
               "fontSize": 16,
               "lineHeight": 24,
@@ -816,17 +816,17 @@ exports[`BackupPhrase still renders when mnemonic doesnt show up 1`] = `
           style={
             [
               {
-                "color": "#1AB775",
+                "color": "#4EB258",
                 "fontFamily": "Inter-Regular",
                 "fontSize": 16,
                 "lineHeight": 24,
               },
               [
                 {
-                  "color": "#2E3338",
+                  "color": "#FFFFFF",
                 },
                 {
-                  "color": "#666666",
+                  "color": "#B7B9C9",
                 },
               ],
             ]
@@ -891,7 +891,7 @@ exports[`BackupPhrase still renders when mnemonic doesnt show up 1`] = `
         <Text
           style={
             {
-              "color": "#1AB775",
+              "color": "#4EB258",
               "fontFamily": "Inter-Regular",
               "fontSize": 16,
               "lineHeight": 24,
@@ -948,8 +948,8 @@ exports[`BackupPhrase still renders when mnemonic doesnt show up 1`] = `
           style={
             {
               "alignContent": "center",
-              "backgroundColor": "#F8F9F9",
-              "borderColor": "#E6E6E6",
+              "backgroundColor": "#363B63",
+              "borderColor": "#2D3154",
               "borderRadius": 8,
               "borderWidth": 1,
               "flexDirection": "row",

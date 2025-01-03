@@ -41,11 +41,11 @@ export function SingleDigitInput({
 
 const styles = StyleSheet.create({
   codeInput: {
-    borderColor: colors.gray2,
+    borderColor: colors.blue200,
     borderRadius: 3,
     borderWidth: 1,
     flex: 0,
-    backgroundColor: colors.white,
+    backgroundColor: colors.darkBlue,
     height: 50,
     width: 50,
     marginVertical: 5,

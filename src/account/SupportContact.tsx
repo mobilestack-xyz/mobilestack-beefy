@@ -133,7 +133,7 @@ function SupportContact({ route }: Props) {
           value={message}
           multiline={true}
           style={styles.messageTextInput}
-          placeholderTextColor={colors.gray4}
+          placeholderTextColor={colors.lightBlue}
           underlineColorAndroid="transparent"
           numberOfLines={10}
           placeholder={t('contactMessagePlaceholder') ?? undefined}
@@ -158,7 +158,7 @@ function SupportContact({ route }: Props) {
           multiline={false}
           value={email}
           style={styles.singleLineTextInput}
-          placeholderTextColor={colors.gray4}
+          placeholderTextColor={colors.lightBlue}
           placeholder={t('Email') ?? undefined}
           showClearButton={false}
           testID={'EmailEntry'}
@@ -203,7 +203,7 @@ const styles = StyleSheet.create({
   },
   disclaimerText: {
     ...typeScale.bodyMedium,
-    color: colors.gray4,
+    color: colors.lightBlue,
   },
   container: {
     flex: 1,
@@ -229,11 +229,11 @@ const styles = StyleSheet.create({
     paddingVertical: 4,
     marginTop: 8,
     alignItems: 'flex-start',
-    borderColor: colors.gray2,
+    borderColor: colors.blue200,
     borderRadius: 8,
     borderWidth: 1,
     marginBottom: 16,
-    color: colors.black,
+    color: colors.white,
     height: 80,
     maxHeight: 150,
   },
@@ -242,11 +242,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     marginTop: 8,
     alignItems: 'flex-start',
-    borderColor: colors.gray2,
+    borderColor: colors.blue200,
     borderRadius: 8,
     borderWidth: 1,
     marginBottom: 16,
-    color: colors.black,
+    color: colors.white,
     maxHeight: 50,
   },
   headerText: {

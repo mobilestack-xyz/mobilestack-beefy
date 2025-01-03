@@ -108,7 +108,7 @@ const styles = StyleSheet.create({
   },
   subTitle: {
     ...typeScale.bodyMedium,
-    color: colors.black,
+    color: colors.white,
     paddingBottom: Spacing.Small12,
   },
 
@@ -123,7 +123,7 @@ const styles = StyleSheet.create({
     paddingVertical: Spacing.Small12,
   },
   rowContainer: {
-    borderColor: colors.gray2,
+    borderColor: colors.blue200,
     borderWidth: 1,
     borderRadius: Spacing.Small12,
   },
@@ -133,11 +133,11 @@ const styles = StyleSheet.create({
   },
   appName: {
     ...typeScale.labelSemiBoldSmall,
-    color: colors.black,
+    color: colors.white,
   },
   disconnectButton: {
     ...typeScale.bodySmall,
-    color: colors.gray4,
+    color: colors.lightBlue,
   },
 })
 

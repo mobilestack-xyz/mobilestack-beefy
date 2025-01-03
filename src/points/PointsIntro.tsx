@@ -76,12 +76,12 @@ const styles = StyleSheet.create({
   },
   title: {
     ...typeScale.titleLarge,
-    color: Colors.black,
+    color: Colors.white,
     textAlign: 'center',
   },
   description: {
     ...typeScale.bodySmall,
-    color: Colors.black,
+    color: Colors.white,
     marginTop: Spacing.Regular16,
     textAlign: 'center',
   },

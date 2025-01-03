@@ -14,7 +14,7 @@ exports[`NotAuthorizedView renders correctly 1`] = `
   <Text
     style={
       {
-        "color": "#FFFFFF",
+        "color": "#242843",
         "fontFamily": "Inter-Bold",
         "fontSize": 20,
         "lineHeight": 28,
@@ -27,7 +27,7 @@ exports[`NotAuthorizedView renders correctly 1`] = `
   <Text
     style={
       {
-        "color": "#FFFFFF",
+        "color": "#242843",
         "fontFamily": "Inter-Regular",
         "fontSize": 16,
         "lineHeight": 24,
@@ -76,7 +76,7 @@ exports[`NotAuthorizedView renders correctly 1`] = `
     <Text
       style={
         {
-          "color": "#1AB775",
+          "color": "#4EB258",
           "fontFamily": "Inter-SemiBold",
           "fontSize": 16,
           "lineHeight": 24,

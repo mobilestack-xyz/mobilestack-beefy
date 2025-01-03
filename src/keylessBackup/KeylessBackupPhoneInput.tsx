@@ -185,19 +185,19 @@ const styles = StyleSheet.create({
   title: {
     ...typeScale.labelSemiBoldLarge,
     textAlign: 'center',
-    color: Colors.black,
+    color: Colors.white,
   },
   subtitle: {
     ...typeScale.bodyMedium,
     textAlign: 'center',
     paddingVertical: Spacing.Regular16,
-    color: Colors.black,
+    color: Colors.white,
   },
   button: {
     padding: Spacing.Thick24,
   },
   countryFlagStyle: {
-    backgroundColor: Colors.gray2,
+    backgroundColor: Colors.blue200,
     marginRight: Spacing.Smallest8,
   },
 })

@@ -123,7 +123,7 @@ const styles = StyleSheet.create({
   },
   subtext: {
     ...typeScale.bodySmall,
-    color: Colors.gray4,
+    color: Colors.lightBlue,
   },
   tokenAmt: {
     ...typeScale.labelSemiBoldLarge,

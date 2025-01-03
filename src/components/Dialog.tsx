@@ -110,7 +110,7 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
   },
   secondary: {
-    color: colors.gray4,
+    color: colors.lightBlue,
     paddingTop: 16,
   },
   primary: {

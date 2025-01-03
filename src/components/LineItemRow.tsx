@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
   },
   text: {
     ...typeScale.labelMedium,
-    color: colors.black,
+    color: colors.white,
   },
   loadingContainer: {
     transform: [{ scale: 0.7 }],

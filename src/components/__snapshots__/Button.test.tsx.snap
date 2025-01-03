@@ -61,8 +61,8 @@ exports[`Button when type is SECONDARY renders 1`] = `
         [
           {
             "alignItems": "center",
-            "backgroundColor": "#F8F9F9",
-            "borderColor": "#E6E6E6",
+            "backgroundColor": "#363B63",
+            "borderColor": "#2D3154",
             "borderRadius": 100,
             "borderWidth": 1,
             "flexDirection": "row",
@@ -81,7 +81,7 @@ exports[`Button when type is SECONDARY renders 1`] = `
         maxFontSizeMultiplier={1}
         style={
           {
-            "color": "#2E3338",
+            "color": "#FFFFFF",
             "fontFamily": "Inter-SemiBold",
             "fontSize": 16,
             "lineHeight": 24,
@@ -158,8 +158,8 @@ exports[`Button when type is TERTIARY and text size is small renders 1`] = `
         [
           {
             "alignItems": "center",
-            "backgroundColor": "#FFFFFF",
-            "borderColor": "#E6E6E6",
+            "backgroundColor": "#242843",
+            "borderColor": "#2D3154",
             "borderRadius": 100,
             "borderWidth": 1,
             "flexDirection": "row",
@@ -178,7 +178,7 @@ exports[`Button when type is TERTIARY and text size is small renders 1`] = `
         maxFontSizeMultiplier={1}
         style={
           {
-            "color": "#2E3338",
+            "color": "#FFFFFF",
             "fontFamily": "Inter-SemiBold",
             "fontSize": 14,
             "lineHeight": 20,
@@ -255,7 +255,7 @@ exports[`Button when type not given defaults to primary 1`] = `
         [
           {
             "alignItems": "center",
-            "backgroundColor": "#2E3338",
+            "backgroundColor": "#4EB258",
             "flexDirection": "row",
             "height": 48,
             "justifyContent": "center",
@@ -272,7 +272,7 @@ exports[`Button when type not given defaults to primary 1`] = `
         maxFontSizeMultiplier={1}
         style={
           {
-            "color": "#FFFFFF",
+            "color": "#242843",
             "fontFamily": "Inter-SemiBold",
             "fontSize": 16,
             "lineHeight": 24,

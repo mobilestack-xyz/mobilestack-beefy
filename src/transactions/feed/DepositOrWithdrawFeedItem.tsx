@@ -153,24 +153,24 @@ const styles = StyleSheet.create({
   },
   title: {
     ...typeScale.labelMedium,
-    color: Colors.black,
+    color: Colors.white,
   },
   subtitle: {
     ...typeScale.bodySmall,
-    color: Colors.gray4,
+    color: Colors.lightBlue,
   },
   amountContainer: {
     maxWidth: '50%',
   },
   amountTitle: {
     ...typeScale.labelMedium,
-    color: Colors.black,
+    color: Colors.white,
     flexWrap: 'wrap',
     textAlign: 'right',
   },
   amountSubtitle: {
     ...typeScale.bodySmall,
-    color: Colors.gray4,
+    color: Colors.lightBlue,
     flexWrap: 'wrap',
     textAlign: 'right',
   },

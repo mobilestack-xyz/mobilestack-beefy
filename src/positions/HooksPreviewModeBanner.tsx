@@ -15,8 +15,8 @@ import { typeScale } from 'src/styles/fonts'
 const AnimatedSafeAreaView = Animated.createAnimatedComponent(SafeAreaView)
 
 const STATUS_COLORS = {
-  idle: colors.gray2,
-  loading: colors.gray2,
+  idle: colors.blue200,
+  loading: colors.blue200,
   success: colors.accent,
   error: colors.errorDark,
 }
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
   },
   text: {
     ...typeScale.labelXSmall,
-    color: colors.white,
+    color: colors.darkBlue,
     textAlign: 'center',
     paddingHorizontal: 10,
   },

@@ -54,7 +54,7 @@ function GetStartedSection() {
         <CircledIcon
           radius={Math.min(24 * getFontScaleSync(), 50)}
           style={getStartedStyles.optionNum}
-          backgroundColor={colors.white}
+          backgroundColor={colors.darkBlue}
         >
           <Text adjustsFontSizeToFit={true} style={getStartedStyles.optionNumText}>
             {optionNum}
@@ -91,7 +91,7 @@ function GetStartedSection() {
 
 const getStartedStyles = StyleSheet.create({
   container: {
-    backgroundColor: colors.gray1,
+    backgroundColor: colors.blue100,
     padding: Spacing.Thick24,
     margin: Spacing.Regular16,
     marginTop: Spacing.Large32,
@@ -100,7 +100,7 @@ const getStartedStyles = StyleSheet.create({
   },
   subtitle: {
     ...typeScale.labelXXSmall,
-    color: colors.gray3,
+    color: colors.lightBlue,
   },
   title: {
     ...typeScale.labelMedium,
@@ -111,11 +111,11 @@ const getStartedStyles = StyleSheet.create({
   },
   optionNum: {
     borderWidth: 1,
-    borderColor: colors.gray2,
+    borderColor: colors.blue200,
   },
   optionNumText: {
     ...typeScale.labelXSmall,
-    color: colors.black,
+    color: colors.white,
   },
   optionText: {
     paddingLeft: Spacing.Smallest8,
@@ -128,7 +128,7 @@ const getStartedStyles = StyleSheet.create({
   },
   optionSubtitle: {
     ...typeScale.bodyXSmall,
-    color: colors.gray3,
+    color: colors.lightBlue,
   },
 })
 
@@ -380,7 +380,7 @@ const styles = StyleSheet.create({
   },
   searchResultsHeader: {
     ...typeScale.labelXSmall,
-    color: colors.gray3,
+    color: colors.lightBlue,
     paddingHorizontal: Spacing.Regular16,
     paddingVertical: Spacing.Smallest8,
   },
@@ -391,12 +391,12 @@ const styles = StyleSheet.create({
   },
   noResultsTitle: {
     ...typeScale.bodyMedium,
-    color: colors.gray3,
+    color: colors.lightBlue,
     textAlign: 'center',
   },
   noResultsSubtitle: {
     ...typeScale.labelXSmall,
-    color: colors.gray3,
+    color: colors.lightBlue,
     justifyContent: 'center',
     padding: Spacing.Regular16,
     textAlign: 'center',

@@ -41,8 +41,8 @@ export default function CodeInput({
   const showStatus = showCheckmark || showSpinner || showError
 
   const textColorForStatus = {
-    [CodeInputStatus.Inputting]: colors.black,
-    [CodeInputStatus.Processing]: colors.gray3,
+    [CodeInputStatus.Inputting]: colors.white,
+    [CodeInputStatus.Processing]: colors.lightBlue,
     [CodeInputStatus.Error]: colors.error,
     [CodeInputStatus.Accepted]: colors.successDark,
   }
@@ -103,9 +103,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding: Spacing.Regular16,
     overflow: 'hidden',
-    backgroundColor: colors.gray1,
+    backgroundColor: colors.blue100,
     borderWidth: 1,
-    borderColor: colors.gray2,
+    borderColor: colors.blue200,
   },
   innerContent: {
     flex: 1,

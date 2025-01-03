@@ -113,7 +113,7 @@ export default function SettingsMenu() {
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollContainer}>
         <SettingsItemTextValue
-          icon={<Wallet size={24} color={Colors.black} />}
+          icon={<Wallet size={24} color={Colors.white} />}
           title={t('address')}
           onPress={() =>
             navigate(Screens.QRNavigator, {
@@ -126,7 +126,7 @@ export default function SettingsMenu() {
           borderless
         />
 
-        <GradientBlock style={styles.divider} colors={[Colors.black, Colors.black]} />
+        <GradientBlock style={styles.divider} colors={[Colors.white, Colors.white]} />
 
         <SettingsItemTextValue
           icon={<Preferences size={24} />}
@@ -137,7 +137,7 @@ export default function SettingsMenu() {
           borderless
         />
         <SettingsItemTextValue
-          icon={<Lock width={24} height={24} color={Colors.black} />}
+          icon={<Lock width={24} height={24} color={Colors.white} />}
           title={t('securityPrivacy')}
           testID="SettingsMenu/Security"
           onPress={() => navigate(Screens.SecuritySubmenu)}
@@ -146,7 +146,7 @@ export default function SettingsMenu() {
         />
         {walletConnectEnabled && (
           <SettingsItemTextValue
-            icon={<Stack size={24} color={Colors.black} />}
+            icon={<Stack size={24} color={Colors.white} />}
             title={t('connectedApplications')}
             testID="SettingsMenu/ConnectedDapps"
             value={connectedDapps.toString()}
@@ -156,7 +156,7 @@ export default function SettingsMenu() {
           />
         )}
         <SettingsItemTextValue
-          icon={<Help size={24} color={Colors.black} />}
+          icon={<Help size={24} color={Colors.white} />}
           title={t('help')}
           onPress={() => navigate(Screens.Support)}
           testID="SettingsMenu/Help"
@@ -164,7 +164,7 @@ export default function SettingsMenu() {
           borderless
         />
 
-        <GradientBlock style={styles.divider} colors={[Colors.black, Colors.black]} />
+        <GradientBlock style={styles.divider} colors={[Colors.white, Colors.white]} />
 
         <SettingsItemTextValue
           title={t('legal')}
@@ -209,7 +209,7 @@ const styles = StyleSheet.create({
   },
   appVersionText: {
     ...typeScale.bodyMedium,
-    color: Colors.gray3,
+    color: Colors.lightBlue,
   },
   devSettings: {
     padding: Spacing.Regular16,

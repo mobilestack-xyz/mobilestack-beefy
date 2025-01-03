@@ -81,7 +81,7 @@ const BottomSheetBase = ({
 
 const styles = StyleSheet.create({
   handle: {
-    backgroundColor: Colors.gray2,
+    backgroundColor: Colors.blue200,
     width: 40,
   },
 })

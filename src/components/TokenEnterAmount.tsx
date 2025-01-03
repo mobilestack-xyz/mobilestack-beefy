@@ -377,7 +377,7 @@ export default function TokenEnterAmount({
             )}
           </View>
 
-          {onOpenTokenPicker && <DownArrowIcon height={24} color={Colors.gray3} />}
+          {onOpenTokenPicker && <DownArrowIcon height={24} color={Colors.lightBlue} />}
         </View>
       </Touchable>
       {token && (
@@ -394,7 +394,7 @@ export default function TokenEnterAmount({
               onInputChange(value)
             }}
             value={formattedInputValue}
-            placeholderTextColor={Colors.gray3}
+            placeholderTextColor={Colors.lightBlue}
             placeholder={amountType === 'token' ? placeholder.token : placeholder.local}
             keyboardType="decimal-pad"
             // Work around for RN issue with Samsung keyboards
@@ -438,7 +438,7 @@ export default function TokenEnterAmount({
                   testID={`${testID}/SwitchTokens`}
                   hitSlop={variables.iconHitslop}
                 >
-                  <SwapArrows color={Colors.gray3} size={24} />
+                  <SwapArrows color={Colors.lightBlue} size={24} />
                 </Touchable>
               )}
 
@@ -466,10 +466,10 @@ export default function TokenEnterAmount({
 const styles = StyleSheet.create({
   rowContainer: {
     borderWidth: 1,
-    borderColor: Colors.gray2,
+    borderColor: Colors.blue200,
     borderRadius: BORDER_RADIUS,
     padding: Spacing.Regular16,
-    backgroundColor: Colors.gray1,
+    backgroundColor: Colors.blue100,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
@@ -487,26 +487,26 @@ const styles = StyleSheet.create({
   },
   tokenName: {
     ...typeScale.labelMedium,
-    color: Colors.black,
+    color: Colors.white,
   },
   tokenBalance: {
     ...typeScale.bodySmall,
-    color: Colors.gray3,
+    color: Colors.lightBlue,
   },
   primaryAmountText: {
     ...typeScale.titleMedium,
     paddingTop: 0,
     paddingBottom: 0,
-    color: Colors.black,
+    color: Colors.white,
   },
   secondaryAmountText: {
     ...typeScale.bodyMedium,
-    color: Colors.gray3,
+    color: Colors.lightBlue,
   },
   placeholderText: {
     ...typeScale.labelMedium,
     paddingHorizontal: 4,
-    color: Colors.gray3,
+    color: Colors.lightBlue,
   },
   swapArrowContainer: {
     transform: [{ rotate: '90deg' }],

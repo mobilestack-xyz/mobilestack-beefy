@@ -41,7 +41,7 @@ exports[`renders selected correctly 1`] = `
       {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "#E6E6E6",
+        "borderColor": "#2D3154",
         "flexDirection": "row",
         "marginLeft": 16,
         "paddingVertical": 14,
@@ -67,14 +67,14 @@ exports[`renders selected correctly 1`] = `
           cx="10"
           cy="10"
           r="9"
-          stroke="#1AB775"
+          stroke="#4EB258"
           strokeWidth={2}
           style={{}}
         />
         <circle
           cx="10"
           cy="10"
-          fill="#1AB775"
+          fill="#4EB258"
           r="6"
           style={{}}
         />
@@ -139,7 +139,7 @@ exports[`renders unselected correctly 1`] = `
       {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "#E6E6E6",
+        "borderColor": "#2D3154",
         "flexDirection": "row",
         "marginLeft": 16,
         "paddingVertical": 14,
@@ -165,7 +165,7 @@ exports[`renders unselected correctly 1`] = `
           cx="10"
           cy="10"
           r="9"
-          stroke="#757575"
+          stroke="#B7B9C9"
           strokeWidth={2}
           style={{}}
         />

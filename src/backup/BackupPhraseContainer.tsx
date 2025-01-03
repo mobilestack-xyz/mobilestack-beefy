@@ -127,7 +127,7 @@ export class BackupPhraseContainer extends React.Component<Props> {
               onChangeText={this.onPhraseInputChange}
               shouldShowClipboard={isValidBackupPhrase}
               underlineColorAndroid="transparent"
-              placeholderTextColor={colors.gray4}
+              placeholderTextColor={colors.lightBlue}
               enablesReturnKeyAutomatically={true}
               multiline={true}
               autoCorrect={false}
@@ -174,16 +174,16 @@ const styles = StyleSheet.create({
   },
   wordText: {
     ...typeScale.labelSemiBoldSmall,
-    color: colors.black,
+    color: colors.white,
   },
   phraseContainer: {
     flexWrap: 'wrap',
     flexDirection: 'row',
     marginTop: 8,
-    backgroundColor: colors.gray1,
+    backgroundColor: colors.blue100,
     borderRadius: 8,
     borderWidth: 1,
-    borderColor: colors.gray2,
+    borderColor: colors.blue200,
     alignContent: 'center',
     justifyContent: 'center',
     padding: 8,

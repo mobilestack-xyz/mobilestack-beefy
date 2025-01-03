@@ -123,7 +123,7 @@ function LearnMoreTouchable({
           <Text style={styles.learnMoreText}>
             {t('earnFlow.poolInfoScreen.learnMoreOnProvider', { providerName })}
           </Text>
-          <OpenLinkIcon color={Colors.black} size={16} />
+          <OpenLinkIcon color={Colors.white} size={16} />
         </View>
       </Touchable>
     </View>
@@ -496,7 +496,7 @@ function InfoBottomSheet({
               <Text style={styles.learnMoreText}>
                 <Trans i18nKey={linkKey} tOptions={{ providerName }} />
               </Text>
-              <OpenLinkIcon color={Colors.black} size={16} />
+              <OpenLinkIcon color={Colors.white} size={16} />
             </View>
           </Touchable>
         </View>
@@ -518,7 +518,7 @@ const styles = StyleSheet.create({
   },
   headerTitleText: {
     ...typeScale.labelSemiBoldMedium,
-    color: Colors.black,
+    color: Colors.white,
   },
   flex: {
     flex: 1,
@@ -531,15 +531,15 @@ const styles = StyleSheet.create({
   },
   title: {
     ...typeScale.titleMedium,
-    color: Colors.black,
+    color: Colors.white,
   },
   subtitleLabel: {
     ...typeScale.bodyMedium,
-    color: Colors.gray3,
+    color: Colors.lightBlue,
   },
   subtitleInfo: {
     ...typeScale.labelMedium,
-    color: Colors.black,
+    color: Colors.white,
   },
   titleContainer: {
     gap: Spacing.Smallest8,
@@ -578,7 +578,7 @@ const styles = StyleSheet.create({
   },
   learnMoreText: {
     ...typeScale.labelSemiBoldSmall,
-    color: Colors.black,
+    color: Colors.white,
   },
   buttonContainer: {
     flexShrink: 1,
@@ -588,12 +588,12 @@ const styles = StyleSheet.create({
   },
   infoBottomSheetTitle: {
     ...typeScale.titleSmall,
-    color: Colors.black,
+    color: Colors.white,
   },
   infoBottomSheetText: {
     ...typeScale.bodySmall,
     marginBottom: Spacing.Thick24,
-    color: Colors.black,
+    color: Colors.white,
   },
   linkText: {
     textDecorationLine: 'underline',

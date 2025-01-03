@@ -162,7 +162,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
   },
   text: {
-    color: colors.white,
+    color: colors.darkBlue,
     // Unset explicit lineHeight set by fonts.tsx otherwise the text is not centered vertically
     lineHeight: undefined,
     textAlign: 'center',
@@ -173,11 +173,11 @@ const styles = StyleSheet.create({
   },
   button: {
     marginTop: 8,
-    borderColor: colors.white,
+    borderColor: colors.darkBlue,
     alignSelf: 'center',
   },
   buttonText: {
-    color: colors.white,
+    color: colors.darkBlue,
   },
 })
 

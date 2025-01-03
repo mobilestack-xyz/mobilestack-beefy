@@ -4,14 +4,14 @@ exports[`SettingsItemInput renders correctly 1`] = `
 <View
   style={
     {
-      "backgroundColor": "#FFFFFF",
+      "backgroundColor": "#242843",
     }
   }
 >
   <View
     style={
       {
-        "borderBottomColor": "#E6E6E6",
+        "borderBottomColor": "#2D3154",
         "borderBottomWidth": 1,
         "marginHorizontal": 16,
         "paddingVertical": 16,
@@ -40,7 +40,7 @@ exports[`SettingsItemInput renders correctly 1`] = `
         <Text
           style={
             {
-              "color": "#2E3338",
+              "color": "#FFFFFF",
               "fontFamily": "Inter-Regular",
               "fontSize": 16,
               "lineHeight": 24,
@@ -75,7 +75,7 @@ exports[`SettingsItemInput renders correctly 1`] = `
           style={
             [
               {
-                "color": "#2E3338",
+                "color": "#FFFFFF",
                 "flex": 1,
                 "fontFamily": "Inter-Regular",
                 "fontSize": 16,
@@ -88,13 +88,13 @@ exports[`SettingsItemInput renders correctly 1`] = `
               },
               [
                 {
-                  "color": "#666666",
+                  "color": "#B7B9C9",
                   "minWidth": 160,
                   "paddingVertical": 0,
                   "textAlign": "right",
                 },
                 {
-                  "color": "#666666",
+                  "color": "#B7B9C9",
                 },
               ],
             ]
@@ -112,14 +112,14 @@ exports[`SettingsItemSwitch renders correctly 1`] = `
 <View
   style={
     {
-      "backgroundColor": "#FFFFFF",
+      "backgroundColor": "#242843",
     }
   }
 >
   <View
     style={
       {
-        "borderBottomColor": "#E6E6E6",
+        "borderBottomColor": "#2D3154",
         "borderBottomWidth": 1,
         "marginHorizontal": 16,
         "paddingVertical": 16,
@@ -148,7 +148,7 @@ exports[`SettingsItemSwitch renders correctly 1`] = `
         <Text
           style={
             {
-              "color": "#2E3338",
+              "color": "#FFFFFF",
               "fontFamily": "Inter-Regular",
               "fontSize": 16,
               "lineHeight": 24,
@@ -165,10 +165,10 @@ exports[`SettingsItemSwitch renders correctly 1`] = `
         onChange={[Function]}
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
-        thumbTintColor="#E6E6E6"
-        trackColorForFalse="#757575"
-        trackColorForTrue="#1AB775"
-        trackTintColor="#1AB775"
+        thumbTintColor="#2D3154"
+        trackColorForFalse="#B7B9C9"
+        trackColorForTrue="#4EB258"
+        trackTintColor="#4EB258"
       />
     </View>
   </View>
@@ -179,14 +179,14 @@ exports[`SettingsItemTextValue renders correctly 1`] = `
 <View
   style={
     {
-      "backgroundColor": "#FFFFFF",
+      "backgroundColor": "#242843",
     }
   }
 >
   <View
     style={
       {
-        "borderBottomColor": "#E6E6E6",
+        "borderBottomColor": "#2D3154",
         "borderBottomWidth": 1,
         "marginHorizontal": 16,
         "paddingVertical": 16,
@@ -215,7 +215,7 @@ exports[`SettingsItemTextValue renders correctly 1`] = `
         <Text
           style={
             {
-              "color": "#2E3338",
+              "color": "#FFFFFF",
               "fontFamily": "Inter-Regular",
               "fontSize": 16,
               "lineHeight": 24,
@@ -236,7 +236,7 @@ exports[`SettingsItemTextValue renders correctly 1`] = `
         <Text
           style={
             {
-              "color": "#666666",
+              "color": "#B7B9C9",
               "fontFamily": "Inter-Regular",
               "fontSize": 16,
               "lineHeight": 24,
@@ -259,7 +259,7 @@ exports[`SettingsItemTextValue renders correctly 1`] = `
           <path
             clipRule="evenodd"
             d="M.293.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L5.586 7 .293 1.707a1 1 0 0 1 0-1.414Z"
-            fill="#757575"
+            fill="#B7B9C9"
             fillRule="evenodd"
             style={{}}
           />
@@ -274,14 +274,14 @@ exports[`SettingsItemTextValue renders correctly without value 1`] = `
 <View
   style={
     {
-      "backgroundColor": "#FFFFFF",
+      "backgroundColor": "#242843",
     }
   }
 >
   <View
     style={
       {
-        "borderBottomColor": "#E6E6E6",
+        "borderBottomColor": "#2D3154",
         "borderBottomWidth": 1,
         "marginHorizontal": 16,
         "paddingVertical": 16,
@@ -310,7 +310,7 @@ exports[`SettingsItemTextValue renders correctly without value 1`] = `
         <Text
           style={
             {
-              "color": "#2E3338",
+              "color": "#FFFFFF",
               "fontFamily": "Inter-Regular",
               "fontSize": 16,
               "lineHeight": 24,

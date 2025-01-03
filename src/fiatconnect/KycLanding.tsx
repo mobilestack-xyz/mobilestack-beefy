@@ -203,7 +203,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingVertical: 48,
     borderBottomWidth: 1,
-    borderBottomColor: Colors.gray2,
+    borderBottomColor: Colors.blue200,
   },
   stepTwo: {
     alignItems: 'center',

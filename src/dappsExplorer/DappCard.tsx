@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
   },
   borderStyle: {
     borderWidth: 1,
-    borderColor: Colors.gray2,
+    borderColor: Colors.blue200,
   },
   dappIcon: {
     width: 40,
@@ -124,11 +124,11 @@ const styles = StyleSheet.create({
   title: {
     ...typeScale.labelSemiBoldSmall,
     lineHeight: 24,
-    color: Colors.black,
+    color: Colors.white,
   },
   subtitle: {
     ...typeScale.bodyXSmall,
-    color: Colors.gray4,
+    color: Colors.lightBlue,
   },
 })
 

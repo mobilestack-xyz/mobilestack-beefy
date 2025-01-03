@@ -168,7 +168,7 @@ export default function SelectRecipientButtons({
           title={t('sendSelectRecipient.jumpstart.title')}
           subtitle={t('sendSelectRecipient.jumpstart.subtitle')}
           onPress={onPressJumpstart}
-          icon={<MagicWand color={Colors.black} />}
+          icon={<MagicWand color={Colors.white} />}
           gradientBackground
         />
       )}

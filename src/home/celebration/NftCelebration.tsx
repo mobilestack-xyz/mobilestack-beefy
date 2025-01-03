@@ -189,15 +189,15 @@ const styles = StyleSheet.create({
     width: 40,
     height: 4,
     borderRadius: 4,
-    backgroundColor: Colors.gray2,
+    backgroundColor: Colors.blue200,
   },
   title: {
     ...typeScale.titleSmall,
-    color: Colors.black,
+    color: Colors.white,
   },
   description: {
     ...typeScale.bodySmall,
-    color: Colors.gray3,
+    color: Colors.lightBlue,
     marginTop: Spacing.Smallest8,
   },
   button: {

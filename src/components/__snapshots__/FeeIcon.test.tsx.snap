@@ -62,12 +62,12 @@ exports[`ExchangeFeeIcon renders correctly 1`] = `
         cx="8"
         cy="8"
         r="7"
-        stroke="#2E3338"
+        stroke="#FFFFFF"
         strokeWidth="1.25"
       />
       <path
         d="M8 12V7M8 6V5"
-        stroke="#2E3338"
+        stroke="#FFFFFF"
         strokeWidth="1.25"
       />
     </svg>
@@ -164,12 +164,12 @@ exports[`SecurityFeeIcon renders correctly 1`] = `
         cx="8"
         cy="8"
         r="7"
-        stroke="#2E3338"
+        stroke="#FFFFFF"
         strokeWidth="1.25"
       />
       <path
         d="M8 12V7M8 6V5"
-        stroke="#2E3338"
+        stroke="#FFFFFF"
         strokeWidth="1.25"
       />
     </svg>

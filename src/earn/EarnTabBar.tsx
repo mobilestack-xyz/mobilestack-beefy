@@ -65,10 +65,10 @@ const styles = StyleSheet.create({
   },
   item: {
     ...typeScale.bodyMedium,
-    color: Colors.gray4,
+    color: Colors.lightBlue,
   },
   itemSelected: {
     ...typeScale.labelMedium,
-    color: Colors.black,
+    color: Colors.white,
   },
 })

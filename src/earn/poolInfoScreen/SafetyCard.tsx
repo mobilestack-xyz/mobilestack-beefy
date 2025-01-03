@@ -116,14 +116,14 @@ const styles = StyleSheet.create({
   },
   bar: {
     width: 4,
-    backgroundColor: Colors.gray2,
+    backgroundColor: Colors.blue200,
   },
   barHighlighted: {
     backgroundColor: Colors.accent,
   },
   viewDetailsText: {
     ...typeScale.labelSemiBoldSmall,
-    color: Colors.gray3,
+    color: Colors.lightBlue,
     textAlign: 'center',
     flex: 1,
   },
@@ -145,10 +145,10 @@ const styles = StyleSheet.create({
   },
   riskTitle: {
     ...typeScale.labelMedium,
-    color: Colors.black,
+    color: Colors.white,
   },
   riskCategory: {
     ...typeScale.bodySmall,
-    color: Colors.gray3,
+    color: Colors.lightBlue,
   },
 })

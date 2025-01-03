@@ -254,11 +254,11 @@ NftsInfoCarousel.navigationOptions = () => ({
 const styles = StyleSheet.create({
   attributeText: {
     ...typeScale.bodyMedium,
-    color: colors.black,
+    color: colors.white,
   },
   attributeTitle: {
     ...typeScale.labelSmall,
-    color: colors.gray3,
+    color: colors.lightBlue,
   },
   attributesContainer: {
     paddingBottom: Spacing.Thick24,
@@ -272,12 +272,12 @@ const styles = StyleSheet.create({
   errorThumbnail: {
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: colors.gray2,
+    backgroundColor: colors.blue200,
   },
   errorImageText: {
     marginTop: Spacing.Regular16,
     ...typeScale.bodyMedium,
-    color: colors.gray3,
+    color: colors.lightBlue,
   },
   explorerLink: {
     ...typeScale.labelSmall,
@@ -299,7 +299,7 @@ const styles = StyleSheet.create({
   nftImageLoadingErrorContainer: {
     width: '100%',
     height: DEFAULT_HEIGHT,
-    backgroundColor: colors.gray1,
+    backgroundColor: colors.blue100,
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 8,

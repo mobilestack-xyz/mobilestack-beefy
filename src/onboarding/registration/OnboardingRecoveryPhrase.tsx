@@ -167,7 +167,7 @@ const styles = StyleSheet.create({
     marginTop: 37,
     marginBottom: 9,
     textAlign: 'center',
-    color: colors.gray3,
+    color: colors.lightBlue,
   },
   bottomSheetTitle: {
     ...typeScale.titleSmall,
@@ -179,10 +179,10 @@ const styles = StyleSheet.create({
   },
   backupPhrase: {
     borderWidth: 1,
-    borderColor: colors.gray2,
+    borderColor: colors.blue200,
     borderRadius: 8,
     marginTop: 0,
-    backgroundColor: colors.gray1,
+    backgroundColor: colors.blue100,
   },
   contentContainer: {
     flexGrow: 1,

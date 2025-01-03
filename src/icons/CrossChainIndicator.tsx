@@ -7,7 +7,7 @@ interface Props {
   color?: Colors
 }
 
-function CrossChainIndicator({ size = 16, color = Colors.gray3 }: Props) {
+function CrossChainIndicator({ size = 16, color = Colors.lightBlue }: Props) {
   return (
     <Svg width={size} height={size} fill="none" viewBox="0 0 16 16">
       <G clipPath="url(#a)">
@@ -22,7 +22,7 @@ function CrossChainIndicator({ size = 16, color = Colors.gray3 }: Props) {
       </G>
       <Defs>
         <ClipPath id="a">
-          <Path fill={Colors.white} d="M1 4h14v9H1z" />
+          <Path fill={Colors.darkBlue} d="M1 4h14v9H1z" />
         </ClipPath>
       </Defs>
     </Svg>

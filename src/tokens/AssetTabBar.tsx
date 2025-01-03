@@ -72,7 +72,7 @@ export default function TabBar({
             {index === activeTab && (
               <GradientBlock
                 style={styles.activeTabUnderline}
-                colors={[Colors.black, Colors.black]}
+                colors={[Colors.white, Colors.white]}
               />
             )}
           </>
@@ -91,11 +91,11 @@ const styles = StyleSheet.create({
   },
   item: {
     ...typeScale.bodyMedium,
-    color: Colors.gray4,
+    color: Colors.lightBlue,
   },
   itemSelected: {
     ...typeScale.labelMedium,
-    color: Colors.black,
+    color: Colors.white,
   },
   activeTabUnderline: {
     height: 2,

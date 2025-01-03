@@ -94,10 +94,10 @@ const styles = StyleSheet.create({
   },
   subtotalText: {
     ...typeScale.labelSmall,
-    color: colors.gray4,
+    color: colors.lightBlue,
   },
   exchangeRate: {
     ...typeScale.labelSmall,
-    color: colors.gray4,
+    color: colors.lightBlue,
   },
 })

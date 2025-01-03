@@ -211,7 +211,7 @@ const styles = StyleSheet.create({
   title: {
     ...typeScale.labelSemiBoldLarge,
     textAlign: 'center',
-    color: colors.black,
+    color: colors.white,
   },
   titleOnSettings: {
     marginBottom: Spacing.Regular16,
@@ -244,7 +244,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   secondaryCta: {
-    color: colors.gray4,
+    color: colors.lightBlue,
     textAlign: 'center',
   },
   button: {

@@ -112,7 +112,7 @@ exports[`renders correctly 1`] = `
         style={
           [
             {
-              "backgroundColor": "#FFFFFF",
+              "backgroundColor": "#242843",
               "padding": 16,
             },
             {
@@ -130,7 +130,7 @@ exports[`renders correctly 1`] = `
             },
             [
               {
-                "backgroundColor": "#FFFFFF",
+                "backgroundColor": "#242843",
                 "maxHeight": "100%",
                 "padding": 24,
               },
@@ -224,7 +224,7 @@ exports[`renders correctly 1`] = `
               style={
                 [
                   {
-                    "color": "#1AB775",
+                    "color": "#4EB258",
                     "fontFamily": "Inter-SemiBold",
                     "fontSize": 16,
                     "lineHeight": 24,

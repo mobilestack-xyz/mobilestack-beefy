@@ -114,7 +114,7 @@ exports[`SendConfirmation renders correctly 1`] = `
             <path
               clipRule="evenodd"
               d="M7.707 13.707a1 1 0 0 1-1.414 0l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L2.414 7l5.293 5.293a1 1 0 0 1 0 1.414Z"
-              fill="#2E3338"
+              fill="#FFFFFF"
               fillRule="evenodd"
             />
           </svg>
@@ -126,7 +126,7 @@ exports[`SendConfirmation renders correctly 1`] = `
     style={
       [
         {
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "#242843",
           "flex": 1,
         },
         undefined,
@@ -218,7 +218,7 @@ exports[`SendConfirmation renders correctly 1`] = `
                 <Text
                   style={
                     {
-                      "color": "#666666",
+                      "color": "#B7B9C9",
                       "fontFamily": "Inter-Medium",
                       "fontSize": 16,
                       "lineHeight": 24,
@@ -231,7 +231,7 @@ exports[`SendConfirmation renders correctly 1`] = `
                 <Text
                   style={
                     {
-                      "color": "#2E3338",
+                      "color": "#FFFFFF",
                       "fontFamily": "Inter-Medium",
                       "fontSize": 16,
                       "lineHeight": 24,
@@ -246,7 +246,7 @@ exports[`SendConfirmation renders correctly 1`] = `
             <Text
               style={
                 {
-                  "color": "#2E3338",
+                  "color": "#FFFFFF",
                   "fontFamily": "Inter-Bold",
                   "fontSize": 32,
                   "letterSpacing": -0.32,
@@ -312,7 +312,7 @@ exports[`SendConfirmation renders correctly 1`] = `
             style={
               [
                 {
-                  "color": "#2E3338",
+                  "color": "#FFFFFF",
                   "fontFamily": "Inter-Medium",
                   "fontSize": 16,
                   "lineHeight": 24,
@@ -333,7 +333,7 @@ exports[`SendConfirmation renders correctly 1`] = `
           style={
             [
               {
-                "color": "#2E3338",
+                "color": "#FFFFFF",
                 "fontFamily": "Inter-Medium",
                 "fontSize": 16,
                 "lineHeight": 24,
@@ -381,13 +381,13 @@ exports[`SendConfirmation renders correctly 1`] = `
             style={
               [
                 {
-                  "color": "#2E3338",
+                  "color": "#FFFFFF",
                   "fontFamily": "Inter-Medium",
                   "fontSize": 16,
                   "lineHeight": 24,
                 },
                 {
-                  "color": "#666666",
+                  "color": "#B7B9C9",
                   "fontFamily": "Inter-Medium",
                   "fontSize": 14,
                   "lineHeight": 20,
@@ -401,13 +401,13 @@ exports[`SendConfirmation renders correctly 1`] = `
           style={
             [
               {
-                "color": "#2E3338",
+                "color": "#FFFFFF",
                 "fontFamily": "Inter-Medium",
                 "fontSize": 16,
                 "lineHeight": 24,
               },
               {
-                "color": "#666666",
+                "color": "#B7B9C9",
                 "fontFamily": "Inter-Medium",
                 "fontSize": 14,
                 "lineHeight": 20,
@@ -448,7 +448,7 @@ exports[`SendConfirmation renders correctly 1`] = `
             style={
               [
                 {
-                  "color": "#2E3338",
+                  "color": "#FFFFFF",
                   "fontFamily": "Inter-Medium",
                   "fontSize": 16,
                   "lineHeight": 24,
@@ -469,7 +469,7 @@ exports[`SendConfirmation renders correctly 1`] = `
           style={
             [
               {
-                "color": "#2E3338",
+                "color": "#FFFFFF",
                 "fontFamily": "Inter-Medium",
                 "fontSize": 16,
                 "lineHeight": 24,
@@ -520,13 +520,13 @@ exports[`SendConfirmation renders correctly 1`] = `
             style={
               [
                 {
-                  "color": "#2E3338",
+                  "color": "#FFFFFF",
                   "fontFamily": "Inter-Medium",
                   "fontSize": 16,
                   "lineHeight": 24,
                 },
                 {
-                  "color": "#666666",
+                  "color": "#B7B9C9",
                   "fontFamily": "Inter-Medium",
                   "fontSize": 14,
                   "lineHeight": 20,
@@ -538,7 +538,7 @@ exports[`SendConfirmation renders correctly 1`] = `
             <Text
               style={
                 {
-                  "color": "#666666",
+                  "color": "#B7B9C9",
                   "fontFamily": "Inter-Medium",
                   "fontSize": 14,
                   "lineHeight": 20,
@@ -558,13 +558,13 @@ exports[`SendConfirmation renders correctly 1`] = `
           style={
             [
               {
-                "color": "#2E3338",
+                "color": "#FFFFFF",
                 "fontFamily": "Inter-Medium",
                 "fontSize": 16,
                 "lineHeight": 24,
               },
               {
-                "color": "#666666",
+                "color": "#B7B9C9",
                 "fontFamily": "Inter-Medium",
                 "fontSize": 14,
                 "lineHeight": 20,
@@ -652,7 +652,7 @@ exports[`SendConfirmation renders correctly 1`] = `
               [
                 {
                   "alignItems": "center",
-                  "backgroundColor": "#2E3338",
+                  "backgroundColor": "#4EB258",
                   "flexDirection": "row",
                   "flexGrow": 1,
                   "height": 48,
@@ -671,7 +671,7 @@ exports[`SendConfirmation renders correctly 1`] = `
               maxFontSizeMultiplier={1}
               style={
                 {
-                  "color": "#FFFFFF",
+                  "color": "#242843",
                   "fontFamily": "Inter-SemiBold",
                   "fontSize": 16,
                   "lineHeight": 24,

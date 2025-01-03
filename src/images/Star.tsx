@@ -12,7 +12,7 @@ const StarOutline = () => (
     </G>
     <Defs>
       <ClipPath id="a">
-        <Path fill={Colors.white} d="M0 0h24v24H0z" />
+        <Path fill={Colors.darkBlue} d="M0 0h24v24H0z" />
       </ClipPath>
     </Defs>
   </Svg>

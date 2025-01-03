@@ -232,7 +232,9 @@ function JumpstartTransactionDetailsScreen({ route }: Props) {
               type={BtnTypes.PRIMARY}
               text={isClaimed ? t('claimed') : t('reclaim')}
               size={BtnSizes.FULL}
-              icon={isClaimed ? <Checkmark height={Spacing.Thick24} color={Colors.white} /> : null}
+              icon={
+                isClaimed ? <Checkmark height={Spacing.Thick24} color={Colors.darkBlue} /> : null
+              }
               iconPositionLeft={false}
             />
           </View>
@@ -350,12 +352,12 @@ const styles = StyleSheet.create({
   },
   tokenFiatValueText: {
     ...typeScale.bodySmall,
-    color: Colors.gray4,
+    color: Colors.lightBlue,
   },
   amountContainer: {
-    backgroundColor: Colors.gray1,
+    backgroundColor: Colors.blue100,
     borderWidth: 1,
-    borderColor: Colors.gray2,
+    borderColor: Colors.blue200,
     borderRadius: 16,
     paddingHorizontal: Spacing.Regular16,
     paddingVertical: Spacing.Large32,
@@ -385,12 +387,12 @@ const styles = StyleSheet.create({
   },
   header: {
     ...typeScale.titleSmall,
-    color: Colors.black,
+    color: Colors.white,
     paddingVertical: Spacing.Regular16,
   },
   description: {
     ...typeScale.bodySmall,
-    color: Colors.black,
+    color: Colors.white,
     marginBottom: Spacing.Thick24,
   },
   errorNotification: {
@@ -406,7 +408,7 @@ const styles = StyleSheet.create({
     height: 40,
     width: 40,
     borderRadius: 100,
-    backgroundColor: Colors.white,
+    backgroundColor: Colors.darkBlue,
   },
 })
 

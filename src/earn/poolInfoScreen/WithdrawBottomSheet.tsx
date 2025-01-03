@@ -165,6 +165,6 @@ const styles = StyleSheet.create({
   },
   bottomSheetTitle: {
     ...typeScale.titleSmall,
-    color: Colors.black,
+    color: Colors.white,
   },
 })

@@ -75,7 +75,7 @@ export default function AddAssetsBottomSheet({
             testID={`${testId}/${action.name}`}
           >
             <>
-              <action.iconComponent color={Colors.black} />
+              <action.iconComponent color={Colors.white} />
               <View style={styles.contentContainer}>
                 <Text style={styles.actionTitle}>{action.title}</Text>
                 <Text style={styles.actionDetails}>{action.details}</Text>
@@ -96,18 +96,18 @@ const styles = StyleSheet.create({
   },
   actionTitle: {
     ...typeScale.labelMedium,
-    color: Colors.black,
+    color: Colors.white,
   },
   actionDetails: {
     ...typeScale.bodySmall,
-    color: Colors.black,
+    color: Colors.white,
   },
   title: {
     ...typeScale.titleSmall,
-    color: Colors.black,
+    color: Colors.white,
   },
   touchable: {
-    backgroundColor: Colors.gray1,
+    backgroundColor: Colors.blue100,
     padding: Spacing.Regular16,
     flexDirection: 'row',
     gap: Spacing.Regular16,

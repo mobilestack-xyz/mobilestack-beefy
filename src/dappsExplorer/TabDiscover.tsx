@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
   },
   title: {
     ...typeScale.titleMedium,
-    color: Colors.black,
+    color: Colors.white,
     paddingVertical: Spacing.Thick24,
   },
 })

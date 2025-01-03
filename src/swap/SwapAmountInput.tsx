@@ -94,7 +94,7 @@ const SwapAmountInput = ({
           ) : (
             <Text style={styles.tokenNamePlaceholder}>{buttonPlaceholder}</Text>
           )}
-          <DownArrowIcon height={24} color={Colors.gray3} />
+          <DownArrowIcon height={24} color={Colors.lightBlue} />
         </View>
       </Touchable>
       {token && (
@@ -138,8 +138,8 @@ const SwapAmountInput = ({
               <View style={styles.loaderContainer}>
                 <SkeletonPlaceholder
                   borderRadius={100} // ensure rounded corners with font scaling
-                  backgroundColor={Colors.gray2}
-                  highlightColor={Colors.white}
+                  backgroundColor={Colors.blue200}
+                  highlightColor={Colors.darkBlue}
                   testID="SwapAmountInput/Loader"
                 >
                   <View style={styles.loader} />
@@ -166,8 +166,8 @@ const SwapAmountInput = ({
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: Colors.gray1,
-    borderColor: Colors.gray2,
+    backgroundColor: Colors.blue100,
+    borderColor: Colors.blue200,
     borderWidth: 1,
   },
   tokenInfo: {
@@ -182,7 +182,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   bottomContainer: {
-    borderColor: Colors.gray2,
+    borderColor: Colors.blue200,
     borderTopWidth: 1,
   },
   inputContainer: {
@@ -210,7 +210,7 @@ const styles = StyleSheet.create({
   },
   tokenNetwork: {
     ...typeScale.bodyXSmall,
-    color: Colors.gray4,
+    color: Colors.lightBlue,
     paddingHorizontal: 4,
   },
   tokenInfoText: {
@@ -219,13 +219,13 @@ const styles = StyleSheet.create({
   tokenNamePlaceholder: {
     ...typeScale.labelMedium,
     paddingHorizontal: 4,
-    color: Colors.gray3,
+    color: Colors.lightBlue,
   },
   fiatValue: {
     ...typeScale.bodyXSmall,
     paddingLeft: Spacing.Smallest8,
     maxWidth: '40%',
-    color: Colors.gray4,
+    color: Colors.lightBlue,
     paddingVertical: Spacing.Smallest8,
   },
 })

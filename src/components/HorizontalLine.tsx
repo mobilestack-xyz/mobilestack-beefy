@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
     width: '100%',
     borderStyle: 'solid',
     borderTopWidth: 1,
-    borderTopColor: colors.gray2,
+    borderTopColor: colors.blue200,
     marginTop: 10,
     marginBottom: 15,
   },

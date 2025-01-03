@@ -304,7 +304,7 @@ function FormField({
             style={styles.infoIcon}
             hitSlop={variables.iconHitslop}
           >
-            <InfoIcon size={18} color={colors.gray3} />
+            <InfoIcon size={18} color={colors.lightBlue} />
           </TouchableOpacity>
         )}
       </View>
@@ -383,21 +383,21 @@ const styles = StyleSheet.create({
   formInputContainer: {
     borderRadius: 4,
     borderWidth: 1.5,
-    borderColor: colors.gray2,
+    borderColor: colors.blue200,
     marginBottom: 4,
     paddingHorizontal: 8,
   },
   formInput: {
     ...typeScale.bodyMedium,
-    color: colors.black,
+    color: colors.white,
   },
   formSelectInput: {
     ...typeScale.bodyMedium,
     borderRadius: 4,
     borderWidth: 1.5,
-    borderColor: colors.gray2,
+    borderColor: colors.blue200,
     marginBottom: 4,
-    color: colors.black,
+    color: colors.white,
     paddingHorizontal: 8,
     paddingVertical: 12,
     lineHeight: LINE_HEIGHT,
@@ -416,7 +416,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   cancelBtn: {
-    color: colors.gray4,
+    color: colors.lightBlue,
   },
   headerSubTitleContainer: {
     flexDirection: 'row',
