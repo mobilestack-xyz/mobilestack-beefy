@@ -159,8 +159,8 @@ class AppAnalytics {
   }
 
   isEnabled() {
-    // Remove __DEV__ here to test analytics in dev builds
-    return !__DEV__ && !isE2EEnv && store.getState().app.analyticsEnabled
+    // Disable analytics until we have a plan to release
+    return false
   }
 
   startSession(
