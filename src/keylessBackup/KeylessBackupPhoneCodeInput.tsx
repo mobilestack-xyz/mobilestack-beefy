@@ -217,8 +217,8 @@ const styles = StyleSheet.create({
     marginBottom: Spacing.Regular16,
   },
   help: {
-    color: colors.accent,
     ...typeScale.labelSemiBoldMedium,
+    color: colors.accent,
   },
   bottomSheetTitle: {
     ...typeScale.titleSmall,
