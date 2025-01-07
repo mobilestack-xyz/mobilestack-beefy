@@ -104,7 +104,7 @@ describe('Statsig helpers', () => {
       const defaultValues = { param1: 'defaultValue1', param2: 'defaultValue2' }
       const experimentName = 'mock_experiment_name' as StatsigExperiments
       const output = getExperimentParams({ experimentName, defaultValues })
-      // expect(Logger.warn).toHaveBeenCalled()
+      expect(Logger.warn).not.toHaveBeenCalled() // TODO: reenable when turning on statsig
       expect(Statsig.getExperiment).toHaveBeenCalledWith(experimentName)
       expect(getMock).toHaveBeenCalledWith('param1', 'defaultValue1')
       expect(getMock).toHaveBeenCalledWith('param2', 'defaultValue2')
