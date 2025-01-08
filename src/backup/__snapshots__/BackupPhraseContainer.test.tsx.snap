@@ -109,9 +109,7 @@ exports[`BackupPhraseContainer renders correctly for readonly backup 12-word phr
       {
         "alignContent": "center",
         "backgroundColor": "#363B63",
-        "borderColor": "#2D3154",
         "borderRadius": 8,
-        "borderWidth": 1,
         "flexDirection": "row",
         "flexWrap": "wrap",
         "justifyContent": "center",
@@ -149,7 +147,7 @@ exports[`BackupPhraseContainer renders correctly for readonly backup 12-word phr
           adjustsFontSizeToFit={true}
           style={
             {
-              "color": "#505050",
+              "color": "#B7B9C9",
               "fontFamily": "Inter-Regular",
               "fontSize": 16,
               "lineHeight": 24,
@@ -192,7 +190,7 @@ exports[`BackupPhraseContainer renders correctly for readonly backup 12-word phr
           adjustsFontSizeToFit={true}
           style={
             {
-              "color": "#505050",
+              "color": "#B7B9C9",
               "fontFamily": "Inter-Regular",
               "fontSize": 16,
               "lineHeight": 24,
@@ -235,7 +233,7 @@ exports[`BackupPhraseContainer renders correctly for readonly backup 12-word phr
           adjustsFontSizeToFit={true}
           style={
             {
-              "color": "#505050",
+              "color": "#B7B9C9",
               "fontFamily": "Inter-Regular",
               "fontSize": 16,
               "lineHeight": 24,
@@ -278,7 +276,7 @@ exports[`BackupPhraseContainer renders correctly for readonly backup 12-word phr
           adjustsFontSizeToFit={true}
           style={
             {
-              "color": "#505050",
+              "color": "#B7B9C9",
               "fontFamily": "Inter-Regular",
               "fontSize": 16,
               "lineHeight": 24,
@@ -321,7 +319,7 @@ exports[`BackupPhraseContainer renders correctly for readonly backup 12-word phr
           adjustsFontSizeToFit={true}
           style={
             {
-              "color": "#505050",
+              "color": "#B7B9C9",
               "fontFamily": "Inter-Regular",
               "fontSize": 16,
               "lineHeight": 24,
@@ -364,7 +362,7 @@ exports[`BackupPhraseContainer renders correctly for readonly backup 12-word phr
           adjustsFontSizeToFit={true}
           style={
             {
-              "color": "#505050",
+              "color": "#B7B9C9",
               "fontFamily": "Inter-Regular",
               "fontSize": 16,
               "lineHeight": 24,
@@ -407,7 +405,7 @@ exports[`BackupPhraseContainer renders correctly for readonly backup 12-word phr
           adjustsFontSizeToFit={true}
           style={
             {
-              "color": "#505050",
+              "color": "#B7B9C9",
               "fontFamily": "Inter-Regular",
               "fontSize": 16,
               "lineHeight": 24,
@@ -450,7 +448,7 @@ exports[`BackupPhraseContainer renders correctly for readonly backup 12-word phr
           adjustsFontSizeToFit={true}
           style={
             {
-              "color": "#505050",
+              "color": "#B7B9C9",
               "fontFamily": "Inter-Regular",
               "fontSize": 16,
               "lineHeight": 24,
@@ -493,7 +491,7 @@ exports[`BackupPhraseContainer renders correctly for readonly backup 12-word phr
           adjustsFontSizeToFit={true}
           style={
             {
-              "color": "#505050",
+              "color": "#B7B9C9",
               "fontFamily": "Inter-Regular",
               "fontSize": 16,
               "lineHeight": 24,
@@ -536,7 +534,7 @@ exports[`BackupPhraseContainer renders correctly for readonly backup 12-word phr
           adjustsFontSizeToFit={true}
           style={
             {
-              "color": "#505050",
+              "color": "#B7B9C9",
               "fontFamily": "Inter-Regular",
               "fontSize": 16,
               "lineHeight": 24,
@@ -579,7 +577,7 @@ exports[`BackupPhraseContainer renders correctly for readonly backup 12-word phr
           adjustsFontSizeToFit={true}
           style={
             {
-              "color": "#505050",
+              "color": "#B7B9C9",
               "fontFamily": "Inter-Regular",
               "fontSize": 16,
               "lineHeight": 24,
@@ -622,7 +620,7 @@ exports[`BackupPhraseContainer renders correctly for readonly backup 12-word phr
           adjustsFontSizeToFit={true}
           style={
             {
-              "color": "#505050",
+              "color": "#B7B9C9",
               "fontFamily": "Inter-Regular",
               "fontSize": 16,
               "lineHeight": 24,
@@ -690,9 +688,7 @@ exports[`BackupPhraseContainer renders correctly for readonly backup 24-word phr
       {
         "alignContent": "center",
         "backgroundColor": "#363B63",
-        "borderColor": "#2D3154",
         "borderRadius": 8,
-        "borderWidth": 1,
         "flexDirection": "row",
         "flexWrap": "wrap",
         "justifyContent": "center",

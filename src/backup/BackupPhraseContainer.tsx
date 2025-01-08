@@ -159,7 +159,7 @@ const styles = StyleSheet.create({
   },
   indexText: {
     ...typeScale.bodyMedium,
-    color: colors.gray5,
+    color: colors.lightBlue,
   },
   twelveWordTable: {
     flexDirection: 'row',
@@ -182,8 +182,6 @@ const styles = StyleSheet.create({
     marginTop: 8,
     backgroundColor: colors.blue100,
     borderRadius: 8,
-    borderWidth: 1,
-    borderColor: colors.blue200,
     alignContent: 'center',
     justifyContent: 'center',
     padding: 8,

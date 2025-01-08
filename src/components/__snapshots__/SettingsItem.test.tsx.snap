@@ -68,6 +68,7 @@ exports[`SettingsItemInput renders correctly 1`] = `
         }
       >
         <TextInput
+          keyboardAppearance="dark"
           multiline={true}
           onBlur={[Function]}
           onChangeText={[MockFunction]}

@@ -66,11 +66,7 @@ export default function ImportSelect({ navigation }: Props) {
   useLayoutEffect(() => {
     navigation.setOptions({
       headerLeft: () => (
-        <TopBarTextButtonOnboarding
-          title={t('cancel')}
-          onPress={handleNavigateBack}
-          titleStyle={{ color: colors.gray5 }}
-        />
+        <TopBarTextButtonOnboarding title={t('cancel')} onPress={handleNavigateBack} />
       ),
       headerStyle: {
         backgroundColor: 'transparent',
@@ -89,7 +85,7 @@ export default function ImportSelect({ navigation }: Props) {
           <ActionCard
             title={t('importSelect.emailAndPhone.title')}
             description={t('importSelect.emailAndPhone.description')}
-            icon={<CloudCheck color={colors.successDark} />}
+            icon={<CloudCheck color={colors.white} />}
             onPress={() =>
               navigate(Screens.SignInWithEmail, {
                 keylessBackupFlow: KeylessBackupFlow.Restore,
@@ -101,7 +97,7 @@ export default function ImportSelect({ navigation }: Props) {
           <ActionCard
             title={t('importSelect.recoveryPhrase.title')}
             description={t('importSelect.recoveryPhrase.description')}
-            icon={<Lock color={colors.successDark} />}
+            icon={<Lock color={colors.white} />}
             onPress={() => navigate(Screens.ImportWallet, { clean: true })}
             testID="ImportSelect/Mnemonic"
           />
@@ -122,6 +118,7 @@ const styles = StyleSheet.create({
     alignSelf: 'stretch',
     flex: 1,
     padding: 0,
+    backgroundColor: colors.blue100,
   },
   cardDescription: {
     ...typeScale.bodySmall,
@@ -129,11 +126,9 @@ const styles = StyleSheet.create({
   },
   cardTitle: {
     ...typeScale.labelMedium,
-    color: colors.successDark,
     flex: 1,
   },
   safeArea: {
-    backgroundColor: colors.blue100,
     flex: 1,
   },
   screenDescription: {

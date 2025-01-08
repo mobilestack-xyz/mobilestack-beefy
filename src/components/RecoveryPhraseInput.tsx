@@ -143,9 +143,7 @@ const styles = StyleSheet.create({
   containerActive: {
     padding: 0,
     backgroundColor: colors.blue100,
-    borderColor: colors.blue200,
     borderRadius: Spacing.Smallest8,
-    borderWidth: 1,
   },
   // Applying overflow 'hidden' to `Card` also hides its shadow
   // that's why we're using a separate container

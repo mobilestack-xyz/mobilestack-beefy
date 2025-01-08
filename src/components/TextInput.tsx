@@ -82,6 +82,7 @@ export class CTextInput extends React.Component<Props, State> {
             passThroughProps.multiline && { textAlignVertical: 'top' },
             inputStyle,
           ]}
+          keyboardAppearance="dark"
           value={value}
           {...passThroughProps}
           onFocus={this.handleInputFocus}

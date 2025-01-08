@@ -25,7 +25,7 @@ enum Colors {
   gradientBorderRight = '#ffd52c',
 
   // shadows
-  softShadow = 'rgba(156, 164, 169, 0.4)',
+  softShadow = 'rgba(45, 49, 84, 0.4)', // called drop shadow in figma
   lightShadow = 'rgba(48, 46, 37, 0.15)',
   barShadow = 'rgba(129, 134, 139, 0.5)',
 
