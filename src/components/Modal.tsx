@@ -31,7 +31,7 @@ export default function Modal({
       testID={testID}
       style={modalStyle}
       isVisible={isVisible}
-      backdropOpacity={0.1}
+      backdropOpacity={0.7}
       onBackdropPress={onBackgroundPress}
       // The default uses `Dimensions.get('window').height` but sometimes reports an incorrect height on Android
       // `useSafeAreaFrame()` seems to work better

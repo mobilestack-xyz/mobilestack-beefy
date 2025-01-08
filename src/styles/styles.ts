@@ -42,6 +42,7 @@ export function elevationShadowStyle(elevation: number) {
 
 const styles = StyleSheet.create({
   softShadow: {
+    // called drop shadow in Figma
     elevation: 12,
     shadowOffset: { width: 0, height: 2 },
     shadowRadius: 12,
