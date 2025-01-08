@@ -15,6 +15,7 @@ jest.mock('src/onboarding/steps')
 jest.mock('src/statsig', () => ({
   patchUpdateStatsigUser: jest.fn(),
 }))
+jest.mock('src/images/WelcomeLogo', () => 'WelcomeLogo')
 
 describe('Welcome', () => {
   beforeAll(() => {
