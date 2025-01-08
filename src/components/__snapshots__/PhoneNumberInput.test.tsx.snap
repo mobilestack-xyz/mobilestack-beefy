@@ -171,6 +171,7 @@ exports[`PhoneNumberInput renders and behaves correctly 1`] = `
         <TextInput
           countryCallingCode="+33"
           editable={true}
+          keyboardAppearance="dark"
           keyboardType="phone-pad"
           onBlur={[Function]}
           onChangeText={[Function]}

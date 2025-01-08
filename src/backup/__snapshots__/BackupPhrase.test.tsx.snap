@@ -252,9 +252,7 @@ exports[`BackupPhrase renders correctly with backup completed 1`] = `
             {
               "alignContent": "center",
               "backgroundColor": "#363B63",
-              "borderColor": "#2D3154",
               "borderRadius": 8,
-              "borderWidth": 1,
               "flexDirection": "row",
               "flexWrap": "wrap",
               "justifyContent": "center",
@@ -535,9 +533,7 @@ exports[`BackupPhrase renders correctly with backup not completed 1`] = `
             {
               "alignContent": "center",
               "backgroundColor": "#363B63",
-              "borderColor": "#2D3154",
               "borderRadius": 8,
-              "borderWidth": 1,
               "flexDirection": "row",
               "flexWrap": "wrap",
               "justifyContent": "center",
@@ -955,9 +951,7 @@ exports[`BackupPhrase still renders when mnemonic doesnt show up 1`] = `
             {
               "alignContent": "center",
               "backgroundColor": "#363B63",
-              "borderColor": "#2D3154",
               "borderRadius": 8,
-              "borderWidth": 1,
               "flexDirection": "row",
               "flexWrap": "wrap",
               "justifyContent": "center",

@@ -93,6 +93,7 @@ exports[`ValidateRecipientAccount renders correctly when full validation require
               }
             >
               <TextInput
+                keyboardAppearance="dark"
                 onBlur={[Function]}
                 onChangeText={[Function]}
                 onFocus={[Function]}
@@ -408,6 +409,7 @@ exports[`ValidateRecipientAccount renders correctly when partial validation requ
                   }
                 >
                   <TextInput
+                    keyboardAppearance="dark"
                     maxLength={1}
                     multiline={true}
                     onBlur={[Function]}
@@ -468,6 +470,7 @@ exports[`ValidateRecipientAccount renders correctly when partial validation requ
                   }
                 >
                   <TextInput
+                    keyboardAppearance="dark"
                     maxLength={1}
                     multiline={true}
                     onBlur={[Function]}
@@ -528,6 +531,7 @@ exports[`ValidateRecipientAccount renders correctly when partial validation requ
                   }
                 >
                   <TextInput
+                    keyboardAppearance="dark"
                     maxLength={1}
                     multiline={true}
                     onBlur={[Function]}
@@ -588,6 +592,7 @@ exports[`ValidateRecipientAccount renders correctly when partial validation requ
                   }
                 >
                   <TextInput
+                    keyboardAppearance="dark"
                     maxLength={1}
                     multiline={true}
                     onBlur={[Function]}
