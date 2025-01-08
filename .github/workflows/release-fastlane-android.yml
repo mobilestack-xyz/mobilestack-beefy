@@ -102,6 +102,19 @@ jobs:
           SUPPLY_UPLOAD_MAX_RETRIES: 5
           RUBYOPT: '-rostruct' # TODO: Remove when https://github.com/fastlane/fastlane/pull/21950 gets released
         run: bundle exec fastlane android ${{ matrix.lane }}
+      # Upload build artifacts to GitHub Actions so that they can be manually
+      # downloaded and submitted to the Play Store (in absence of a service
+      # account that can do the upload automatically. Once a service account for
+      # upload is available, this step can be deleted. Remember to re-enable the
+      # upload step in the FastFile, and update the success_text in the
+      # notification step.
+      - name: Upload Android build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: android-build-artifacts
+          path: |
+            android/app/build/outputs/apk/**/*.apk
+            android/app/build/outputs/bundle/**/*.aab
       - name: Build notification
         if: always()
         uses: edge/simple-slack-notify@v1.1.2
