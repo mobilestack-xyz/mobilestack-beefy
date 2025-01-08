@@ -58,6 +58,7 @@ platform :android do
       track: track,
       track_promote_to: track,
       package_name: get_app_bundle_id(env),
+      release_status: 'draft',
       mapping: lane_context[SharedValues::GRADLE_MAPPING_TXT_OUTPUT_PATH],
       skip_upload_apk: true,
       skip_upload_metadata: true,
