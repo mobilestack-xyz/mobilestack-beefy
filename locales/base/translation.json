@@ -990,7 +990,7 @@
     "back": "Go Back"
   },
   "success": {
-    "message": "You're all set!"
+    "message": "All set.\nLet's start earning."
   },
   "verificationUnavailable": "Phone number connection is currently unavailable. Please enter your phone number and we will notify you when it is possible to connect again.\n\nIn the meantime, you can continue to use {{appName}} with QR codes or Account Addresses. Don't worry, payments sent to your phone number will be waiting for you until you connect it to your account.",
   "requests": "Requests",

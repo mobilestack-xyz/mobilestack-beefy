@@ -178,8 +178,8 @@ const styles = StyleSheet.create({
     paddingBottom: 10,
   },
   backupPhrase: {
-    borderWidth: 1,
-    borderColor: colors.blue200,
+    // borderWidth: 1,
+    // borderColor: colors.blue200,
     borderRadius: 8,
     marginTop: 0,
     backgroundColor: colors.blue100,

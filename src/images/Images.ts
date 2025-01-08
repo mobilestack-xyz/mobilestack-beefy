@@ -22,3 +22,4 @@ export const pointsIllustration = require('src/images/assets/points-illustration
 export const welcomeBackground = require('src/images/assets/intro-background.png')
 export const walletSafe = require('src/images/assets/wallet-safe.png')
 export const earnCardBackground = require('src/images/assets/earn-card-background.png')
+export const cowSpaceship = require('src/images/assets/cow-spaceship.png')
