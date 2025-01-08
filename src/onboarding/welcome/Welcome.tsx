@@ -1,13 +1,13 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import { ImageBackground, StyleSheet, View } from 'react-native'
+import { StyleSheet, View } from 'react-native'
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context'
 import { chooseCreateAccount, chooseRestoreAccount } from 'src/account/actions'
 import { recoveringFromStoreWipeSelector } from 'src/account/selectors'
 import AppAnalytics from 'src/analytics/AppAnalytics'
 import { OnboardingEvents } from 'src/analytics/Events'
 import Button, { BtnSizes, BtnTypes } from 'src/components/Button'
-import { welcomeBackground } from 'src/images/Images'
+import MSLogoFull from 'src/images/MSLogoFull'
 import WelcomeLogo from 'src/images/WelcomeLogo'
 import { nuxNavigationOptions } from 'src/navigator/Headers'
 import { navigate } from 'src/navigator/NavigationService'
@@ -63,28 +63,29 @@ export default function Welcome() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <ImageBackground source={welcomeBackground} resizeMode="stretch" style={styles.image}>
-        <View style={styles.contentContainer}>
-          <WelcomeLogo />
-        </View>
-        <View style={{ ...styles.buttonView, marginBottom: Math.max(0, 40 - insets.bottom) }}>
-          <Button
-            onPress={onPressCreateAccount}
-            text={t('welcome.createNewWallet')}
-            size={BtnSizes.FULL}
-            type={BtnTypes.PRIMARY}
-            style={styles.createAccountButton}
-            testID={'CreateAccountButton'}
-          />
-          <Button
-            onPress={onPressRestoreAccount}
-            text={t('welcome.hasWalletV1_88')}
-            size={BtnSizes.FULL}
-            type={BtnTypes.SECONDARY}
-            testID={'RestoreAccountButton'}
-          />
-        </View>
-      </ImageBackground>
+      <View style={styles.contentContainer}>
+        <WelcomeLogo />
+      </View>
+      <View style={{ ...styles.buttonView, marginBottom: Math.max(0, 40 - insets.bottom) }}>
+        <Button
+          onPress={onPressCreateAccount}
+          text={t('welcome.createNewWallet')}
+          size={BtnSizes.FULL}
+          type={BtnTypes.PRIMARY}
+          style={styles.createAccountButton}
+          testID={'CreateAccountButton'}
+        />
+        <Button
+          onPress={onPressRestoreAccount}
+          text={t('welcome.hasWalletV1_88')}
+          size={BtnSizes.FULL}
+          type={BtnTypes.SECONDARY}
+          testID={'RestoreAccountButton'}
+        />
+      </View>
+      <View style={styles.msLogoContainer}>
+        <MSLogoFull />
+      </View>
     </SafeAreaView>
   )
 }
@@ -109,9 +110,10 @@ const styles = StyleSheet.create({
   buttonView: {
     paddingHorizontal: Spacing.Thick24,
   },
-  image: {
-    flex: 1,
-    justifyContent: 'center',
-    marginTop: Spacing.XLarge48,
+  msLogoContainer: {
+    width: '100%',
+    marginTop: Spacing.Large32,
+    paddingBottom: Spacing.Regular16,
+    alignItems: 'center',
   },
 })
