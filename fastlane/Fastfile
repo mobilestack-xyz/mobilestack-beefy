@@ -90,7 +90,7 @@ platform :android do
   lane :mainnet do
     env = 'mainnet'
     build(environment: env)
-    upload(environment: env, track: 'internal')
+    # upload(environment: env, track: 'internal')
   end
 
   desc 'Ship Mainnet Nightly to Playstore Internal'
