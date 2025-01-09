@@ -315,7 +315,7 @@ export default function EarnHome({ navigation, route }: Props) {
   )
 }
 
-function LearnMoreBottomSheet({
+export function LearnMoreBottomSheet({
   learnMoreBottomSheetRef,
 }: {
   learnMoreBottomSheetRef: React.RefObject<BottomSheetModalRefType>
