@@ -11,7 +11,7 @@ exports[`SettingsItemInput renders correctly 1`] = `
   <View
     style={
       {
-        "borderBottomColor": "#2D3154",
+        "borderBottomColor": "#B7B9C9",
         "borderBottomWidth": 1,
         "marginHorizontal": 16,
         "paddingVertical": 16,
@@ -120,7 +120,7 @@ exports[`SettingsItemSwitch renders correctly 1`] = `
   <View
     style={
       {
-        "borderBottomColor": "#2D3154",
+        "borderBottomColor": "#B7B9C9",
         "borderBottomWidth": 1,
         "marginHorizontal": 16,
         "paddingVertical": 16,
@@ -166,8 +166,8 @@ exports[`SettingsItemSwitch renders correctly 1`] = `
         onChange={[Function]}
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
-        thumbTintColor="#2D3154"
-        trackColorForFalse="#B7B9C9"
+        thumbTintColor="#242843"
+        trackColorForFalse="#FFFFFF"
         trackColorForTrue="#4EB258"
         trackTintColor="#4EB258"
       />
@@ -187,7 +187,7 @@ exports[`SettingsItemTextValue renders correctly 1`] = `
   <View
     style={
       {
-        "borderBottomColor": "#2D3154",
+        "borderBottomColor": "#B7B9C9",
         "borderBottomWidth": 1,
         "marginHorizontal": 16,
         "paddingVertical": 16,
@@ -282,7 +282,7 @@ exports[`SettingsItemTextValue renders correctly without value 1`] = `
   <View
     style={
       {
-        "borderBottomColor": "#2D3154",
+        "borderBottomColor": "#B7B9C9",
         "borderBottomWidth": 1,
         "marginHorizontal": 16,
         "paddingVertical": 16,
