@@ -176,7 +176,7 @@ const styles = StyleSheet.create({
   },
   address: {
     ...typeScale.bodyMedium,
-    color: colors.gray5,
+    color: colors.lightBlue,
     marginHorizontal: variables.width / 5,
     marginBottom: 8,
     textAlign: 'center',
