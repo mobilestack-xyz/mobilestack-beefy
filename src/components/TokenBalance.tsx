@@ -120,7 +120,7 @@ function TokenBalance({
   }
 }
 
-function HideBalanceButton({ hideBalance }: { hideBalance: boolean }) {
+export function HideBalanceButton({ hideBalance }: { hideBalance: boolean }) {
   const dispatch = useDispatch()
   const eyeIconOnPress = () => {
     AppAnalytics.track(hideBalance ? HomeEvents.show_balances : HomeEvents.hide_balances)
