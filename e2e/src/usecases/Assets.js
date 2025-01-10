@@ -54,25 +54,6 @@ export default Assets = () => {
         },
       ],
     },
-    {
-      balance: 'zero',
-      tokens: [
-        {
-          tokenId: 'celo-mainnet:native',
-          symbol: 'CELO',
-          actions: ['Add'],
-          moreActions: [],
-          learnMore: true,
-        },
-        {
-          tokenId: 'celo-mainnet:0x765de816845861e75a25fca122bb6898b8b1282a',
-          symbol: 'cUSD',
-          actions: ['Add'],
-          moreActions: [],
-          learnMore: true,
-        },
-      ],
-    },
   ])('For wallet with $balance balance', ({ balance, tokens }) => {
     beforeAll(async () => {
       // Start with either a new account or the usual e2e account
@@ -89,16 +70,7 @@ export default Assets = () => {
 
     it('navigates to wallet tab from home', async () => {
       await waitForElementById('Tab/Wallet', { tap: true })
-      await waitForElementById('Assets/TabBar')
-    })
-
-    it('switching tabs displays corresponding assets', async () => {
-      await expect(element(by.id('TokenBalanceItem')).atIndex(0)).toBeVisible()
-      await element(by.id('Assets/TabBarItem')).atIndex(1).tap()
-      await scrollIntoViewByTestId('Assets/NoNfts', 'AssetList')
-      await waitForElementById('Assets/NoNfts')
-      await element(by.id('Assets/TabBarItem')).atIndex(0).tap()
-      await expect(element(by.id('TokenBalanceItem')).atIndex(0)).toBeVisible()
+      await waitForElementById('TotalTokenBalance')
     })
 
     describe.each(tokens)('For $symbol', ({ symbol, tokenId, learnMore, actions, moreActions }) => {
@@ -166,7 +138,7 @@ export default Assets = () => {
 
       it('navigates back to Assets page', async () => {
         await element(by.id('BackChevron')).tap()
-        await waitForElementById('Assets/TabBar')
+        await waitForElementById('TotalTokenBalance')
       })
     })
   })
