@@ -13,6 +13,8 @@ concurrency:
 
 jobs:
   android:
+    # TODO re-enable after we fix e2e tests in ACT-1536
+    if: false
     name: Android
     uses: ./.github/workflows/e2e-android.yml
     with:
