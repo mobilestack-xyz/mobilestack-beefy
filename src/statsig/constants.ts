@@ -128,8 +128,11 @@ export const DynamicConfigs = {
   [StatsigDynamicConfigs.EARN_CONFIG]: {
     configName: StatsigDynamicConfigs.EARN_CONFIG,
     defaultValues: {
-      supportedPools: [] as string[],
-      supportedAppIds: [] as string[],
+      supportedPools: [
+        // Beefy WETH
+        'arbitrum-one:0xe6efe71fc3442343037b72776e02dafa2ee9af1a',
+      ],
+      supportedAppIds: ['beefy'],
     },
   },
 } satisfies {
