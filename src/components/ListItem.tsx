@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
   innerView: {
     paddingVertical: variables.contentPadding,
     borderBottomWidth: 1,
-    borderBottomColor: colors.blue200,
+    borderBottomColor: colors.lightBlue,
     marginHorizontal: variables.contentPadding,
   },
 })

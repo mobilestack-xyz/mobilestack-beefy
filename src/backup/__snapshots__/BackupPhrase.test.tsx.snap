@@ -577,10 +577,10 @@ exports[`BackupPhrase renders correctly with backup not completed 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       testID="backupKeySavedSwitch"
-      thumbTintColor="#2D3154"
-      trackColorForFalse="#B7B9C9"
+      thumbTintColor="#242843"
+      trackColorForFalse="#FFFFFF"
       trackColorForTrue="#4EB258"
-      trackTintColor="#B7B9C9"
+      trackTintColor="#FFFFFF"
     />
     <Text
       onPress={[Function]}
