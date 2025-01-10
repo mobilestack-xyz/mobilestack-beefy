@@ -148,7 +148,7 @@ const styles = StyleSheet.create({
     minWidth: 120,
   },
   full: {
-    height: 56,
+    height: 48,
     flexGrow: 1,
   },
 })

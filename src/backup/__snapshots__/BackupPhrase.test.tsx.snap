@@ -667,7 +667,7 @@ exports[`BackupPhrase renders correctly with backup not completed 1`] = `
               "borderWidth": 1,
               "flexDirection": "row",
               "flexGrow": 1,
-              "height": 56,
+              "height": 48,
               "justifyContent": "center",
               "opacity": 0.5,
               "paddingHorizontal": 24,

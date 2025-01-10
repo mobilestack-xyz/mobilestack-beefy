@@ -544,7 +544,7 @@ exports[`AccountKeyEducation renders correctly 1`] = `
                   "borderWidth": 1,
                   "flexDirection": "row",
                   "flexGrow": 1,
-                  "height": 56,
+                  "height": 48,
                   "justifyContent": "center",
                   "opacity": 1,
                   "paddingHorizontal": 24,
