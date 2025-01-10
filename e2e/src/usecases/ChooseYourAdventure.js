@@ -21,7 +21,7 @@ export default ChooseYourAdventure = () => {
     // Back should go to the home screen
     await element(by.id('BackChevron')).tap()
     await waitForElementById('Tab/Wallet', { tap: true })
-    await waitForElementById('TotalTokenBalance')
+    await waitForElementById('HomeAction-Send')
   })
 
   it('build your profile navigates to profile page', async () => {
@@ -33,7 +33,7 @@ export default ChooseYourAdventure = () => {
     // Back should go to the home screen
     await element(by.id('BackButton')).tap()
     await waitForElementById('Tab/Wallet', { tap: true })
-    await waitForElementById('TotalTokenBalance')
+    await waitForElementById('HomeAction-Send')
   })
 
   it('add funds to your wallet navigates to home and opens the token bottom sheet', async () => {
@@ -45,7 +45,7 @@ export default ChooseYourAdventure = () => {
     // dismissing the bottom sheet should show home screen
     await element(by.id('TokenBottomSheet')).swipe('down')
     await waitForElementById('Tab/Wallet', { tap: true })
-    await waitForElementById('TotalTokenBalance')
+    await waitForElementById('HomeAction-Send')
   })
 
   it('explore earning opportunities navigates to stablecoins info page', async () => {
