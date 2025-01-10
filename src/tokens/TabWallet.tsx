@@ -16,7 +16,7 @@ import { useSelector } from 'src/redux/hooks'
 import { typeScale } from 'src/styles/fonts'
 import { Spacing } from 'src/styles/styles'
 import { useTotalTokenBalance } from 'src/tokens/hooks'
-import { sortedTokensWithBalanceOrShowZeroBalanceSelector } from 'src/tokens/selectors'
+import { sortedTokensWithBalanceSelector } from 'src/tokens/selectors'
 import { TokenBalanceItem } from 'src/tokens/TokenBalanceItem'
 import { getSupportedNetworkIdsForTokenBalances, getTokenAnalyticsProps } from 'src/tokens/utils'
 
@@ -27,9 +27,7 @@ function TabWallet() {
   const { decimalSeparator } = getNumberFormatSettings()
 
   const supportedNetworkIds = getSupportedNetworkIdsForTokenBalances()
-  const tokens = useSelector((state) =>
-    sortedTokensWithBalanceOrShowZeroBalanceSelector(state, supportedNetworkIds)
-  )
+  const tokens = useSelector((state) => sortedTokensWithBalanceSelector(state, supportedNetworkIds))
   const totalTokenBalanceLocal = useTotalTokenBalance()
   const balanceDisplay = hideWalletBalances
     ? `XX${decimalSeparator}XX`
@@ -39,18 +37,17 @@ function TabWallet() {
     return (
       <View style={styles.zeroStateContainer}>
         <Image style={styles.image} source={cowSpaceship} />
-        <Text style={styles.title}>{`You don't have any tokens`}</Text>
-        <Text
-          style={styles.body}
-        >{`Before you can deposit into a pool or vault you need to moooove tokens into your wallet`}</Text>
+        <Text style={styles.title}>{t('assets.noTokensTitle')}</Text>
+        <Text style={styles.body}>{t('assets.noTokensDescription')}</Text>
         <Button
+          testID="ZeroStateBuyTokens"
           style={{ ...styles.button, width: '100%' }}
           type={BtnTypes.PRIMARY}
           size={BtnSizes.FULL}
           onPress={() => {
             navigate(Screens.FiatExchangeCurrencyBottomSheet, { flow: FiatExchangeFlow.CashIn })
           }}
-          text="Buy Tokens"
+          text={t('assets.buyTokens')}
         />
       </View>
     )
@@ -84,13 +81,14 @@ function TabWallet() {
           />
         ))}
         <Button
-          style={styles.button}
+          testID="BuyTokens"
+          style={{ ...styles.button, marginBottom: Spacing.XLarge48 }}
           type={BtnTypes.SECONDARY}
           size={BtnSizes.FULL}
           onPress={() => {
             navigate(Screens.FiatExchangeCurrencyBottomSheet, { flow: FiatExchangeFlow.CashIn })
           }}
-          text="Buy Tokens"
+          text={t('assets.buyTokens')}
         />
       </ScrollView>
     </View>

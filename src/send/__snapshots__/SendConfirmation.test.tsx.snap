@@ -659,7 +659,7 @@ exports[`SendConfirmation renders correctly 1`] = `
                   "backgroundColor": "#4EB258",
                   "flexDirection": "row",
                   "flexGrow": 1,
-                  "height": 48,
+                  "height": 56,
                   "justifyContent": "center",
                   "opacity": 1,
                   "paddingHorizontal": 24,
