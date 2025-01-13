@@ -2066,7 +2066,7 @@
     "tabBar": {
       "tokens": "Tokens",
       "collectibles": "Collectibles",
-      "dappPositions": "Dapp Positions"
+      "dappPositions": "Positions"
     },
     "importToken": "Import",
     "importTokens": "Import Tokens",
