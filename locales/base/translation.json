@@ -2726,7 +2726,8 @@
       "percentage": "{{percentage}}%",
       "poweredBy": "Powered by {{providerName}}",
       "deposited": "Supplied",
-      "depositAndEarnings": "Deposit & Earnings"
+      "depositAndEarnings": "Deposit & Earnings",
+      "safety": "Safety"
     },
     "poolFilters": {
       "allPools": "All",

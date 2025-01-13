@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
   },
   underline: {
     borderBottomWidth: 2,
-    borderBottomColor: Colors.blue50,
+    borderBottomColor: Colors.lightBlue,
   },
   touchable: {
     flexShrink: 1,

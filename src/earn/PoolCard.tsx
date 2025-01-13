@@ -7,6 +7,7 @@ import { EarnEvents } from 'src/analytics/Events'
 import { formatValueToDisplay } from 'src/components/TokenDisplay'
 import TokenIcon from 'src/components/TokenIcon'
 import Touchable from 'src/components/Touchable'
+import { LEVEL_TO_MAX_HIGHLIGHTED_BAR } from 'src/earn/poolInfoScreen/SafetyCard'
 import { getEarnPositionBalanceValues, getTotalYieldRate } from 'src/earn/utils'
 import { useDollarsToLocalAmount } from 'src/localCurrency/hooks'
 import { getLocalCurrencySymbol } from 'src/localCurrency/selectors'
@@ -20,6 +21,8 @@ import { typeScale } from 'src/styles/fonts'
 import { Spacing } from 'src/styles/styles'
 import { tokensByIdSelector } from 'src/tokens/selectors'
 import { TokenBalance } from 'src/tokens/slice'
+
+const BAR_HEIGHTS = [7, 11, 15]
 
 export default function PoolCard({
   pool,
@@ -35,7 +38,7 @@ export default function PoolCard({
     tokens,
     networkId,
     balance,
-    dataProps: { earningItems, tvl, depositTokenId },
+    dataProps: { earningItems, tvl, depositTokenId, safety },
   } = pool
   const { t } = useTranslation()
   const allTokens = useSelector((state) => tokensByIdSelector(state, [networkId]))
@@ -96,20 +99,40 @@ export default function PoolCard({
     <Touchable borderRadius={12} style={styles.card} testID={testID} onPress={onPress}>
       <View style={styles.cardView}>
         <View style={styles.titleRow}>
-          {tokensInfo.map((token, index) => (
-            <TokenIcon
-              key={index}
-              token={token}
-              viewStyle={index > 0 ? { marginLeft: -8, zIndex: -index } : {}}
-            />
-          ))}
-          <View style={styles.titleTextContainer}>
-            <Text style={styles.titleTokens}>
-              {tokensInfo.map((token) => token.symbol).join(' / ')}
-            </Text>
-            <Text style={styles.titleNetwork}>
-              {t('earnFlow.poolCard.onNetwork', { networkName: NETWORK_NAMES[networkId] })}
-            </Text>
+          <View style={styles.titleRowToken}>
+            {tokensInfo.map((token, index) => (
+              <TokenIcon
+                key={index}
+                token={token}
+                viewStyle={index > 0 ? { marginLeft: -8, zIndex: -index } : {}}
+              />
+            ))}
+            <View style={styles.titleTextContainer}>
+              <Text style={styles.titleTokens}>
+                {tokensInfo.map((token) => token.symbol).join(' / ')}
+              </Text>
+              <Text style={styles.titleNetwork}>
+                {t('earnFlow.poolCard.onNetwork', { networkName: NETWORK_NAMES[networkId] })}
+              </Text>
+            </View>
+          </View>
+          <View>
+            <Text style={styles.safetyText}>{t('earnFlow.poolCard.safety')}</Text>
+            {safety && (
+              <View style={styles.tripleBarContainer}>
+                {BAR_HEIGHTS.map((height, index) => (
+                  <View
+                    testID="SafetyCard/Bar"
+                    key={index}
+                    style={[
+                      styles.bar,
+                      { height },
+                      index < LEVEL_TO_MAX_HIGHLIGHTED_BAR[safety.level] && styles.barHighlighted,
+                    ]}
+                  />
+                ))}
+              </View>
+            )}
           </View>
         </View>
         <View style={styles.keyValueContainer}>
@@ -144,14 +167,15 @@ export default function PoolCard({
 const styles = StyleSheet.create({
   card: {
     padding: Spacing.Regular16,
-    // borderColor: Colors.blue200,
-    // borderRadius: 12,
-    // borderWidth: 1,
     backgroundColor: Colors.blue100,
   },
   cardView: { gap: Spacing.Regular16 },
+  titleRowToken: {
+    flexDirection: 'row',
+  },
   titleRow: {
     flexDirection: 'row',
+    justifyContent: 'space-between',
   },
   titleTextContainer: {
     marginLeft: Spacing.Smallest8,
@@ -191,5 +215,26 @@ const styles = StyleSheet.create({
     gap: Spacing.Smallest8,
     flexDirection: 'row',
     justifyContent: 'space-between',
+  },
+  safetyText: {
+    ...typeScale.bodySmall,
+    color: Colors.lightBlue,
+    marginBottom: Spacing.Tiny4,
+  },
+  tripleBarContainer: {
+    flex: 1,
+    gap: 2,
+    flexDirection: 'row',
+    paddingHorizontal: Spacing.Tiny4,
+    alignItems: 'flex-end',
+    paddingBottom: 3,
+    justifyContent: 'flex-end',
+  },
+  bar: {
+    width: 4,
+    backgroundColor: Colors.blue200,
+  },
+  barHighlighted: {
+    backgroundColor: Colors.accent,
   },
 })

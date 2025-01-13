@@ -9,7 +9,6 @@ enum Colors {
   lightBlue = '#B7B9C9',
   blue200 = '#2D3154',
   blue100 = '#363B63',
-  blue50 = '#B7B9C9',
   text = '#FFFFFF',
   background = '#242843',
 
