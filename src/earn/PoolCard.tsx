@@ -170,9 +170,8 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   keyText: {
-    color: Colors.white,
     ...typeScale.bodySmall,
-    color: Colors.lightBlue,
+    color: Colors.white,
   },
   valueText: {
     ...typeScale.bodySmall,
