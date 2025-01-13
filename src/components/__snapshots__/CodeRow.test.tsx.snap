@@ -54,6 +54,7 @@ exports[`CodeRow renders correctly for all CodeRowStatus states 2`] = `
   }
 >
   <TextInput
+    keyboardAppearance="dark"
     onBlur={[Function]}
     onChangeText={[MockFunction]}
     onFocus={[Function]}

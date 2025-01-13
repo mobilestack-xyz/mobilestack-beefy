@@ -10,6 +10,8 @@ enum Colors {
   blue200 = '#2D3154',
   blue100 = '#363B63',
   blue50 = '#B7B9C9',
+  text = '#FFFFFF',
+  background = '#242843',
 
   // other
   gray5 = '#505050',
@@ -24,7 +26,7 @@ enum Colors {
   gradientBorderRight = '#ffd52c',
 
   // shadows
-  softShadow = 'rgba(156, 164, 169, 0.4)',
+  softShadow = 'rgba(45, 49, 84, 0.4)', // called drop shadow in figma
   lightShadow = 'rgba(48, 46, 37, 0.15)',
   barShadow = 'rgba(129, 134, 139, 0.5)',
 

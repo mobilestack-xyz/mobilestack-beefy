@@ -4,8 +4,18 @@ import {
   StatsigMultiNetworkDynamicConfig,
   StatsigParameter,
 } from 'src/statsig/types'
-import { NetworkId } from 'src/transactions/types'
+import { Network, NetworkId } from 'src/transactions/types'
 import networkConfig from 'src/web3/networkConfig'
+
+// All except polygon
+const defaultNetworkIds = Object.entries(networkConfig.networkToNetworkId)
+  .filter(([key]) => key !== Network.PolygonPoS)
+  .map(([, value]) => value)
+
+// celo and ethereum
+const celoAndEthereumNetworkIds = [Network.Celo, Network.Ethereum].map(
+  (network) => networkConfig.networkToNetworkId[network]
+)
 
 export const ExperimentConfigs = {
   // NOTE: the keys of defaultValues MUST be parameter names
@@ -41,16 +51,16 @@ export const DynamicConfigs = {
   [StatsigMultiNetworkDynamicConfig.MULTI_CHAIN_FEATURES]: {
     configName: StatsigMultiNetworkDynamicConfig.MULTI_CHAIN_FEATURES,
     defaultValues: {
-      showCico: [networkConfig.defaultNetworkId],
-      showBalances: [networkConfig.defaultNetworkId],
-      showSend: [networkConfig.defaultNetworkId],
-      showSwap: [networkConfig.defaultNetworkId],
-      showTransfers: [networkConfig.defaultNetworkId],
-      showWalletConnect: [networkConfig.defaultNetworkId],
-      showApprovalTxsInHomefeed: [] as NetworkId[],
-      showNfts: [networkConfig.defaultNetworkId],
-      showPositions: [networkConfig.defaultNetworkId],
-      showShortcuts: [networkConfig.defaultNetworkId],
+      showCico: defaultNetworkIds,
+      showBalances: defaultNetworkIds,
+      showSend: defaultNetworkIds,
+      showSwap: defaultNetworkIds,
+      showTransfers: defaultNetworkIds,
+      showWalletConnect: defaultNetworkIds,
+      showApprovalTxsInHomefeed: celoAndEthereumNetworkIds,
+      showNfts: defaultNetworkIds,
+      showPositions: defaultNetworkIds,
+      showShortcuts: defaultNetworkIds,
     },
   },
   [StatsigDynamicConfigs.DAPP_WEBVIEW_CONFIG]: {
@@ -118,8 +128,11 @@ export const DynamicConfigs = {
   [StatsigDynamicConfigs.EARN_CONFIG]: {
     configName: StatsigDynamicConfigs.EARN_CONFIG,
     defaultValues: {
-      supportedPools: [] as string[],
-      supportedAppIds: [] as string[],
+      supportedPools: [
+        // Beefy WETH
+        'arbitrum-one:0xe6efe71fc3442343037b72776e02dafa2ee9af1a',
+      ],
+      supportedAppIds: ['beefy'],
     },
   },
 } satisfies {

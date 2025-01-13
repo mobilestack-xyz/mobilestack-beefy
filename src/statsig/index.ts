@@ -74,11 +74,11 @@ function _getDynamicConfigParams<T extends Record<string, StatsigParameter>>({
   try {
     const config = Statsig.getConfig(configName)
     if (!isE2EEnv && config.getEvaluationDetails().reason === EvaluationReason.Uninitialized) {
-      Logger.warn(
-        TAG,
-        'getDynamicConfigParams: SDK is uninitialized when getting experiment',
-        config
-      )
+      // Logger.warn(
+      //   TAG,
+      //   'getDynamicConfigParams: SDK is uninitialized when getting experiment',
+      //   config
+      // )
     }
     return getParams({ config, defaultValues })
   } catch (error) {
@@ -110,6 +110,9 @@ export function getDynamicConfigParams<T extends Record<string, StatsigParameter
 }
 
 export function getFeatureGate(featureGateName: StatsigFeatureGates) {
+  if (featureGateName === StatsigFeatureGates.SHOW_POSITIONS) {
+    return true
+  }
   try {
     return Statsig.checkGate(featureGateName)
   } catch (error) {

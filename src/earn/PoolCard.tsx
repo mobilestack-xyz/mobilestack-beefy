@@ -157,11 +157,9 @@ const styles = StyleSheet.create({
     marginLeft: Spacing.Smallest8,
   },
   titleTokens: {
-    color: Colors.white,
     ...typeScale.labelSemiBoldSmall,
   },
   titleNetwork: {
-    color: Colors.white,
     ...typeScale.bodyXSmall,
   },
   keyValueContainer: {
@@ -174,19 +172,18 @@ const styles = StyleSheet.create({
   keyText: {
     color: Colors.white,
     ...typeScale.bodySmall,
+    color: Colors.lightBlue,
   },
   valueText: {
-    color: Colors.white,
     ...typeScale.bodySmall,
   },
   valueTextBold: {
-    color: Colors.white,
     ...typeScale.labelSemiBoldSmall,
   },
   poweredByText: {
-    color: Colors.lightBlue,
     ...typeScale.bodyXSmall,
     alignSelf: 'center',
+    color: Colors.lightBlue,
   },
   withBalanceContainer: {
     borderTopWidth: 1,

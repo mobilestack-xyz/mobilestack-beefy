@@ -161,6 +161,7 @@ exports[`renders correctly 1`] = `
               <Text
                 style={
                   {
+                    "color": "#FFFFFF",
                     "fontFamily": "Inter-Bold",
                     "fontSize": 20,
                     "lineHeight": 28,
@@ -174,6 +175,7 @@ exports[`renders correctly 1`] = `
               <Text
                 style={
                   {
+                    "color": "#FFFFFF",
                     "fontFamily": "Inter-Regular",
                     "fontSize": 16,
                     "lineHeight": 24,
@@ -231,6 +233,7 @@ exports[`renders correctly 1`] = `
               <Text
                 style={
                   {
+                    "color": "#FFFFFF",
                     "fontFamily": "Inter-Bold",
                     "fontSize": 20,
                     "lineHeight": 28,
@@ -244,6 +247,7 @@ exports[`renders correctly 1`] = `
               <Text
                 style={
                   {
+                    "color": "#FFFFFF",
                     "fontFamily": "Inter-Regular",
                     "fontSize": 16,
                     "lineHeight": 24,
@@ -301,6 +305,7 @@ exports[`renders correctly 1`] = `
               <Text
                 style={
                   {
+                    "color": "#FFFFFF",
                     "fontFamily": "Inter-Bold",
                     "fontSize": 20,
                     "lineHeight": 28,
@@ -314,6 +319,7 @@ exports[`renders correctly 1`] = `
               <Text
                 style={
                   {
+                    "color": "#FFFFFF",
                     "fontFamily": "Inter-Regular",
                     "fontSize": 16,
                     "lineHeight": 24,
@@ -371,6 +377,7 @@ exports[`renders correctly 1`] = `
               <Text
                 style={
                   {
+                    "color": "#FFFFFF",
                     "fontFamily": "Inter-Bold",
                     "fontSize": 20,
                     "lineHeight": 28,
@@ -384,6 +391,7 @@ exports[`renders correctly 1`] = `
               <Text
                 style={
                   {
+                    "color": "#FFFFFF",
                     "fontFamily": "Inter-Regular",
                     "fontSize": 16,
                     "lineHeight": 24,
@@ -429,7 +437,7 @@ exports[`renders correctly 1`] = `
       <View
         style={
           {
-            "backgroundColor": "#2D3154",
+            "backgroundColor": "#363B63",
             "borderRadius": 5,
             "flex": 0,
             "height": 5,
@@ -441,7 +449,7 @@ exports[`renders correctly 1`] = `
       <View
         style={
           {
-            "backgroundColor": "#2D3154",
+            "backgroundColor": "#363B63",
             "borderRadius": 5,
             "flex": 0,
             "height": 5,
@@ -453,7 +461,7 @@ exports[`renders correctly 1`] = `
       <View
         style={
           {
-            "backgroundColor": "#2D3154",
+            "backgroundColor": "#363B63",
             "borderRadius": 5,
             "flex": 0,
             "height": 5,

@@ -41,9 +41,9 @@ exports[`renders selected correctly 1`] = `
       {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "#2D3154",
+        "borderColor": "#B7B9C9",
         "flexDirection": "row",
-        "marginLeft": 16,
+        "marginHorizontal": 16,
         "paddingVertical": 14,
       }
     }
@@ -84,6 +84,7 @@ exports[`renders selected correctly 1`] = `
       numberOfLines={1}
       style={
         {
+          "color": "#FFFFFF",
           "flex": 1,
           "fontFamily": "Inter-Regular",
           "fontSize": 16,
@@ -139,9 +140,9 @@ exports[`renders unselected correctly 1`] = `
       {
         "alignItems": "center",
         "borderBottomWidth": 1,
-        "borderColor": "#2D3154",
+        "borderColor": "#B7B9C9",
         "flexDirection": "row",
-        "marginLeft": 16,
+        "marginHorizontal": 16,
         "paddingVertical": 14,
       }
     }
@@ -182,6 +183,7 @@ exports[`renders unselected correctly 1`] = `
       numberOfLines={1}
       style={
         {
+          "color": "#FFFFFF",
           "flex": 1,
           "fontFamily": "Inter-Regular",
           "fontSize": 16,

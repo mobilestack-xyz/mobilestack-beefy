@@ -120,7 +120,7 @@ exports[`renders correctly 1`] = `
             },
             {
               "elevation": 12,
-              "shadowColor": "rgba(156, 164, 169, 0.4)",
+              "shadowColor": "rgba(45, 49, 84, 0.4)",
               "shadowOffset": {
                 "height": 2,
                 "width": 0,
@@ -150,6 +150,7 @@ exports[`renders correctly 1`] = `
             <Text
               style={
                 {
+                  "color": "#FFFFFF",
                   "fontFamily": "Inter-Bold",
                   "fontSize": 20,
                   "lineHeight": 28,
@@ -163,6 +164,7 @@ exports[`renders correctly 1`] = `
             <Text
               style={
                 {
+                  "color": "#FFFFFF",
                   "fontFamily": "Inter-Regular",
                   "fontSize": 16,
                   "lineHeight": 24,

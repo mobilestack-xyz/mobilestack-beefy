@@ -53,14 +53,10 @@ react {
 
 project.ext.envConfigFiles = [
     // IMPORTANT: longer variants should be first, as react-native-config plugin matches the first prefix it finds
-    alfajoresnightly: ".env.alfajoresnightly",
-    alfajoresdev: ".env.alfajoresdev",
-    alfajores: ".env.alfajores",
-    mainnetnightly: ".env.mainnetnightly",
     mainnetdev: ".env.mainnetdev",
     mainnet: ".env.mainnet",
     apptest: ".env.test",
-    "": ".env.alfajoresdev", // Fallback
+    "": ".env.mainnetdev", // Fallback
 ]
 
 project.ext.sentryCli = [
@@ -150,7 +146,7 @@ android {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode appVersionCode
-        versionName "1.101.0"
+        versionName "0.0.1"
         multiDexEnabled true
         testBuildType System.getProperty('testBuildType', 'debug')
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -223,22 +219,10 @@ android {
     }
     flavorDimensions "default"
     productFlavors {
-        alfajores {
-            dimension "default"
-        }
-        alfajoresdev {
-            dimension "default"
-        }
-        alfajoresnightly {
-            dimension "default"
-        }
         mainnet {
             dimension "default"
         }
         mainnetdev {
-            dimension "default"
-        }
-        mainnetnightly {
             dimension "default"
         }
         // ProductFlavor names cannot start with 'test'

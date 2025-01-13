@@ -5,6 +5,7 @@ exports[`renders banner when app is disconnected 1`] = `
   style={
     [
       {
+        "color": "#FFFFFF",
         "fontFamily": "Inter-Regular",
         "fontSize": 14,
         "lineHeight": undefined,
@@ -14,6 +15,7 @@ exports[`renders banner when app is disconnected 1`] = `
         "color": "#B7B9C9",
       },
       {
+        "color": "#FFFFFF",
         "fontFamily": "Inter-SemiBold",
         "fontSize": 16,
         "lineHeight": 24,

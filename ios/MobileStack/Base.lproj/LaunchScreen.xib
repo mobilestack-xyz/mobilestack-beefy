@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -13,20 +13,14 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="850"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashBackground" translatesAutoresizingMaskIntoConstraints="NO" id="8LT-u5-sxU">
-                    <rect key="frame" x="0.0" y="0.0" width="480" height="850"/>
-                </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="LPF-fj-afL">
-                    <rect key="frame" x="212.66666666666666" y="402.66666666666669" width="54.999999999999972" height="45"/>
+                    <rect key="frame" x="192" y="375.66666666666669" width="96" height="99"/>
                 </imageView>
             </subviews>
+            <color key="backgroundColor" red="0.14117647058823529" green="0.15686274509803921" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="LPF-fj-afL" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="2h6-D6-NhQ"/>
-                <constraint firstItem="8LT-u5-sxU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="AzH-sd-X8C"/>
-                <constraint firstAttribute="bottom" secondItem="8LT-u5-sxU" secondAttribute="bottom" id="Puw-Fn-03F"/>
                 <constraint firstItem="LPF-fj-afL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bjQ-lY-KrZ"/>
-                <constraint firstItem="8LT-u5-sxU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kzq-AG-XqU"/>
-                <constraint firstAttribute="trailing" secondItem="8LT-u5-sxU" secondAttribute="trailing" id="pZa-Et-097"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -34,7 +28,6 @@
         </view>
     </objects>
     <resources>
-        <image name="logo" width="55" height="45"/>
-        <image name="splashBackground" width="340" height="604"/>
+        <image name="logo" width="96" height="98.666664123535156"/>
     </resources>
 </document>

@@ -79,7 +79,7 @@ export class App extends React.Component<Props> {
                 appStartedMillis={this.props.appStartedMillis}
                 reactLoadTime={this.reactLoadTime}
               >
-                <StatusBar backgroundColor="transparent" barStyle="dark-content" />
+                <StatusBar backgroundColor="transparent" barStyle="light-content" />
                 <ErrorBoundary>
                   <GestureHandlerRootView style={{ flex: 1 }}>
                     <BottomSheetModalProvider>

@@ -234,6 +234,7 @@ exports[`BackupPhrase renders correctly with backup completed 1`] = `
             <Text
               style={
                 {
+                  "color": "#FFFFFF",
                   "fontFamily": "Inter-Bold",
                   "fontSize": 20,
                   "lineHeight": 28,
@@ -251,9 +252,7 @@ exports[`BackupPhrase renders correctly with backup completed 1`] = `
             {
               "alignContent": "center",
               "backgroundColor": "#363B63",
-              "borderColor": "#2D3154",
               "borderRadius": 8,
-              "borderWidth": 1,
               "flexDirection": "row",
               "flexWrap": "wrap",
               "justifyContent": "center",
@@ -267,6 +266,7 @@ exports[`BackupPhrase renders correctly with backup completed 1`] = `
       <Text
         style={
           {
+            "color": "#FFFFFF",
             "fontFamily": "Inter-Regular",
             "fontSize": 16,
             "lineHeight": 24,
@@ -515,6 +515,7 @@ exports[`BackupPhrase renders correctly with backup not completed 1`] = `
             <Text
               style={
                 {
+                  "color": "#FFFFFF",
                   "fontFamily": "Inter-Bold",
                   "fontSize": 20,
                   "lineHeight": 28,
@@ -532,9 +533,7 @@ exports[`BackupPhrase renders correctly with backup not completed 1`] = `
             {
               "alignContent": "center",
               "backgroundColor": "#363B63",
-              "borderColor": "#2D3154",
               "borderRadius": 8,
-              "borderWidth": 1,
               "flexDirection": "row",
               "flexWrap": "wrap",
               "justifyContent": "center",
@@ -548,6 +547,7 @@ exports[`BackupPhrase renders correctly with backup not completed 1`] = `
       <Text
         style={
           {
+            "color": "#FFFFFF",
             "fontFamily": "Inter-Regular",
             "fontSize": 16,
             "lineHeight": 24,
@@ -577,15 +577,16 @@ exports[`BackupPhrase renders correctly with backup not completed 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       testID="backupKeySavedSwitch"
-      thumbTintColor="#2D3154"
-      trackColorForFalse="#B7B9C9"
+      thumbTintColor="#242843"
+      trackColorForFalse="#FFFFFF"
       trackColorForTrue="#4EB258"
-      trackTintColor="#B7B9C9"
+      trackTintColor="#FFFFFF"
     />
     <Text
       onPress={[Function]}
       style={
         {
+          "color": "#FFFFFF",
           "flex": 1,
           "fontFamily": "Inter-Regular",
           "fontSize": 16,
@@ -932,6 +933,7 @@ exports[`BackupPhrase still renders when mnemonic doesnt show up 1`] = `
             <Text
               style={
                 {
+                  "color": "#FFFFFF",
                   "fontFamily": "Inter-Bold",
                   "fontSize": 20,
                   "lineHeight": 28,
@@ -949,9 +951,7 @@ exports[`BackupPhrase still renders when mnemonic doesnt show up 1`] = `
             {
               "alignContent": "center",
               "backgroundColor": "#363B63",
-              "borderColor": "#2D3154",
               "borderRadius": 8,
-              "borderWidth": 1,
               "flexDirection": "row",
               "flexWrap": "wrap",
               "justifyContent": "center",
@@ -965,6 +965,7 @@ exports[`BackupPhrase still renders when mnemonic doesnt show up 1`] = `
       <Text
         style={
           {
+            "color": "#FFFFFF",
             "fontFamily": "Inter-Regular",
             "fontSize": 16,
             "lineHeight": 24,
