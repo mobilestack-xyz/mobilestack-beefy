@@ -169,7 +169,7 @@ function TabWallet({ navigation, route }: Props) {
         <Text style={styles.body}>{t('assets.noTokensDescription')}</Text>
         <Button
           testID="ZeroStateBuyTokens"
-          style={{ ...styles.button, width: '100%' }}
+          style={styles.button}
           type={BtnTypes.PRIMARY}
           size={BtnSizes.FULL}
           onPress={() => {
@@ -264,6 +264,7 @@ const styles = StyleSheet.create({
   button: {
     marginTop: Spacing.Regular16,
     marginHorizontal: Spacing.Regular16,
+    width: '100%',
   },
   image: {
     height: 120,

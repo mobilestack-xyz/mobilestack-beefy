@@ -2,7 +2,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { StyleSheet, Text, View, ViewStyle } from 'react-native'
 import TokenDisplay from 'src/components/TokenDisplay'
-import TokenIcon, { IconSize } from 'src/components/TokenIcon'
+import TokenIcon from 'src/components/TokenIcon'
 import Touchable from 'src/components/Touchable'
 import Warning from 'src/icons/Warning'
 import { NETWORK_NAMES } from 'src/shared/conts'
@@ -27,14 +27,14 @@ export const TokenBalanceItem = ({
   containerStyle,
   balanceUsdErrorFallback,
   showPriceUsdUnavailableWarning,
-  testIdPrefix = '',
+  testIdPrefix,
   hideBalances = false,
 }: Props) => {
   const { t } = useTranslation()
 
   const Content = (
     <View style={[styles.container, containerStyle]} testID="TokenBalanceItem">
-      <TokenIcon token={token} size={IconSize.LARGE} />
+      <TokenIcon token={token} />
       <View style={styles.textContainer}>
         <View style={styles.line}>
           <View style={styles.row}>
