@@ -217,8 +217,10 @@ function TabHome({ navigation, route }: Props) {
           </View>
         </Animated.View>
         {errorLoadingPools && (
-          <View style={styles.textContainer}>
-            <AttentionIcon size={48} color={Colors.white} />
+          <View style={styles.textContainerError}>
+            <View style={{ alignItems: 'center' }}>
+              <AttentionIcon size={48} color={Colors.white} />
+            </View>
             <Text style={styles.errorTitle}>{t('earnFlow.home.errorTitle')}</Text>
             <Text style={styles.description}>{t('earnFlow.home.errorDescription')}</Text>
             <Button
@@ -257,6 +259,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
+  errorContainer: {
+    flex: 1,
+  },
   listHeaderContainer: {
     ...getShadowStyle(Shadow.SoftLight),
     paddingHorizontal: Spacing.Regular16,
@@ -276,7 +281,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: Spacing.Thick24,
-    backgroundColor: Colors.blue100,
+    backgroundColor: Colors.darkBlue,
+  },
+  textContainerError: {
+    flex: 1,
+    justifyContent: 'center',
+    padding: Spacing.Thick24,
+    backgroundColor: Colors.darkBlue,
   },
   noPoolsTitle: {
     ...typeScale.labelSemiBoldLarge,
@@ -290,7 +301,7 @@ const styles = StyleSheet.create({
   description: {
     ...typeScale.bodySmall,
     textAlign: 'center',
-    marginTop: Spacing.Regular16,
+    marginVertical: Spacing.Regular16,
   },
 })
 
