@@ -2,6 +2,7 @@ import { BottomSheetModal } from '@gorhom/bottom-sheet'
 import React, { useRef } from 'react'
 import { StyleSheet, Text, TextStyle, View, ViewStyle } from 'react-native'
 import { ScrollView } from 'react-native-gesture-handler'
+import { Colors } from 'react-native/Libraries/NewAppScreen'
 import BottomSheetBase from 'src/components/BottomSheetBase'
 import BottomSheetScrollView from 'src/components/BottomSheetScrollView'
 import { typeScale } from 'src/styles/fonts'
@@ -27,7 +28,7 @@ export type BottomSheetModalRefType = BottomSheetModal
 const BottomSheet = ({
   forwardedRef,
   title,
-  titleStyle = typeScale.titleSmall,
+  titleStyle = { ...typeScale.titleSmall, color: Colors.white },
   description,
   children,
   onClose,

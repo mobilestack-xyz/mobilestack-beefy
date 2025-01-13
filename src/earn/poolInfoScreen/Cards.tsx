@@ -328,6 +328,7 @@ export const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 12,
     gap: Spacing.Regular16,
+    backgroundColor: Colors.blue100,
   },
   cardLineContainer: {
     flex: 1,
@@ -350,7 +351,6 @@ export const styles = StyleSheet.create({
     color: Colors.lightBlue,
   },
   depositAndEarningCard: {
-    backgroundColor: Colors.blue100,
     padding: 0,
     gap: 0,
   },
@@ -364,7 +364,8 @@ export const styles = StyleSheet.create({
     color: Colors.white,
   },
   depositAndEarningCardSubtitleContainer: {
-    backgroundColor: Colors.darkBlue,
+    borderTopWidth: 1,
+    borderTopColor: Colors.darkBlue,
     padding: Spacing.Regular16,
     borderBottomLeftRadius: 16,
     borderBottomRightRadius: 16,

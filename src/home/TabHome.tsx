@@ -24,7 +24,6 @@ import {
   SHOW_TESTNET_BANNER,
   TIME_UNTIL_TOKEN_INFO_BECOMES_STALE,
 } from 'src/config'
-import { LearnMoreBottomSheet } from 'src/earn/EarnHome'
 import EarnTabBar from 'src/earn/EarnTabBar'
 import PoolList from 'src/earn/PoolList'
 import { EarnTabType } from 'src/earn/types'
@@ -32,7 +31,6 @@ import { refreshAllBalances, visitHome } from 'src/home/actions'
 import AttentionIcon from 'src/icons/Attention'
 import { importContacts } from 'src/identity/actions'
 import { Screens } from 'src/navigator/Screens'
-import useScrollAwareHeader from 'src/navigator/ScrollAwareHeader'
 import { StackParamList } from 'src/navigator/types'
 import { refreshPositions } from 'src/positions/actions'
 import {
@@ -50,9 +48,6 @@ import { tokensByIdSelector } from 'src/tokens/selectors'
 import { TokenBalance } from 'src/tokens/slice'
 import { hasGrantedContactsPermission } from 'src/utils/contacts'
 
-const HEADER_OPACITY_ANIMATION_START_OFFSET = 44
-const HEADER_OPACITY_ANIMATION_DISTANCE = 20
-
 type Props = NativeStackScreenProps<StackParamList, Screens.TabHome>
 
 function TabHome({ navigation, route }: Props) {
@@ -69,9 +64,6 @@ function TabHome({ navigation, route }: Props) {
   const activeTab = route.params?.activeEarnTab ?? EarnTabType.AllPools
 
   const insets = useSafeAreaInsets()
-  const insetsStyle = {
-    paddingBottom: Math.max(insets.bottom, Spacing.Regular16),
-  }
 
   const supportedNetworkIds = [...new Set(pools.map((pool) => pool.networkId))]
   const allTokens = useSelector((state) => tokensByIdSelector(state, supportedNetworkIds))
@@ -178,14 +170,6 @@ function TabHome({ navigation, route }: Props) {
     setNonStickyHeaderHeight(event.nativeEvent.layout.height)
   }
 
-  useScrollAwareHeader({
-    navigation,
-    title: t('earnFlow.home.title'),
-    scrollPosition,
-    startFadeInPosition: nonStickyHeaderHeight - HEADER_OPACITY_ANIMATION_START_OFFSET,
-    animationDistance: HEADER_OPACITY_ANIMATION_DISTANCE,
-  })
-
   const handleChangeActiveView = (selectedTab: EarnTabType) => {
     navigation.setParams({ activeEarnTab: selectedTab })
   }
@@ -237,6 +221,12 @@ function TabHome({ navigation, route }: Props) {
             <AttentionIcon size={48} color={Colors.white} />
             <Text style={styles.errorTitle}>{t('earnFlow.home.errorTitle')}</Text>
             <Text style={styles.description}>{t('earnFlow.home.errorDescription')}</Text>
+            <Button
+              onPress={onPressTryAgain}
+              text={t('earnFlow.home.errorButton')}
+              type={BtnTypes.SECONDARY}
+              size={BtnSizes.FULL}
+            />
           </View>
         )}
         {zeroPoolsinMyPoolsTab && (
@@ -258,18 +248,7 @@ function TabHome({ navigation, route }: Props) {
             onPressLearnMore={onPressLearnMore}
           />
         )}
-        {errorLoadingPools && (
-          <View style={[styles.buttonContainer, insetsStyle]}>
-            <Button
-              onPress={onPressTryAgain}
-              text={t('earnFlow.home.errorButton')}
-              type={BtnTypes.SECONDARY}
-              size={BtnSizes.FULL}
-            />
-          </View>
-        )}
       </Animated.View>
-      <LearnMoreBottomSheet learnMoreBottomSheetRef={learnMoreBottomSheetRef} />
     </>
   )
 }
@@ -278,13 +257,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
-  title: {
-    ...typeScale.titleMedium,
-    color: Colors.white,
-  },
   listHeaderContainer: {
     ...getShadowStyle(Shadow.SoftLight),
-    paddingBottom: Spacing.Regular16,
     paddingHorizontal: Spacing.Regular16,
     backgroundColor: Colors.darkBlue,
     position: 'absolute',
@@ -292,6 +266,7 @@ const styles = StyleSheet.create({
     zIndex: 1,
   },
   nonStickyHeaderContainer: {
+    paddingTop: Spacing.Regular16,
     zIndex: 1,
     gap: Spacing.Thick24,
     flexDirection: 'column',
@@ -301,6 +276,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: Spacing.Thick24,
+    backgroundColor: Colors.blue100,
   },
   noPoolsTitle: {
     ...typeScale.labelSemiBoldLarge,
@@ -315,9 +291,6 @@ const styles = StyleSheet.create({
     ...typeScale.bodySmall,
     textAlign: 'center',
     marginTop: Spacing.Regular16,
-  },
-  buttonContainer: {
-    marginHorizontal: Spacing.Thick24,
   },
 })
 

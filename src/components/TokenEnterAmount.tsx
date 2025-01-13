@@ -466,7 +466,7 @@ export default function TokenEnterAmount({
 const styles = StyleSheet.create({
   rowContainer: {
     borderWidth: 1,
-    borderColor: Colors.blue200,
+    borderColor: Colors.darkBlue,
     borderRadius: BORDER_RADIUS,
     padding: Spacing.Regular16,
     backgroundColor: Colors.blue100,

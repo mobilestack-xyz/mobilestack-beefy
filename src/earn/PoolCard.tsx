@@ -144,9 +144,10 @@ export default function PoolCard({
 const styles = StyleSheet.create({
   card: {
     padding: Spacing.Regular16,
-    borderColor: Colors.blue200,
-    borderRadius: 12,
-    borderWidth: 1,
+    // borderColor: Colors.blue200,
+    // borderRadius: 12,
+    // borderWidth: 1,
+    backgroundColor: Colors.blue100,
   },
   cardView: { gap: Spacing.Regular16 },
   titleRow: {
@@ -171,7 +172,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   keyText: {
-    color: Colors.lightBlue,
+    color: Colors.white,
     ...typeScale.bodySmall,
   },
   valueText: {
@@ -189,7 +190,7 @@ const styles = StyleSheet.create({
   },
   withBalanceContainer: {
     borderTopWidth: 1,
-    borderTopColor: Colors.blue200,
+    borderTopColor: Colors.darkBlue,
     paddingTop: Spacing.Regular16,
     gap: Spacing.Smallest8,
     flexDirection: 'row',
