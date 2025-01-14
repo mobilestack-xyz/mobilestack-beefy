@@ -14,9 +14,6 @@ import {
   mockCeurTokenId,
   mockCusdAddress,
   mockCusdTokenId,
-  mockNftAllFields,
-  mockNftMinimumFields,
-  mockNftNullMetadata,
   mockPositions,
   mockShortcuts,
 } from 'test/values'
@@ -63,6 +60,15 @@ const storeWithTokenBalances = {
   },
 }
 
+const storeWithZeroTokenBalances = {
+  tokens: {
+    tokenBalances: {},
+  },
+  positions: {
+    positions: [],
+  },
+}
+
 const storeWithPositions = {
   ...storeWithTokenBalances,
   positions: {
@@ -79,19 +85,6 @@ const storeWithPositionsAndClaimableRewards = {
   },
 }
 
-const storeWithNfts = {
-  ...storeWithTokenBalances,
-  nfts: {
-    nfts: [
-      { ...mockNftAllFields, networkId: NetworkId['celo-alfajores'] },
-      { ...mockNftMinimumFields, networkId: NetworkId['ethereum-sepolia'] },
-      { ...mockNftNullMetadata, networkId: NetworkId['celo-alfajores'] },
-    ],
-    nftsLoading: false,
-    nftsError: null,
-  },
-}
-
 describe('TabWallet', () => {
   beforeEach(() => {
     jest.clearAllMocks()
@@ -101,34 +94,19 @@ describe('TabWallet', () => {
     })
   })
 
-  it('renders tokens and collectibles tabs when positions is disabled', () => {
-    jest.mocked(getFeatureGate).mockReturnValue(false)
-    const store = createMockStore(storeWithPositions)
+  it('renders the zero state if there are no tokens', () => {
+    const store = createMockStore(storeWithZeroTokenBalances)
 
-    const { getByTestId, getAllByTestId, queryAllByTestId, getByText, queryByText, queryByTestId } =
-      render(
-        <Provider store={store}>
-          <MockedNavigator component={TabWallet} />
-        </Provider>
-      )
+    const { getByText } = render(
+      <Provider store={store}>
+        <MockedNavigator component={TabWallet} />
+      </Provider>
+    )
 
-    expect(getByTestId('AssetsTokenBalance')).toBeTruthy()
-    expect(queryByTestId('AssetsTokenBalance/Info')).toBeFalsy()
-    expect(getByTestId('AssetsTokenBalance')).toHaveTextContent('₱21.03')
-
-    expect(getByTestId('HomeActionsCarousel')).toBeTruthy()
-
-    expect(getByTestId('Assets/TabBar')).toBeTruthy()
-    expect(getAllByTestId('Assets/TabBarItem')).toHaveLength(2)
-    expect(getByText('assets.tabBar.tokens')).toBeTruthy()
-    expect(getByText('assets.tabBar.collectibles')).toBeTruthy()
-    expect(queryByText('assets.tabBar.dappPositions')).toBeFalsy()
-
-    expect(getAllByTestId('TokenBalanceItem')).toHaveLength(2)
-    expect(queryAllByTestId('PositionItem')).toHaveLength(0)
+    expect(getByText('assets.noTokensTitle')).toBeTruthy()
   })
 
-  it('renders tokens, collectibles and dapp positions tabs when positions is enabled', () => {
+  it('renders tokens and dapp positions tabs', () => {
     jest.mocked(getFeatureGate).mockReturnValue(true)
     const store = createMockStore(storeWithPositions)
 
@@ -144,9 +122,8 @@ describe('TabWallet', () => {
     expect(getByTestId('AssetsTokenBalance')).toHaveTextContent('₱31.55')
 
     expect(getByTestId('Assets/TabBar')).toBeTruthy()
-    expect(getAllByTestId('Assets/TabBarItem')).toHaveLength(3)
+    expect(getAllByTestId('Assets/TabBarItem')).toHaveLength(2)
     expect(getByText('assets.tabBar.tokens')).toBeTruthy()
-    expect(getByText('assets.tabBar.collectibles')).toBeTruthy()
     expect(queryByText('assets.tabBar.dappPositions')).toBeTruthy()
 
     expect(getAllByTestId('TokenBalanceItem')).toHaveLength(2)
@@ -169,33 +146,12 @@ describe('TabWallet', () => {
     expect(getByTestId('AssetsTokenBalance')).toHaveTextContent('₱21.03')
 
     expect(getByTestId('Assets/TabBar')).toBeTruthy()
-    expect(getAllByTestId('Assets/TabBarItem')).toHaveLength(2)
+    expect(getAllByTestId('Assets/TabBarItem')).toHaveLength(1)
     expect(getByText('assets.tabBar.tokens')).toBeTruthy()
-    expect(getByText('assets.tabBar.collectibles')).toBeTruthy()
     expect(queryByText('assets.tabBar.dappPositions')).toBeFalsy()
 
     expect(getAllByTestId('TokenBalanceItem')).toHaveLength(2)
     expect(queryAllByTestId('PositionItem')).toHaveLength(0)
-  })
-
-  it('renders collectibles on selecting the collectibles tab', () => {
-    const store = createMockStore(storeWithNfts)
-
-    const { getAllByTestId, queryAllByTestId, getByText } = render(
-      <Provider store={store}>
-        <MockedNavigator component={TabWallet} />
-      </Provider>
-    )
-
-    expect(getAllByTestId('TokenBalanceItem')).toHaveLength(2)
-    expect(queryAllByTestId('PositionItem')).toHaveLength(0)
-    expect(queryAllByTestId('NftItem')).toHaveLength(0)
-
-    fireEvent.press(getByText('assets.tabBar.collectibles'))
-
-    expect(queryAllByTestId('TokenBalanceItem')).toHaveLength(0)
-    expect(queryAllByTestId('PositionItem')).toHaveLength(0)
-    expect(queryAllByTestId('NftItem')).toHaveLength(2)
   })
 
   it('renders dapp positions on selecting the tab', () => {
@@ -254,7 +210,7 @@ describe('TabWallet', () => {
     jest.mocked(getFeatureGate).mockReturnValue(true)
     const store = createMockStore(storeWithPositionsAndClaimableRewards)
 
-    const { getByText, queryByText } = render(
+    const { getByText } = render(
       <Provider store={store}>
         <MockedNavigator component={TabWallet} />
       </Provider>
@@ -263,8 +219,6 @@ describe('TabWallet', () => {
     expect(getByText('assets.claimRewards')).toBeTruthy()
     fireEvent.press(getByText('assets.tabBar.dappPositions'))
     expect(getByText('assets.claimRewards')).toBeTruthy()
-    fireEvent.press(getByText('assets.tabBar.collectibles'))
-    expect(queryByText('assets.claimRewards')).toBeFalsy()
     fireEvent.press(getByText('assets.tabBar.tokens'))
     expect(getByText('assets.claimRewards')).toBeTruthy()
   })

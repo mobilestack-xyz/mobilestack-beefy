@@ -26,7 +26,7 @@ export default function TabBar({
   const { t } = useTranslation()
 
   const items = useMemo(() => {
-    const items = [t('assets.tabBar.tokens'), t('assets.tabBar.collectibles')]
+    const items = [t('assets.tabBar.tokens')]
     if (displayPositions) {
       items.push(t('assets.tabBar.dappPositions'))
     }
@@ -34,13 +34,7 @@ export default function TabBar({
   }, [t, displayPositions])
 
   const handleSelectOption = (index: AssetTabType) => () => {
-    AppAnalytics.track(
-      [
-        AssetsEvents.view_wallet_assets,
-        AssetsEvents.view_collectibles,
-        AssetsEvents.view_dapp_positions,
-      ][index]
-    )
+    AppAnalytics.track([AssetsEvents.view_wallet_assets, AssetsEvents.view_dapp_positions][index])
     onChange(index)
     vibrateInformative()
   }
