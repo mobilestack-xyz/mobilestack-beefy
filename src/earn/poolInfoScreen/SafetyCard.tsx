@@ -14,7 +14,7 @@ import Colors from 'src/styles/colors'
 import { typeScale } from 'src/styles/fonts'
 import { Spacing } from 'src/styles/styles'
 
-export const BAR_HEIGHTS = [8, 13, 18]
+const BAR_HEIGHTS = [8, 13, 18]
 
 export const LEVEL_TO_MAX_HIGHLIGHTED_BAR: Record<Safety['level'], 1 | 2 | 3> = {
   low: 1,
