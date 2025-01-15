@@ -28,7 +28,7 @@ export type BottomSheetModalRefType = BottomSheetModal
 const BottomSheet = ({
   forwardedRef,
   title,
-  titleStyle = { ...typeScale.titleSmall, color: Colors.white },
+  titleStyle = typeScale.titleSmall,
   description,
   children,
   onClose,

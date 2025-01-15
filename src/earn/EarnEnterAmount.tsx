@@ -1026,21 +1026,19 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
   },
   bottomSheetLineLabel: {
+    ...typeScale.bodySmall,
     maxWidth: '40%',
     textAlign: 'left',
-    color: Colors.white,
   },
   bottomSheetLineLabelText: {
+    ...typeScale.bodySmall,
     maxWidth: '60%',
     textAlign: 'right',
-    color: Colors.white,
   },
   bottomSheetDescriptionTitle: {
     ...typeScale.labelSemiBoldSmall,
-    color: Colors.white,
   },
   bottomSheetDescriptionText: {
     ...typeScale.bodySmall,
-    color: Colors.white,
   },
 })

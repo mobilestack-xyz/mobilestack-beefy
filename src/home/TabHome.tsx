@@ -265,7 +265,7 @@ const styles = StyleSheet.create({
   listHeaderContainer: {
     ...getShadowStyle(Shadow.SoftLight),
     paddingHorizontal: Spacing.Regular16,
-    backgroundColor: Colors.darkBlue,
+    backgroundColor: Colors.background,
     position: 'absolute',
     width: '100%',
     zIndex: 1,
@@ -281,13 +281,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: Spacing.Thick24,
-    backgroundColor: Colors.darkBlue,
+    backgroundColor: Colors.background,
   },
   textContainerError: {
     flex: 1,
     justifyContent: 'center',
     padding: Spacing.Thick24,
-    backgroundColor: Colors.darkBlue,
+    backgroundColor: Colors.background,
   },
   noPoolsTitle: {
     ...typeScale.labelSemiBoldLarge,
