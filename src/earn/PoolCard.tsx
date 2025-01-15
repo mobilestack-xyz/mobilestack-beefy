@@ -195,7 +195,6 @@ const styles = StyleSheet.create({
   },
   keyText: {
     ...typeScale.bodySmall,
-    color: Colors.white,
   },
   valueText: {
     ...typeScale.bodySmall,
