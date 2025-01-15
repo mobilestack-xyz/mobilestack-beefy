@@ -4,7 +4,6 @@ import { StyleSheet, Text, TextStyle, View, ViewStyle } from 'react-native'
 import { ScrollView } from 'react-native-gesture-handler'
 import BottomSheetBase from 'src/components/BottomSheetBase'
 import BottomSheetScrollView from 'src/components/BottomSheetScrollView'
-import Colors from 'src/styles/colors'
 import { typeScale } from 'src/styles/fonts'
 import { Spacing } from 'src/styles/styles'
 
@@ -56,7 +55,7 @@ const BottomSheet = ({
       )}
       <BottomSheetScrollView
         forwardedRef={scrollViewRef}
-        containerStyle={[styles.container, hasStickyHeader ? { paddingTop: 0 } : undefined]}
+        containerStyle={hasStickyHeader ? { paddingTop: 0 } : undefined}
         testId={testId}
       >
         {!stickyTitle && !!title && (
@@ -79,9 +78,6 @@ const styles = StyleSheet.create({
   description: {
     ...typeScale.bodySmall,
     marginBottom: Spacing.Smallest8,
-  },
-  container: {
-    backgroundColor: Colors.background,
   },
 })
 
