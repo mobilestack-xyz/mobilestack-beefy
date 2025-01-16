@@ -357,8 +357,9 @@ const styles = StyleSheet.create({
   feeContainer: {
     marginVertical: Spacing.Regular16,
     padding: Spacing.Regular16,
+    backgroundColor: Colors.blue100,
     borderColor: Colors.blue200,
-    borderWidth: 1,
+    borderWidth: 0,
     borderRadius: 12,
     gap: Spacing.Smallest8,
     flexDirection: 'row',
