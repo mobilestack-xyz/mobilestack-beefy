@@ -2,7 +2,6 @@ import * as React from 'react'
 import { StyleSheet, View, ViewStyle } from 'react-native'
 import Svg, { Path } from 'react-native-svg'
 import colors from 'src/styles/colors'
-import { elevationShadowStyle } from 'src/styles/styles'
 
 const SIZE = 24
 
@@ -34,6 +33,5 @@ const styles = StyleSheet.create({
     borderRadius: SIZE / 2,
     alignItems: 'center',
     justifyContent: 'center',
-    ...elevationShadowStyle(3),
   },
 })

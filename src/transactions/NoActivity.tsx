@@ -2,8 +2,8 @@ import { type SerializedError } from '@reduxjs/toolkit'
 import { type FetchBaseQueryError } from '@reduxjs/toolkit/query'
 import * as React from 'react'
 import { useTranslation } from 'react-i18next'
-import { ActivityIndicator, StyleSheet, Text, View } from 'react-native'
-import Celebration from 'src/images/Celebration'
+import { Image, StyleSheet, Text, View } from 'react-native'
+import { beefyCow } from 'src/images/Images'
 import colors from 'src/styles/colors'
 import { typeScale } from 'src/styles/fonts'
 import { Spacing } from 'src/styles/styles'
@@ -25,19 +25,9 @@ function NoActivity({ loading, error }: Props) {
   }
 
   return (
-    <View style={styles.container}>
-      <View style={styles.noTransactionsContainer}>
-        <Celebration testID="NoActivity/CelebrationImage" />
-        <Text style={styles.noTransactionsText}>{t('transactionFeed.noTransactions')}</Text>
-      </View>
-      {loading && (
-        <ActivityIndicator
-          style={styles.icon}
-          size="large"
-          color={colors.accent}
-          testID="NoActivity/loading"
-        />
-      )}
+    <View style={styles.zeroStateContainer}>
+      <Image style={styles.image} source={beefyCow} />
+      <Text style={styles.title}>{t('transactionFeed.noActiviy')}</Text>
     </View>
   )
 }
@@ -50,22 +40,23 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     marginTop: 32,
   },
-  icon: {
-    marginVertical: 20,
-    height: 108,
-    width: 108,
-  },
   text: {
     ...typeScale.bodyLarge,
     color: colors.lightBlue,
   },
-  noTransactionsContainer: {
-    padding: Spacing.Regular16,
-    gap: Spacing.Regular16,
+  zeroStateContainer: {
+    marginTop: '50%',
+    justifyContent: 'center',
     alignItems: 'center',
+    paddingHorizontal: Spacing.Regular16,
   },
-  noTransactionsText: {
-    ...typeScale.labelSemiBoldMedium,
+  image: {
+    height: 104,
+    width: 136,
+  },
+  title: {
+    ...typeScale.titleMedium,
+    marginTop: Spacing.Regular16,
     textAlign: 'center',
   },
 })

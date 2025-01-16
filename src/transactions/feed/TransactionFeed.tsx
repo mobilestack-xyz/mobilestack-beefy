@@ -1,7 +1,6 @@
 import React, { useMemo } from 'react'
 import { ActivityIndicator, SectionList, StyleSheet, View } from 'react-native'
 import SectionHead from 'src/components/SectionHead'
-import GetStarted from 'src/home/GetStarted'
 import { useSelector } from 'src/redux/hooks'
 import { getFeatureGate } from 'src/statsig'
 import { StatsigFeatureGates } from 'src/statsig/types'
@@ -122,7 +121,7 @@ function TransactionFeed() {
   }
 
   if (!sections.length) {
-    return !showUKCompliantVariant ? <GetStarted /> : <NoActivity loading={loading} error={error} />
+    return <NoActivity loading={loading} error={error} />
   }
 
   return (
