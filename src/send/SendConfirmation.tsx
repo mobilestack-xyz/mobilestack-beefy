@@ -284,7 +284,7 @@ const styles = StyleSheet.create({
   },
   amountSubscript: {
     ...typeScale.bodyMedium,
-    color: colors.gray5,
+    color: colors.lightBlue,
     paddingBottom: 16,
   },
   subHeading: {

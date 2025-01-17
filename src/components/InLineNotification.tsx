@@ -64,7 +64,7 @@ export function InLineNotification({
     )
   const Icon = variantIcons[variant]
 
-  const backgroundStyle = { backgroundColor: variantColor.secondary }
+  const backgroundStyle = { backgroundColor: `${variantColor.secondary}66` } // secondary color with 40% opacity
   const borderStyle = withBorder && {
     borderWidth: 1,
     borderColor: `${variantColor.primary}80`, // primary color with 50% opacity
@@ -121,7 +121,6 @@ const styles = StyleSheet.create({
   },
   bodyText: {
     ...typeScale.bodyXSmall,
-    color: Colors.white,
   },
   ctaLabel: {
     ...typeScale.labelSmall,
@@ -134,20 +133,20 @@ const styles = StyleSheet.create({
 
 const variantColors: Record<NotificationVariant, CustomColors> = {
   [NotificationVariant.Info]: {
-    primary: Colors.white,
-    secondary: Colors.blue100,
+    primary: Colors.text,
+    secondary: Colors.gray5,
   },
   [NotificationVariant.Success]: {
-    primary: Colors.successDark,
-    secondary: Colors.successLight,
+    primary: Colors.text,
+    secondary: Colors.successDark,
   },
   [NotificationVariant.Warning]: {
-    primary: Colors.warningDark,
-    secondary: Colors.warningLight,
+    primary: Colors.text,
+    secondary: Colors.warningDark,
   },
   [NotificationVariant.Error]: {
-    primary: Colors.errorDark,
-    secondary: Colors.errorLight,
+    primary: Colors.text,
+    secondary: Colors.errorDark,
   },
 }
 

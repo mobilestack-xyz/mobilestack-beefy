@@ -142,10 +142,10 @@ QRNavigator.navigationOptions = {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: Colors.white,
+    backgroundColor: Colors.background,
   },
   sceneContainerStyle: {
-    backgroundColor: Colors.white,
+    backgroundColor: Colors.background,
   },
   viewContainer: {
     flex: 1,

@@ -152,7 +152,6 @@ const styles = StyleSheet.create({
     bottom: 32,
     ...typeScale.labelSemiBoldSmall,
     lineHeight: undefined,
-    color: colors.darkBlue,
     textAlign: 'center',
     paddingHorizontal: 30,
   },
