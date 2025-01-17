@@ -220,7 +220,11 @@ export const useActions = (token: TokenBalance) => {
       details: t('tokenDetails.actionDescriptions.withdraw'),
       iconComponent: QuickActionsWithdraw,
       onPress: () => {
-        navigate(Screens.WithdrawSpend)
+        navigate(Screens.FiatExchangeAmount, {
+          tokenId: token.tokenId,
+          flow: CICOFlow.CashOut,
+          tokenSymbol: token.symbol,
+        })
       },
       visible: showWithdraw,
     },

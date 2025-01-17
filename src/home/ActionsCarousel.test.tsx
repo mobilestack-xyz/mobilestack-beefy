@@ -59,7 +59,12 @@ describe('ActionsCarousel', () => {
     [HomeActionName.Send, 'send', Screens.SendSelectRecipient, undefined],
     [HomeActionName.Receive, 'receive', Screens.QRNavigator, { screen: Screens.QRCode }],
     [HomeActionName.Swap, 'swap', Screens.SwapScreenWithBack, undefined],
-    [HomeActionName.Withdraw, 'withdraw', Screens.WithdrawSpend, undefined],
+    [
+      HomeActionName.Withdraw,
+      'withdraw',
+      Screens.FiatExchangeCurrencyBottomSheet,
+      { flow: FiatExchangeFlow.CashOut },
+    ],
   ])(
     'renders title and navigates to appropriate screen for %s',
     (name, title, screen, screenOptions) => {

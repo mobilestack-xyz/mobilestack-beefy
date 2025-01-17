@@ -67,7 +67,7 @@ function ActionsCarousel() {
       title: t('homeActions.withdraw'),
       icon: <QuickActionsWithdraw color={Colors.white} />,
       onPress: () => {
-        navigate(Screens.WithdrawSpend)
+        navigate(Screens.FiatExchangeCurrencyBottomSheet, { flow: FiatExchangeFlow.CashOut })
       },
     },
   }
