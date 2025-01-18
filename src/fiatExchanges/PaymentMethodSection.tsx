@@ -228,7 +228,7 @@ export function PaymentMethodSection({
       >
         <View>
           <Expandable
-            arrowColor={colors.accent}
+            arrowColor={colors.lightBlue}
             containerStyle={{
               ...styles.expandableContainer,
               paddingVertical: isExpandable ? (expanded ? 22 : 27) : 16,
@@ -294,7 +294,7 @@ export function PaymentMethodSection({
 const styles = StyleSheet.create({
   container: {
     borderBottomWidth: 1,
-    borderBottomColor: colors.blue200,
+    borderBottomColor: colors.white,
   },
   expandableContainer: {
     paddingHorizontal: 16,
@@ -311,10 +311,10 @@ const styles = StyleSheet.create({
   },
   expandedContainer: {
     borderTopWidth: 1,
-    borderTopColor: colors.blue200,
+    borderTopColor: colors.white,
     paddingVertical: 16,
     paddingHorizontal: 16,
-    backgroundColor: colors.successLight,
+    backgroundColor: colors.blue100,
     justifyContent: 'space-between',
     alignItems: 'center',
     flexDirection: 'row',

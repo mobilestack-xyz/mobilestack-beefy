@@ -67,7 +67,7 @@ function FilterChipsCarousel<T>({
             style={[
               styles.filterChipBackground,
               chip.isSelected
-                ? { backgroundColor: Colors.white, borderColor: Colors.white }
+                ? { backgroundColor: Colors.accent, borderColor: Colors.accent }
                 : { backgroundColor: Colors.blue100, borderColor: Colors.blue200 },
             ]}
           >
@@ -81,14 +81,14 @@ function FilterChipsCarousel<T>({
                 <Text
                   style={[
                     styles.filterChipText,
-                    chip.isSelected ? { color: Colors.darkBlue } : { color: Colors.lightBlue },
+                    chip.isSelected ? { color: Colors.white } : { color: Colors.white },
                   ]}
                 >
                   {chip.name}
                 </Text>
                 {isNetworkChip(chip) && (
                   <DownArrowIcon
-                    color={chip.isSelected ? Colors.darkBlue : Colors.lightBlue}
+                    color={chip.isSelected ? Colors.white : Colors.white}
                     strokeWidth={2}
                     height={Spacing.Regular16}
                     style={{ marginBottom: 2, marginLeft: 4 }}

@@ -462,7 +462,11 @@ describe('TokenDetails', () => {
       tokenSymbol: 'CELO',
     })
     fireEvent.press(getByTestId('TokenDetailsMoreActions/Withdraw'))
-    expect(navigate).toHaveBeenCalledWith(Screens.WithdrawSpend)
+    expect(navigate).toHaveBeenCalledWith(Screens.FiatExchangeAmount, {
+      tokenId: mockCeloTokenId,
+      flow: CICOFlow.CashOut,
+      tokenSymbol: 'CELO',
+    })
     expect(AppAnalytics.track).toHaveBeenCalledTimes(6) // 4 actions + 1 more action + 1 celo news
   })
 
