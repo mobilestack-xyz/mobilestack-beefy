@@ -14,7 +14,14 @@ import { NetworkId } from 'src/transactions/types'
 import { ONE_DAY_IN_MILLIS } from 'src/utils/time'
 import MockedNavigator from 'test/MockedNavigator'
 import { RecursivePartial, createMockStore } from 'test/utils'
-import { mockCeurAddress, mockCeurTokenId, mockCusdAddress, mockCusdTokenId, mockEarnPositions, mockTokenBalances } from 'test/values'
+import {
+  mockCeurAddress,
+  mockCeurTokenId,
+  mockCusdAddress,
+  mockCusdTokenId,
+  mockEarnPositions,
+  mockTokenBalances,
+} from 'test/values'
 
 jest.mock('src/statsig')
 
