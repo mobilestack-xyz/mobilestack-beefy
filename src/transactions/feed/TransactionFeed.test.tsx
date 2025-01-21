@@ -425,8 +425,9 @@ describe('TransactionFeed', () => {
       throw new Error('Unexpected gate')
     })
 
-    const { getByTestId } = renderScreen({})
-    expect(getByTestId('GetStarted')).toBeDefined()
+    const { getByTestId, getByText } = renderScreen({})
+    expect(getByTestId('NoActivity/Image')).toBeTruthy()
+    expect(getByText('transactionFeed.noActivity')).toBeTruthy()
   })
 
   it('renders NoActivity for UK compliance', () => {
@@ -439,7 +440,7 @@ describe('TransactionFeed', () => {
 
     const { getByTestId, getByText } = renderScreen({})
 
-    expect(getByTestId('NoActivity/loading')).toBeTruthy()
-    expect(getByText('transactionFeed.noTransactions')).toBeTruthy()
+    expect(getByTestId('NoActivity/Image')).toBeTruthy()
+    expect(getByText('transactionFeed.noActivity')).toBeTruthy()
   })
 })

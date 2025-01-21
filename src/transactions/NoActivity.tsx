@@ -12,7 +12,7 @@ interface Props {
   error?: Error | FetchBaseQueryError | SerializedError | undefined
 }
 
-function NoActivity({ loading, error }: Props) {
+function NoActivity({ error }: Props) {
   const { t } = useTranslation()
 
   if (error) {
@@ -26,8 +26,8 @@ function NoActivity({ loading, error }: Props) {
 
   return (
     <View style={styles.zeroStateContainer}>
-      <Image style={styles.image} source={beefyCow} />
-      <Text style={styles.title}>{t('transactionFeed.noActiviy')}</Text>
+      <Image testID="NoActivity/Image" style={styles.image} source={beefyCow} />
+      <Text style={styles.title}>{t('transactionFeed.noActivity')}</Text>
     </View>
   )
 }

@@ -2,8 +2,6 @@ import React, { useMemo } from 'react'
 import { ActivityIndicator, SectionList, StyleSheet, View } from 'react-native'
 import SectionHead from 'src/components/SectionHead'
 import { useSelector } from 'src/redux/hooks'
-import { getFeatureGate } from 'src/statsig'
-import { StatsigFeatureGates } from 'src/statsig/types'
 import colors from 'src/styles/colors'
 import { Spacing } from 'src/styles/styles'
 import NoActivity from 'src/transactions/NoActivity'
@@ -31,8 +29,6 @@ function TransactionFeed() {
   const allPendingStandbyTransactions = useSelector(pendingStandbyTransactionsSelector)
   const allConfirmedStandbyTransactions = useSelector(confirmedStandbyTransactionsSelector)
   const allowedNetworks = useAllowedNetworkIdsForTransfers()
-
-  const showUKCompliantVariant = getFeatureGate(StatsigFeatureGates.SHOW_UK_COMPLIANT_VARIANT)
 
   const confirmedFeedTransactions = useMemo(() => {
     // Filter out received pending transactions that are also in the pending
