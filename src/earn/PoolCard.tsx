@@ -208,20 +208,4 @@ const styles = StyleSheet.create({
     color: Colors.lightBlue,
     marginBottom: Spacing.Tiny4,
   },
-  tripleBarContainer: {
-    flex: 1,
-    gap: 2,
-    flexDirection: 'row',
-    paddingHorizontal: Spacing.Tiny4,
-    alignItems: 'flex-end',
-    paddingBottom: 3,
-    justifyContent: 'flex-end',
-  },
-  bar: {
-    width: 4,
-    backgroundColor: Colors.blue200,
-  },
-  barHighlighted: {
-    backgroundColor: Colors.accent,
-  },
 })
