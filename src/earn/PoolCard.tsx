@@ -116,9 +116,9 @@ export default function PoolCard({
               </Text>
             </View>
           </View>
-          <View>
-            <Text style={styles.safetyText}>{t('earnFlow.poolCard.safety')}</Text>
-            {safety && (
+          {safety && (
+            <View>
+              <Text style={styles.safetyText}>{t('earnFlow.poolCard.safety')}</Text>
               <View style={styles.tripleBarContainer}>
                 {BAR_HEIGHTS.map((height, index) => (
                   <View
@@ -132,8 +132,8 @@ export default function PoolCard({
                   />
                 ))}
               </View>
-            )}
-          </View>
+            </View>
+          )}
         </View>
         <View style={styles.keyValueContainer}>
           <View style={styles.keyValueRow}>

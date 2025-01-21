@@ -204,7 +204,7 @@ function TabHome({ navigation, route }: Props) {
 
   return (
     <>
-      <Animated.View testID="WalletHome" style={styles.container}>
+      <Animated.View testID="Home" style={styles.container}>
         <Animated.View
           style={[styles.listHeaderContainer, animatedListHeaderStyles]}
           onLayout={handleMeasureListHeadereHeight}

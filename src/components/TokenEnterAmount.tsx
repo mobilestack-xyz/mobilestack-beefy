@@ -350,7 +350,6 @@ export default function TokenEnterAmount({
               borderBottomLeftRadius: token ? 0 : BORDER_RADIUS,
               borderBottomRightRadius: token ? 0 : BORDER_RADIUS,
               borderBottomWidth: token ? 1 : 0,
-              borderBottomColor: Colors.blue200,
             },
           ]}
         >
@@ -467,6 +466,7 @@ export default function TokenEnterAmount({
 
 const styles = StyleSheet.create({
   rowContainer: {
+    borderColor: Colors.blue200,
     borderRadius: BORDER_RADIUS,
     padding: Spacing.Regular16,
     backgroundColor: Colors.blue100,
