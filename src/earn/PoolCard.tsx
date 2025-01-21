@@ -7,7 +7,7 @@ import { EarnEvents } from 'src/analytics/Events'
 import { formatValueToDisplay } from 'src/components/TokenDisplay'
 import TokenIcon from 'src/components/TokenIcon'
 import Touchable from 'src/components/Touchable'
-import { LEVEL_TO_MAX_HIGHLIGHTED_BAR } from 'src/earn/poolInfoScreen/SafetyCard'
+import { TripleBars } from 'src/earn/poolInfoScreen/SafetyCard'
 import { getEarnPositionBalanceValues, getTotalYieldRate } from 'src/earn/utils'
 import { useDollarsToLocalAmount } from 'src/localCurrency/hooks'
 import { getLocalCurrencySymbol } from 'src/localCurrency/selectors'
@@ -119,19 +119,7 @@ export default function PoolCard({
           {safety && (
             <View>
               <Text style={styles.safetyText}>{t('earnFlow.poolCard.safety')}</Text>
-              <View style={styles.tripleBarContainer}>
-                {BAR_HEIGHTS.map((height, index) => (
-                  <View
-                    testID="SafetyCard/Bar"
-                    key={index}
-                    style={[
-                      styles.bar,
-                      { height },
-                      index < LEVEL_TO_MAX_HIGHLIGHTED_BAR[safety.level] && styles.barHighlighted,
-                    ]}
-                  />
-                ))}
-              </View>
+              <TripleBars safety={safety} barHeights={BAR_HEIGHTS} />
             </View>
           )}
         </View>
