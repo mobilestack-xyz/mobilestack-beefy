@@ -297,7 +297,7 @@ const styles = StyleSheet.create({
     minHeight: 48, // setting height manually b.c. of bug causing text to jump on Android
   },
   fiatCurrencyColor: {
-    color: colors.accent,
+    color: colors.text,
   },
   reviewBtn: {
     padding: variables.contentPadding,

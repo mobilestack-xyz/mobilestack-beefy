@@ -64,9 +64,8 @@ const BottomSheetBase = ({
       enablePanDownToClose
       backdropComponent={renderBackdrop}
       handleComponent={handleComponent}
-      handleStyle={styles.handle}
       handleIndicatorStyle={handleIndicatorStyle}
-      backgroundStyle={backgroundStyle}
+      backgroundStyle={[styles.background, backgroundStyle]}
       onAnimate={handleAnimate}
       onDismiss={onClose}
       onChange={onChange}
@@ -85,10 +84,8 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.white,
     width: 40,
   },
-  handle: {
+  background: {
     backgroundColor: Colors.background,
-    borderTopLeftRadius: 16,
-    borderTopRightRadius: 16,
   },
 })
 

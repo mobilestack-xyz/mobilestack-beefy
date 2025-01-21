@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next'
 import { Platform, StyleSheet, Text, View } from 'react-native'
 import * as AndroidOpenSettings from 'react-native-android-open-settings'
 import TextButton from 'src/components/TextButton'
-import colors from 'src/styles/colors'
 import { typeScale } from 'src/styles/fonts'
 import { navigateToURI } from 'src/utils/linking'
 
@@ -36,11 +35,9 @@ const styles = StyleSheet.create({
   title: {
     ...typeScale.titleSmall,
     marginBottom: 8,
-    color: colors.darkBlue,
   },
   description: {
     ...typeScale.bodyMedium,
-    color: colors.darkBlue,
     textAlign: 'center',
     marginBottom: 16,
   },

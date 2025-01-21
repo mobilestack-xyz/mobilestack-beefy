@@ -19,35 +19,15 @@ describe('AssetTabBar', () => {
     )
 
     const tabItems = getAllByTestId('Assets/TabBarItem')
-    expect(tabItems).toHaveLength(3)
-    expect(tabItems[0]).toHaveTextContent('tokens')
-    expect(tabItems[0].children[0]).toHaveStyle({ color: Colors.white })
-    expect(tabItems[1]).toHaveTextContent('collectibles')
-    expect(tabItems[1].children[0]).toHaveStyle({ color: Colors.lightBlue })
-    expect(tabItems[2]).toHaveTextContent('dappPositions')
-    expect(tabItems[2].children[0]).toHaveStyle({ color: Colors.lightBlue })
-  })
-
-  it('does not render positions if disabled', () => {
-    const { getAllByTestId } = render(
-      <AssetTabBar
-        activeTab={AssetTabType.Collectibles}
-        onChange={onChange}
-        displayPositions={false}
-      />
-    )
-
-    const tabItems = getAllByTestId('Assets/TabBarItem')
     expect(tabItems).toHaveLength(2)
     expect(tabItems[0]).toHaveTextContent('tokens')
-    expect(tabItems[0].children[0]).toHaveStyle({ color: Colors.lightBlue })
-    expect(tabItems[1]).toHaveTextContent('collectibles')
-    expect(tabItems[1].children[0]).toHaveStyle({ color: Colors.white })
+    expect(tabItems[0].children[0]).toHaveStyle({ color: Colors.white })
+    expect(tabItems[1]).toHaveTextContent('dappPositions')
+    expect(tabItems[1].children[0]).toHaveStyle({ color: Colors.lightBlue })
   })
 
   it.each([
     { tab: AssetTabType.Tokens, event: AssetsEvents.view_wallet_assets },
-    { tab: AssetTabType.Collectibles, event: AssetsEvents.view_collectibles },
     { tab: AssetTabType.Positions, event: AssetsEvents.view_dapp_positions },
   ])('selecting tab $tab fires analytics events and invokes on change', ({ tab, event }) => {
     const { getAllByTestId } = render(

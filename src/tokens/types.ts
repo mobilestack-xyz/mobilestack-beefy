@@ -20,6 +20,6 @@ export interface TokenAction {
 
 export enum AssetTabType {
   Tokens = 0,
-  Collectibles = 1,
-  Positions = 2,
+  Collectibles = 2,
+  Positions = 1,
 }

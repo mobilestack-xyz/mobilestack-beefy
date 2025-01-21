@@ -29,8 +29,12 @@ export default function SegmentedControl({ values, selectedIndex = 0, onChange }
     Extrapolation.CLAMP
   )
 
-  const color = interpolateColor(selectedIndex, [0.5, 1], [colors.white, colors.darkBlue])
-  const colorInverted = interpolateColor(selectedIndex, [0.5, 1], [colors.darkBlue, colors.white])
+  const color = interpolateColor(selectedIndex, [0.5, 1], [colors.white, colors.white])
+  const colorInverted = interpolateColor(
+    selectedIndex,
+    [0.5, 1],
+    [colors.darkBlue, colors.darkBlue]
+  )
 
   const onLayout = ({
     nativeEvent: {

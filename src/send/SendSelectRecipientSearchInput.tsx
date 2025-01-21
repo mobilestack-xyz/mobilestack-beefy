@@ -47,9 +47,8 @@ const styles = StyleSheet.create({
     columnGap: Spacing.Smallest8,
     paddingVertical: Spacing.Smallest8,
     paddingHorizontal: Spacing.Small12,
-    borderWidth: 1,
-    borderColor: colors.blue200,
     borderRadius: 100,
+    backgroundColor: colors.blue100,
   },
   input: {
     ...typeScale.bodySmall,
