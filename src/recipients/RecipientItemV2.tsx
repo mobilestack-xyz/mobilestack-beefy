@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   rowSelected: {
-    backgroundColor: Colors.blue100,
+    backgroundColor: Colors.blue200,
   },
   avatar: {
     marginRight: Spacing.Small12,

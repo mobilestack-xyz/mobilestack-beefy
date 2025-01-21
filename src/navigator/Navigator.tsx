@@ -112,6 +112,7 @@ import ValidateRecipientAccount, {
 import ValidateRecipientIntro, {
   validateRecipientIntroScreenNavOptions,
 } from 'src/send/ValidateRecipientIntro'
+import Colors from 'src/styles/colors'
 import variables from 'src/styles/variables'
 import SwapScreen from 'src/swap/SwapScreen'
 import TokenDetailsScreen from 'src/tokens/TokenDetails'
@@ -744,6 +745,8 @@ function RootStackScreen() {
         // take up the whole screen, it is no longer obvious that they are a bottom
         // sheet / how to navigate away
         maxDynamicContentSize: variables.height * 0.9,
+        backgroundStyle: { backgroundColor: Colors.background },
+        handleIndicatorStyle: { backgroundColor: Colors.white, width: 40 },
       }}
     >
       <RootStack.Screen name={Screens.MainModal} component={ModalStackScreen} />
