@@ -250,7 +250,7 @@ describe('TransactionFeedV2', () => {
     const { getByTestId, getByText } = renderScreen({})
 
     expect(getByTestId('TransactionList/loading')).toBeTruthy()
-    expect(getByText('transactionFeed.noTransactions')).toBeTruthy()
+    expect(getByText('transactionFeed.noActivity')).toBeTruthy()
   })
 
   it('renders GetStarted with an error if the initial fetch fails', async () => {
