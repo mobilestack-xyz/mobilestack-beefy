@@ -4,6 +4,7 @@ import ContactCircle from 'src/components/ContactCircle'
 import ContactCircleSelf from 'src/components/ContactCircleSelf'
 import CircleArrowIcon from 'src/icons/CircleArrowIcon'
 import { Recipient } from 'src/recipients/recipient'
+import Colors from 'src/styles/colors'
 
 interface Props {
   type: 'sent' | 'received'
@@ -11,7 +12,13 @@ interface Props {
 }
 
 export default function TransferAvatars({ type, recipient }: Props) {
-  const userAvatar = <ContactCircle recipient={recipient} />
+  const userAvatar = (
+    <ContactCircle
+      foregroundColor={Colors.white}
+      backgroundColor={Colors.blue100}
+      recipient={recipient}
+    />
+  )
 
   const selfAvatar = <ContactCircleSelf />
 

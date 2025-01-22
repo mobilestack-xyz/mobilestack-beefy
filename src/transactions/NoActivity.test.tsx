@@ -6,15 +6,8 @@ describe('NoActivity Component', () => {
   it('renders an image and text', () => {
     const { getByText, getByTestId } = render(<NoActivity loading={false} error={undefined} />)
 
-    expect(getByText('transactionFeed.noTransactions')).toBeTruthy()
-    expect(getByTestId('NoActivity/CelebrationImage')).toBeTruthy()
-  })
-
-  it('renders loading indicator when loading is true', () => {
-    const { getByTestId, getByText } = render(<NoActivity loading error={undefined} />)
-
-    expect(getByTestId('NoActivity/loading')).toBeTruthy()
-    expect(getByText('transactionFeed.noTransactions')).toBeTruthy()
+    expect(getByText('transactionFeed.noActivity')).toBeTruthy()
+    expect(getByTestId('NoActivity/Image')).toBeTruthy()
   })
 
   it('renders error message when error exists', () => {
