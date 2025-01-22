@@ -175,12 +175,19 @@ function TabHome({ navigation, route }: Props) {
   }
 
   const displayPools = useMemo(() => {
-    return activeTab === EarnTabType.AllPools
-      ? pools
-      : pools.filter(
-          (pool) => new BigNumber(pool.balance).gt(0) && !!allTokens[pool.dataProps.depositTokenId]
-        )
-  }, [pools, allTokens, activeTab])
+    const returnPools =
+      activeTab === EarnTabType.AllPools
+        ? pools
+        : pools.filter(
+            (pool) =>
+              new BigNumber(pool.balance).gt(0) && !!allTokens[pool.dataProps.depositTokenId]
+          )
+    return returnPools.filter((pool) =>
+      pool.tokens.some((poolToken) =>
+        tokenList.map((token) => token.tokenId).includes(poolToken.tokenId)
+      )
+    )
+  }, [pools, allTokens, activeTab, tokenList])
 
   const onPressLearnMore = () => {
     AppAnalytics.track(EarnEvents.earn_home_learn_more_press)
@@ -199,7 +206,7 @@ function TabHome({ navigation, route }: Props) {
     (pools.length === 0 ||
       Date.now() - (positionsFetchedAt ?? 0) > TIME_UNTIL_TOKEN_INFO_BECOMES_STALE)
 
-  const zeroPoolsinMyPoolsTab =
+  const zeroPoolsInMyPoolsTab =
     !errorLoadingPools && displayPools.length === 0 && activeTab === EarnTabType.MyPools
 
   return (
@@ -231,22 +238,18 @@ function TabHome({ navigation, route }: Props) {
             />
           </View>
         )}
-        {zeroPoolsinMyPoolsTab && (
+        {zeroPoolsInMyPoolsTab && (
           <View style={styles.textContainer}>
             <Text style={styles.noPoolsTitle}>{t('earnFlow.home.noPoolsTitle')}</Text>
             <Text style={styles.description}>{t('earnFlow.home.noPoolsDescription')}</Text>
           </View>
         )}
-        {!errorLoadingPools && !zeroPoolsinMyPoolsTab && (
+        {!errorLoadingPools && !zeroPoolsInMyPoolsTab && (
           <PoolList
             handleScroll={handleScroll}
             listHeaderHeight={listHeaderHeight}
             paddingBottom={insets.bottom}
-            displayPools={displayPools.filter((pool) =>
-              pool.tokens.some((token) =>
-                tokenList.map((token) => token.tokenId).includes(token.tokenId)
-              )
-            )}
+            displayPools={displayPools}
             onPressLearnMore={onPressLearnMore}
           />
         )}
