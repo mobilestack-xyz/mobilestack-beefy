@@ -40,10 +40,16 @@ function Risk({ risk }: { risk: SafetyRisk }) {
   )
 }
 
-export function TripleBars({ safety, barHeights }: { safety: Safety; barHeights?: number[] }) {
+export function TripleBars({
+  safety,
+  barHeights = BAR_HEIGHTS,
+}: {
+  safety: Safety
+  barHeights?: number[]
+}) {
   return (
     <View style={styles.tripleBarContainer}>
-      {(barHeights ?? BAR_HEIGHTS).map((height, index) => (
+      {barHeights.map((height, index) => (
         <View
           testID="SafetyCard/Bar"
           key={index}
