@@ -29,6 +29,7 @@ import PoolList from 'src/earn/PoolList'
 import { EarnTabType } from 'src/earn/types'
 import { refreshAllBalances, visitHome } from 'src/home/actions'
 import AttentionIcon from 'src/icons/Attention'
+import ShakingCowHead from 'src/icons/ShakingCowHead'
 import { importContacts } from 'src/identity/actions'
 import { Screens } from 'src/navigator/Screens'
 import { StackParamList } from 'src/navigator/types'
@@ -240,6 +241,7 @@ function TabHome({ navigation, route }: Props) {
         )}
         {zeroPoolsInMyPoolsTab && (
           <View style={styles.textContainer}>
+            <ShakingCowHead />
             <Text style={styles.noPoolsTitle}>{t('earnFlow.home.noPoolsTitle')}</Text>
             <Text style={styles.description}>{t('earnFlow.home.noPoolsDescription')}</Text>
           </View>
