@@ -3,7 +3,11 @@ import { initializeAccount } from 'src/account/actions'
 import { navigate, navigateClearingStack, popToScreen } from 'src/navigator/NavigationService'
 import { Screens } from 'src/navigator/Screens'
 import { StackParamList } from 'src/navigator/types'
-import { updateStatsigAndNavigate } from 'src/onboarding/actions'
+import {
+  onboardingCompleted,
+  updateLastOnboardingScreen,
+  updateStatsigAndNavigate,
+} from 'src/onboarding/actions'
 import {
   firstOnboardingScreen,
   getOnboardingStepValues,
@@ -11,7 +15,6 @@ import {
 } from 'src/onboarding/steps'
 import { store } from 'src/redux/store'
 import { mockOnboardingProps } from 'test/values'
-import { onboardingCompleted, updateLastOnboardingScreen } from 'src/onboarding/actions'
 
 jest.mock('src/redux/store', () => ({ store: { dispatch: jest.fn() } }))
 jest.mock('src/config', () => ({
@@ -36,7 +39,7 @@ describe('onboarding steps', () => {
       Screens.VerificationStartScreen,
     ],
     name: 'newUserFlowWithEverythingEnabled',
-    finalScreen: Screens.ChooseYourAdventure,
+    finalScreen: Screens.OnboardingSuccessScreen,
   }
 
   const newUserFlowWithEverythingDisabled = {
@@ -48,7 +51,7 @@ describe('onboarding steps', () => {
     },
     screens: [Screens.PincodeSet, Screens.ProtectWallet],
     name: 'newUserFlowWithEverythingDisabled',
-    finalScreen: Screens.ChooseYourAdventure,
+    finalScreen: Screens.OnboardingSuccessScreen,
   }
 
   const importWalletFlowEverythingEnabled = {
@@ -66,7 +69,7 @@ describe('onboarding steps', () => {
       Screens.VerificationStartScreen,
     ],
     name: 'importWalletFlowEverythingEnabled',
-    finalScreen: Screens.ChooseYourAdventure,
+    finalScreen: Screens.OnboardingSuccessScreen,
   }
 
   beforeEach(() => {
@@ -185,10 +188,10 @@ describe('onboarding steps', () => {
         })
         expect(mockStore.dispatch).toHaveBeenCalledWith(initializeAccount())
         expect(mockStore.dispatch).toHaveBeenCalledWith(
-          updateLastOnboardingScreen(Screens.ChooseYourAdventure)
+          updateLastOnboardingScreen(Screens.OnboardingSuccessScreen)
         )
         expect(mockStore.dispatch).toHaveBeenCalledWith(
-          updateStatsigAndNavigate(Screens.ChooseYourAdventure)
+          updateStatsigAndNavigate(Screens.OnboardingSuccessScreen)
         )
       })
     })
@@ -243,10 +246,10 @@ describe('onboarding steps', () => {
         })
         expect(mockStore.dispatch).toHaveBeenCalledWith(initializeAccount())
         expect(mockStore.dispatch).toHaveBeenCalledWith(
-          updateStatsigAndNavigate(Screens.ChooseYourAdventure)
+          updateStatsigAndNavigate(Screens.OnboardingSuccessScreen)
         )
         expect(mockStore.dispatch).toHaveBeenCalledWith(
-          updateLastOnboardingScreen(Screens.ChooseYourAdventure)
+          updateLastOnboardingScreen(Screens.OnboardingSuccessScreen)
         )
       })
     })
@@ -260,10 +263,10 @@ describe('onboarding steps', () => {
           },
         })
         expect(mockStore.dispatch).toHaveBeenCalledWith(
-          updateStatsigAndNavigate(Screens.ChooseYourAdventure)
+          updateStatsigAndNavigate(Screens.OnboardingSuccessScreen)
         )
         expect(mockStore.dispatch).toHaveBeenCalledWith(
-          updateLastOnboardingScreen(Screens.ChooseYourAdventure)
+          updateLastOnboardingScreen(Screens.OnboardingSuccessScreen)
         )
       })
       it('should also navigate to the CYA screen if numberAlreadyVerifiedCentrally is true', () => {
@@ -275,10 +278,10 @@ describe('onboarding steps', () => {
           },
         })
         expect(mockStore.dispatch).toHaveBeenCalledWith(
-          updateStatsigAndNavigate(Screens.ChooseYourAdventure)
+          updateStatsigAndNavigate(Screens.OnboardingSuccessScreen)
         )
         expect(mockStore.dispatch).toHaveBeenCalledWith(
-          updateLastOnboardingScreen(Screens.ChooseYourAdventure)
+          updateLastOnboardingScreen(Screens.OnboardingSuccessScreen)
         )
       })
       it('should otherwise navigate to VerificationStartScreen', () => {
@@ -304,10 +307,10 @@ describe('onboarding steps', () => {
           },
         })
         expect(mockStore.dispatch).toHaveBeenCalledWith(
-          updateStatsigAndNavigate(Screens.ChooseYourAdventure)
+          updateStatsigAndNavigate(Screens.OnboardingSuccessScreen)
         )
         expect(mockStore.dispatch).toHaveBeenCalledWith(
-          updateLastOnboardingScreen(Screens.ChooseYourAdventure)
+          updateLastOnboardingScreen(Screens.OnboardingSuccessScreen)
         )
       })
       it('should also navigate to the CYA screen if numberAlreadyVerifiedCentrally is true', () => {
@@ -319,10 +322,10 @@ describe('onboarding steps', () => {
           },
         })
         expect(mockStore.dispatch).toHaveBeenCalledWith(
-          updateStatsigAndNavigate(Screens.ChooseYourAdventure)
+          updateStatsigAndNavigate(Screens.OnboardingSuccessScreen)
         )
         expect(mockStore.dispatch).toHaveBeenCalledWith(
-          updateLastOnboardingScreen(Screens.ChooseYourAdventure)
+          updateLastOnboardingScreen(Screens.OnboardingSuccessScreen)
         )
       })
       it('should otherwise navigate to LinkPhoneNumber', () => {
@@ -340,17 +343,17 @@ describe('onboarding steps', () => {
     })
     describe('Screens.VerificationStartScreen and Screens.LinkPhoneNumber', () => {
       it.each([Screens.VerificationStartScreen, Screens.LinkPhoneNumber])(
-        'From %s should navigate to the Screens.ChooseYourAdventure',
+        'From %s should navigate to the Screens.OnboardingSuccessScreen',
         (screen) => {
           goToNextOnboardingScreen({
             firstScreenInCurrentStep: screen,
             onboardingProps: { ...onboardingProps },
           })
           expect(mockStore.dispatch).toHaveBeenCalledWith(
-            updateStatsigAndNavigate(Screens.ChooseYourAdventure)
+            updateStatsigAndNavigate(Screens.OnboardingSuccessScreen)
           )
           expect(mockStore.dispatch).toHaveBeenCalledWith(
-            updateLastOnboardingScreen(Screens.ChooseYourAdventure)
+            updateLastOnboardingScreen(Screens.OnboardingSuccessScreen)
           )
         }
       )
@@ -365,10 +368,10 @@ describe('onboarding steps', () => {
           },
         })
         expect(mockStore.dispatch).toHaveBeenCalledWith(
-          updateStatsigAndNavigate(Screens.ChooseYourAdventure)
+          updateStatsigAndNavigate(Screens.OnboardingSuccessScreen)
         )
         expect(mockStore.dispatch).toHaveBeenCalledWith(
-          updateLastOnboardingScreen(Screens.ChooseYourAdventure)
+          updateLastOnboardingScreen(Screens.OnboardingSuccessScreen)
         )
       })
       it('should navigate to VerficationStartScreen if skipVerification is false and choseToRestoreAccount is false', () => {

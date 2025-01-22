@@ -6,17 +6,20 @@ import {
   recoveringFromStoreWipeSelector,
 } from 'src/account/selectors'
 import { phoneNumberVerifiedSelector, supportedBiometryTypeSelector } from 'src/app/selectors'
+import { ONBOARDING_FEATURES_ENABLED } from 'src/config'
 import { KeylessBackupFlow, KeylessBackupOrigin } from 'src/keylessBackup/types'
 import * as NavigationService from 'src/navigator/NavigationService'
 import { Screens } from 'src/navigator/Screens'
 import { StackParamList } from 'src/navigator/types'
-import { updateStatsigAndNavigate } from 'src/onboarding/actions'
-import { store } from 'src/redux/store'
+import {
+  onboardingCompleted,
+  updateLastOnboardingScreen,
+  updateStatsigAndNavigate,
+} from 'src/onboarding/actions'
 import { ToggleableOnboardingFeatures } from 'src/onboarding/types'
-import { ONBOARDING_FEATURES_ENABLED } from 'src/config'
-import { onboardingCompleted, updateLastOnboardingScreen } from 'src/onboarding/actions'
+import { store } from 'src/redux/store'
 
-const END_OF_ONBOARDING_SCREENS = [Screens.TabHome, Screens.ChooseYourAdventure]
+const END_OF_ONBOARDING_SCREENS = [Screens.TabHome, Screens.OnboardingSuccessScreen]
 
 interface NavigatorFunctions {
   navigate: typeof NavigationService.navigate
@@ -251,7 +254,7 @@ function _getStepInfo({ firstScreenInStep, navigator, dispatch, props }: GetStep
           } else {
             dispatch(initializeAccount())
             if (skipProtectWallet) {
-              finishOnboarding(Screens.ChooseYourAdventure)
+              finishOnboarding(Screens.OnboardingSuccessScreen)
             } else {
               wrapNavigate(Screens.ProtectWallet)
             }
@@ -272,7 +275,7 @@ function _getStepInfo({ firstScreenInStep, navigator, dispatch, props }: GetStep
           } else {
             dispatch(initializeAccount())
             if (skipProtectWallet) {
-              finishOnboarding(Screens.ChooseYourAdventure)
+              finishOnboarding(Screens.OnboardingSuccessScreen)
             } else {
               wrapNavigate(Screens.ProtectWallet)
             }
@@ -283,7 +286,7 @@ function _getStepInfo({ firstScreenInStep, navigator, dispatch, props }: GetStep
       return {
         next: () => {
           if (skipVerification || numberAlreadyVerifiedCentrally) {
-            finishOnboarding(Screens.ChooseYourAdventure)
+            finishOnboarding(Screens.OnboardingSuccessScreen)
           } else {
             // DO NOT CLEAR NAVIGATION STACK HERE - breaks restore flow on initial app open in native-stack v6
             wrapNavigate(Screens.LinkPhoneNumber)
@@ -294,7 +297,7 @@ function _getStepInfo({ firstScreenInStep, navigator, dispatch, props }: GetStep
       return {
         next: () => {
           if (skipVerification || numberAlreadyVerifiedCentrally) {
-            finishOnboarding(Screens.ChooseYourAdventure)
+            finishOnboarding(Screens.OnboardingSuccessScreen)
           } else {
             // DO NOT CLEAR NAVIGATION STACK HERE - breaks restore flow on initial app open in native-stack v6
             wrapNavigate(Screens.VerificationStartScreen)
@@ -305,7 +308,7 @@ function _getStepInfo({ firstScreenInStep, navigator, dispatch, props }: GetStep
       return {
         next: () => {
           if (skipVerification || numberAlreadyVerifiedCentrally) {
-            finishOnboarding(Screens.ChooseYourAdventure)
+            finishOnboarding(Screens.OnboardingSuccessScreen)
           } else {
             // DO NOT CLEAR NAVIGATION STACK HERE - breaks restore flow on initial app open in native-stack v6
             wrapNavigate(Screens.VerificationStartScreen)
@@ -318,14 +321,14 @@ function _getStepInfo({ firstScreenInStep, navigator, dispatch, props }: GetStep
         next: () => {
           // initializeAccount is called in the middle of
           // the verification flow, so we don't need to call it here
-          finishOnboarding(Screens.ChooseYourAdventure)
+          finishOnboarding(Screens.OnboardingSuccessScreen)
         },
       }
     case Screens.ProtectWallet:
       return {
         next: () => {
           if (skipVerification) {
-            finishOnboarding(Screens.ChooseYourAdventure)
+            finishOnboarding(Screens.OnboardingSuccessScreen)
           } else {
             wrapNavigate(Screens.VerificationStartScreen)
           }
