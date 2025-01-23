@@ -2641,14 +2641,14 @@
     "depositBottomSheet": {
       "title": "Review & Deposit",
       "description": "Before depositing to an Aave pool, please review the transaction details below",
-      "descriptionV1_93": "Before depositing to an {{providerName}} pool, please review the transaction details below",
+      "descriptionV1_93": "Before depositing to a {{providerName}} pool, please review the transaction details below",
       "amount": "Amount Deposited",
       "fee": "Est. Gas Fees",
       "provider": "Earnings provider",
       "network": "Network",
       "footer": "By depositing crypto into an Aave pool, you accept the risks associated with using Aave. <0>Terms & Conditions</0>",
       "footerV1_93": "By depositing crypto into an {{providerName}} pool, you accept the risks associated with using {{providerName}}. <0>Terms & Conditions</0>",
-      "noTermsUrlFooter": "You are responsible for your actions in {{appName}}. {{appName}} disclaims all responsibility for your assets or interactions with {{providerName}}. You can review {{providerName}}'s documents <0>here</0> and our Terms & Conditions <1>here</1>.",
+      "noTermsUrlFooter": "You are responsible for your actions in {{appName}}. {{appName}} disclaims all responsibility for your assets or interactions with {{appName}}. You can review {{appName}}'s documents <0>here</0>.",
       "primaryCta": "Complete",
       "secondaryCta": "Cancel",
       "yieldRate": "Yield Rate (est.)",
@@ -2712,10 +2712,10 @@
         "chooseSubtitle": "How should you choose a pool? ",
         "chooseDescription": "Any financial decision is a personal choice. We have aggregated some pools across different protocols, but each pool has benefits and risks. We do our best to provide some helpful info for each pool, but it’s always best to do additional research if you’re unsure."
       },
-      "noPoolsTitle": "You haven’t joined any pools yet",
-      "noPoolsDescription": "Discover available pools, pick one that matches your goals, and make the most of your crypto.",
-      "errorTitle": "Unable to load pools",
-      "errorDescription": "Oops, something went wrong when trying to load the pool information. Please try again.",
+      "noPoolsTitle": "You don't have any positions yet",
+      "noPoolsDescription": "Mooooove to the All tab to discover available pools and vaults and pick one that matches your goals",
+      "errorTitle": "Unable to load pools & vaults",
+      "errorDescription": "Oops, something went wrong when trying to load the information. Please try again.",
       "errorButton": "Try again"
     },
     "poolCard": {
@@ -2730,11 +2730,12 @@
       "percentage": "{{percentage}}%",
       "poweredBy": "Powered by {{providerName}}",
       "deposited": "Supplied",
-      "depositAndEarnings": "Deposit & Earnings"
+      "depositAndEarnings": "Deposit & Earnings",
+      "safety": "Safety"
     },
     "poolFilters": {
-      "allPools": "All Pools",
-      "myPools": "My Pools"
+      "allPools": "All",
+      "myPools": "My Positions"
     },
     "poolInfoScreen": {
       "chainName": "Chain: <0>{{networkName}}</0>",
@@ -2771,7 +2772,7 @@
       "lineItemAmountDisplay": "{{localCurrencySymbol}}{{localCurrencyAmount}} ({{cryptoAmount}} {{cryptoSymbol}})",
       "infoBottomSheet": {
         "gotIt": "Got it",
-        "depositDescription": "This is your breakdown of your deposited amount, the interest you’e earned on that amount, and any additional rewards you’ve received from participating in the pool.",
+        "depositDescription": "This is a breakdown of your deposited amount, the interest you’e earned, and any additional rewards you’ve received from participating in the pool, along with the amount and percentage change. At times, this change may be negative, which can occur if the underlying asset decreases in value.",
         "depositNoBreakdownDescription": "This number combines your supplied tokens with any interest and rewards you’ve earned.\n\nSome protocols, like {{providerName}}, do not provide a breakdown of your earnings - this is normal. Instead they add your earnings directly to your deposited amount, which continues to earn interest based on the growing amount. ",
         "tvlTitle": "Total Value Locked (TVL)",
         "tvlDescription": "TVL refers to the total amount of assets deposited in a liquidity pool and can be used to help indicate the trust and utility of a pool. Typically a higher TVL correlates to reduced risk, however no pool is completely risk free.",

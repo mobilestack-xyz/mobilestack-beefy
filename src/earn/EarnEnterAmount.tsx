@@ -981,8 +981,7 @@ const styles = StyleSheet.create({
   txDetailsContainer: {
     marginVertical: Spacing.Regular16,
     padding: Spacing.Regular16,
-    borderColor: Colors.blue200,
-    borderWidth: 1,
+    backgroundColor: Colors.blue100,
     borderRadius: 12,
     gap: Spacing.Smallest8,
   },
@@ -1027,19 +1026,19 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
   },
   bottomSheetLineLabel: {
+    ...typeScale.bodySmall,
     maxWidth: '40%',
     textAlign: 'left',
   },
   bottomSheetLineLabelText: {
+    ...typeScale.bodySmall,
     maxWidth: '60%',
     textAlign: 'right',
   },
   bottomSheetDescriptionTitle: {
     ...typeScale.labelSemiBoldSmall,
-    color: Colors.white,
   },
   bottomSheetDescriptionText: {
     ...typeScale.bodySmall,
-    color: Colors.white,
   },
 })

@@ -370,11 +370,7 @@ export default function EarnPoolInfoScreen({ route, navigation }: Props) {
       <InfoBottomSheet
         infoBottomSheetRef={depositInfoBottomSheetRef}
         titleKey="earnFlow.poolInfoScreen.depositAndEarnings"
-        descriptionKey={
-          dataProps.cantSeparateCompoundedInterest
-            ? 'earnFlow.poolInfoScreen.infoBottomSheet.depositNoBreakdownDescription'
-            : 'earnFlow.poolInfoScreen.infoBottomSheet.depositDescription'
-        }
+        descriptionKey={'earnFlow.poolInfoScreen.infoBottomSheet.depositDescription'}
         providerName={appName}
         testId="DepositInfoBottomSheet"
       />
