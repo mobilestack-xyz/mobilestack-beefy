@@ -42,7 +42,12 @@ export default function EarnTabBar({
               {value}
             </Text>
 
-            {index === activeTab && <GradientBlock style={styles.activeTabUnderline} />}
+            {index === activeTab && (
+              <GradientBlock
+                style={styles.activeTabUnderline}
+                colors={[Colors.lightBlue, Colors.lightBlue]}
+              />
+            )}
           </>
         </Touchable>
       ))}

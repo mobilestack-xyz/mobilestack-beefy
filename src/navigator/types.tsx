@@ -283,7 +283,7 @@ export type StackParamList = {
       }
     | undefined
   [Screens.TabDiscover]: {} | undefined
-  [Screens.TabHome]: {} | undefined
+  [Screens.TabHome]: { activeEarnTab?: EarnTabType } | undefined
   [Screens.TabActivity]: {} | undefined
   [Screens.TabWallet]: { activeAssetTab?: AssetTabType } | undefined
   [Screens.TabNavigator]: {

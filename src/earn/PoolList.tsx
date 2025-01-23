@@ -1,12 +1,10 @@
 import React from 'react'
-import { Trans } from 'react-i18next'
 import {
   FlatList,
   FlatListProps,
   NativeScrollEvent,
   NativeSyntheticEvent,
   StyleSheet,
-  Text,
   View,
 } from 'react-native'
 import Animated from 'react-native-reanimated'
@@ -41,17 +39,6 @@ export default function PoolList({
       scrollIndicatorInsets={{ top: 0.01 }}
       scrollEventThrottle={16}
       ListHeaderComponent={<View style={{ height: listHeaderHeight }} />}
-      ListFooterComponent={
-        <Text style={styles.learnMore}>
-          <Trans i18nKey="earnFlow.home.learnMore">
-            <Text
-              style={styles.learnMoreLink}
-              onPress={onPressLearnMore}
-              testID="LearnMoreCta"
-            ></Text>
-          </Trans>
-        </Text>
-      }
       style={styles.sectionList}
       contentContainerStyle={[
         styles.sectionListContentContainer,
