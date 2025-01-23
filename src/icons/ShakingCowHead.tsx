@@ -1,18 +1,14 @@
 import * as React from 'react'
 import Svg, { ClipPath, Defs, G, Mask, Path } from 'react-native-svg'
 
-export interface Props {
-  size?: number
-}
-
-function ShakingCowHead({ size }: Props) {
+function ShakingCowHead() {
   return (
-    <Svg height={size} width={size} viewBox="0 0 112 112" fill="none" testID="ShakingCowHead">
+    <Svg height={112} width={112} viewBox="0 0 112 112" fill="none" testID="ShakingCowHead">
       <G clipPath="url(#a)">
         <Mask
           id="b"
-          width={size}
-          height={size}
+          width={112}
+          height={112}
           x={0}
           y={0}
           maskUnits="userSpaceOnUse"
@@ -25,8 +21,8 @@ function ShakingCowHead({ size }: Props) {
         <G mask="url(#b)">
           <Mask
             id="c"
-            width={size}
-            height={size}
+            width={112}
+            height={112}
             x={0}
             y={0}
             maskUnits="userSpaceOnUse"
@@ -49,10 +45,6 @@ function ShakingCowHead({ size }: Props) {
       </Defs>
     </Svg>
   )
-}
-
-ShakingCowHead.defaultProps = {
-  size: 112,
 }
 
 export default ShakingCowHead
