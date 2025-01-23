@@ -184,7 +184,7 @@ describe('KeylessBackupProgress', () => {
       expect(getByTestId('KeylessBackupProgress/Skip')).toBeTruthy()
       fireEvent.press(getByTestId('KeylessBackupProgress/Skip'))
 
-      expect(navigate).toBeCalledWith(Screens.ChooseYourAdventure)
+      expect(navigate).toBeCalledWith(Screens.OnboardingSuccessScreen)
 
       expect(AppAnalytics.track).toHaveBeenCalledTimes(1)
       expect(AppAnalytics.track).toHaveBeenCalledWith(
