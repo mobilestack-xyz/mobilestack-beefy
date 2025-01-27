@@ -159,8 +159,7 @@ class AppAnalytics {
   }
 
   isEnabled() {
-    // Disable analytics until we have a plan to release
-    return false
+    return !__DEV__ && !isE2EEnv && store.getState().app.analyticsEnabled
   }
 
   startSession(
