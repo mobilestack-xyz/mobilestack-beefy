@@ -2772,20 +2772,20 @@
       "lineItemAmountDisplay": "{{localCurrencySymbol}}{{localCurrencyAmount}} ({{cryptoAmount}} {{cryptoSymbol}})",
       "infoBottomSheet": {
         "gotIt": "Got it",
-        "depositDescription": "This is a breakdown of your deposited amount, the interest you’e earned, and any additional rewards you’ve received from participating in the vault, along with the amount and percentage change. At times, this change may be negative, which can occur if the underlying asset decreases in value.",
+        "depositDescription": "This is a breakdown of your deposited amount, the interest you’e earned, and any additional rewards you’ve received from participating in the vault.",
         "depositNoBreakdownDescription": "This number combines your supplied tokens with any interest and rewards you’ve earned.\n\nSome protocols, like {{providerName}}, do not provide a breakdown of your earnings - this is normal. Instead they add your earnings directly to your deposited amount, which continues to earn interest based on the growing amount. ",
         "tvlTitle": "Total Value Locked (TVL)",
-        "tvlDescription": "TVL refers to the total amount of assets deposited in a liquidity vault and can be used to help indicate the trust and utility of a vault. Typically a higher TVL correlates to reduced risk, however no vault is completely risk free.",
+        "tvlDescription": "TVL refers to the total amount of assets deposited in a vault and can be used to help indicate the trust and utility of a vault. Typically a higher TVL correlates to reduced risk, however no vault is completely risk free.",
         "ageTitle": "Age of Vault",
         "ageDescription": "Older liquidity vaults can indicate a solid track record and a history of building community trust. Because of this, some may consider these vaults to be safer.\n\nThere is no perfect way to determine risk, so use this info as part of your overall research to make the decision that is best for you.",
         "yieldRateTitle": "Yield Rate",
-        "yieldRateDescription": "While most vaults offer earnings in the form of a liquidity pool token, some give additional token(s) as a reward or added incentive.\n\nSince {{appName}} aggregates vaults across multiple protocols, we have combined all the earning and reward rates into a single, overall yield rate to help easily evaluate your earning potential. This number is an estimate since the earning and reward values fluctuate constantly.\n\nFor further information about earning breakdowns you can visit <0>{{providerName}}</0>.",
+        "yieldRateDescription": "While most vaults offer earnings in the form of the vault's underlying token, some will also reward you with different token(s) as an added incentive.\n\nSince {{appName}} aggregates vaults across multiple protocols, we have combined all the earning and reward rates into a single, overall yield rate to help easily evaluate your earning potential. This number is an estimate since the earning and reward values fluctuate constantly.\n\nFor further information about earning breakdowns you can visit <0>{{providerName}}</0>.",
         "dailyYieldRateTitle": "Daily Rate",
         "dailyYieldRateDescription": "The daily rate displayed reflects the daily rate provided by {{providerName}}.",
         "dailyYieldRateLink": "View More Daily Rate Details On {{providerName}}",
         "safetyScoreTitle": "Safety Score",
         "safetyScoreDescription": "The Safety Score breaks down the safety of the underlying vault asset into several key factors. It aims to draw your attention to the risks to consider before investing, and to inform you about technical details that you may not be able to evaluate for yourself.\nThough the full position is always more complicated, the Safety Score is provided to simplify the key risk and safety considerations and kick-start your own due diligence. Our team carefully considers each factor before a vault is deployed, and keeps a watchful eye on each asset, chain and protocol which {{providerName}} has integrated.",
-        "safetyScoreRateLink": "View More Safety Score Details On {{providerName}}"
+        "safetyScoreRateLink": "View More Safety Score Details"
       },
       "viewMoreDetails": "View More Details",
       "viewLessDetails": "View Less Details"
