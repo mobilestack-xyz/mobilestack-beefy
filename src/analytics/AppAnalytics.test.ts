@@ -173,30 +173,30 @@ describe('AppAnalytics', () => {
     )
   })
 
-  it('does not call identify', async () => {
+  it('calls identify', async () => {
     AppAnalytics.identify('0xUSER', { someUserProp: 'testValue' })
     expect(mockSegmentClient.identify).not.toHaveBeenCalled()
 
     await AppAnalytics.init()
     // Now that init has finished identify should have been called
-    expect(mockSegmentClient.identify).not.toHaveBeenCalled()
+    expect(mockSegmentClient.identify).toHaveBeenCalled()
   })
 
-  it('does not call track', async () => {
+  it('calls track', async () => {
     AppAnalytics.track(OnboardingEvents.pin_invalid, { error: 'some error' })
     expect(mockSegmentClient.track).not.toHaveBeenCalled()
 
     await AppAnalytics.init()
     // Now that init has finished track should have been called
-    expect(mockSegmentClient.track).not.toHaveBeenCalled()
+    expect(mockSegmentClient.track).toHaveBeenCalled()
   })
 
-  it('does not call screen', async () => {
+  it('calls screen', async () => {
     AppAnalytics.page('Some Page', { someProp: 'testValue' })
     expect(mockSegmentClient.screen).not.toHaveBeenCalled()
 
     await AppAnalytics.init()
     // Now that init has finished identify should have been called
-    expect(mockSegmentClient.screen).not.toHaveBeenCalled()
+    expect(mockSegmentClient.screen).toHaveBeenCalled()
   })
 })
